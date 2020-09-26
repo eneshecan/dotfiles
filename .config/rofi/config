@@ -1,0 +1,6 @@
+rofi.theme: ~/.config/rofi/purple.rasi
+rofi.font: Roboto 11
+rofi.show-icons: true
+rofi.icon-theme: Papirus-Dark
+rofi.modi: run,drun
+rofi.width: 20
