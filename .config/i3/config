@@ -24,11 +24,12 @@ set $urgent_color #7F0000
 font pango:Roboto 11
 
 # Autostart apps
+exec_always feh --no-fehbg --bg-scale ~/.config/i3/wallpaper.jpg
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id dunst
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id pasystray
-exec --no-startup-id dunst
-exec_always feh --no-fehbg --bg-scale ~/.config/i3/wallpaper.jpg
 
 # Screenshot
 bindsym $mod+shift+p exec scrot ~/Pictures/%Y-%m-%d-%T-Screenshot.png
@@ -48,8 +49,8 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 # Brightness
-bindsym XF86_MonBrightnessUp exec --no-startup-id  xbacklight -inc 10
-bindsym XF86_MonBrightnessDown exec --no-startup-id xbacklight -dec 10
+bindsym XF86_MonBrightnessUp exec --no-startup-id  xbacklight -inc 5
+bindsym XF86_MonBrightnessDown exec --no-startup-id xbacklight -dec 5
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -113,7 +114,7 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:  Browser"
+set $ws1 "1:  Browser"
 set $ws2 "2:  Terminal"
 set $ws3 "3:  IDE"
 set $ws4 "4:  Tools"
@@ -198,17 +199,17 @@ bindsym $mod+r mode "resize"
 # class                 border          background     text              indicator     child_border
 client.focused          $bg_color_light $bg_color_dark $text_color_light $border_color $bg_color_light
 
-# Start i3bar to display a workspace bar (plus the system information i3status finds out, if available)
-bar {
-    status_command i3status
-    tray_output primary
+# Start i3bar to display a workspace bar (plus the system information i3status finds out, if available
+# bar {
+#    status_command i3status
+#    tray_output primary
+#
+#    colors {
+#        background $bg_color_dark
+#        statusline $text_color_light
+#        separator $text_color_dark
 
-    colors {
-        background $bg_color_dark
-        statusline $text_color_light
-        separator $text_color_dark
-
-        focused_workspace $border_color $bg_color_light $text_color_light
-        urgent_workspace $border_color $urgent_color $text_color_light
-    }
-}
+#        focused_workspace $border_color $bg_color_light $text_color_light
+#        urgent_workspace $border_color $urgent_color $text_color_light
+#    }
+#}
