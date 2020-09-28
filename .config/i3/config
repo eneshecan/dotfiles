@@ -32,7 +32,7 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id pasystray
 
 # Screenshot
-bindsym $mod+shift+p exec scrot ~/Pictures/%Y-%m-%d-%T-Screenshot.png
+bindsym $mod+shift+p exec scrot ~/Pictures/%Y-%m-%d-%I-%M-%S-%p-Screenshot.png
 
 # Lock screen
 bindsym $mod+shift+x exec betterlockscreen -l dim -t "xeco's dell"
