@@ -90,7 +90,7 @@ label = %percentage_used%%
 [module/wlan]
 type = internal/network
 interface = wlp2s0
-interval = 3.0
+interval = 3
 
 format-connected-prefix = " "
 label-connected = %essid%
@@ -101,7 +101,7 @@ label-disconnected =
 [module/eth]
 type = internal/network
 interface = enp14s0u1u2
-interval = 3.0
+interval = 3
 
 format-connected-prefix = " "
 label-connected = %local_ip%
@@ -127,6 +127,7 @@ label = %date% %time%
 [module/pulseaudio]
 type = internal/pulseaudio
 use-ui-max = false
+interval = 5
 
 format-volume = <ramp-volume> <label-volume>
 
@@ -152,7 +153,8 @@ label =  %percentage%%
 type = internal/battery
 battery = BAT0
 adapter = AC
-full-at = 90
+full-at = 81
+poll-interval = 5
 
 label-charging =  %percentage%%
 label-discharging =  %percentage%%
@@ -163,6 +165,7 @@ label-full =  %percentage%%
 type = internal/temperature
 thermal-zone = 0
 warn-temperature = 60
+interval = 2
 
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
