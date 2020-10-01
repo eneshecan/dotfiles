@@ -164,7 +164,9 @@ label-full =  %percentage%%
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
-warn-temperature = 60
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon6/temp1_input
+base-temperature = 10
+warn-temperature = 100
 interval = 2
 
 format = <ramp> <label>
