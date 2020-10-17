@@ -13,6 +13,7 @@ A collection of my configuration files for arch linux.
 * [dunst](https://www.archlinux.org/packages/community/x86_64/dunst/)
 * [betterlockscreen](https://aur.archlinux.org/packages/betterlockscreen)
 * [xorg-xrandr](https://www.archlinux.org/packages/extra/x86_64/xorg-xrandr/)
+* [autorandr](https://www.archlinux.org/packages/community/any/autorandr/)
 * [feh](https://www.archlinux.org/packages/extra/x86_64/feh/)
 * [pulseaudio](https://www.archlinux.org/packages/extra/x86_64/pulseaudio/)
 * [xorg-xbacklight](https://www.archlinux.org/packages/extra/x86_64/xorg-xbacklight/)
