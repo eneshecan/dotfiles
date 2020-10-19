@@ -63,7 +63,7 @@ bindsym $mod+d exec rofi -show drun
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+i exec firefox
 bindsym $mod+c exec clion
-bindsym $mod+t exec teams-for-linux
+bindsym $mod+t exec teams
 bindsym $mod+shift+t exec thunderbird
 bindsym $mod+shift+s exec spotify
 
@@ -153,7 +153,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 assign [class="firefox"] $ws1
 assign [class="UXTerm"] $ws2
 assign [class="jetbrains-clion"] $ws3
-assign [class="teams-for-linux"] $ws6
+assign [class="Microsoft Teams - Preview"] $ws6
 assign [class="Glade"] $ws4
 assign [class="VirtualBox Manager"] $ws4
 assign [class="VirtualBox Machine"] $ws5
