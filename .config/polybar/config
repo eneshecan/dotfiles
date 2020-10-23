@@ -61,7 +61,7 @@ label-visible-padding = ${self.label-focused-padding}
 label-urgent = %name%
 label-urgent-background = ${colors.urgent}
 label-urgent-foreground = ${colors.text-dark}
-label-urgent-underline = ${colors.line}
+label-urgent-underline = ${colors.background-light}
 label-urgent-padding = 2
 ; separator
 label-separator = "  "
