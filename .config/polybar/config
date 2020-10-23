@@ -26,7 +26,7 @@ font-2 = FontAwesome5Free:style=Solid:size=11;2
 font-3 = FontAwesome5Brands:style=Regular:size=11;2
 modules-left = i3
 modules-center =
-modules-right = filesystem cpu memory temperature wlan eth battery pulseaudio backlight date powermenu
+modules-right = filesystemroot filesystemhome cpu memory temperature wlan eth battery pulseaudio backlight date powermenu
 tray-position = right
 tray-padding = 2
 cursor-click = pointer
@@ -67,12 +67,20 @@ label-urgent-padding = 2
 label-separator = "  "
 
 
-[module/filesystem]
+[module/filesystemroot]
 type = internal/fs
 interval = 60
 mount-0 = /
-mount-1 = /home
-label-mounted = "%mountpoint%  %percentage_used%%"
+label-mounted = " %percentage_used%%"
+label-unmounted = ""
+format-mounted-underline = ${colors.background-light}
+
+
+[module/filesystemhome]
+type = internal/fs
+interval = 60
+mount-0 = /home
+label-mounted = " %percentage_used%%"
 label-unmounted = ""
 format-mounted-underline = ${colors.background-light}
 
@@ -107,9 +115,10 @@ label-disconnected =
 type = internal/network
 interface = enp14s0u1u2
 interval = 3
-format-connected = ""
+format-connected-prefix = " "
 format-connected-underline = ${colors.background-light}
-format-disconnected =
+label-connected = %local_ip%
+label-disconnected =
 
 
 [module/date]
