@@ -107,9 +107,8 @@ label-disconnected =
 type = internal/network
 interface = enp14s0u1u2
 interval = 3
-format-connected-prefix = " "
+format-connected = ""
 format-connected-underline = ${colors.background-light}
-label-connected = %local_ip%
 format-disconnected =
 
 
