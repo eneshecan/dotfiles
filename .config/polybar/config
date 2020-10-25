@@ -26,7 +26,7 @@ font-2 = FontAwesome5Free:style=Solid:size=11;2
 font-3 = FontAwesome5Brands:style=Regular:size=11;2
 modules-left = i3
 modules-center =
-modules-right = filesystemroot filesystemhome cpu memory temperature wlan eth battery pulseaudio backlight date powermenu
+modules-right = cpu memory temperature filesystemroot filesystemhome wlan eth battery pulseaudio backlight date powermenu
 tray-position = right
 tray-padding = 2
 cursor-click = pointer
