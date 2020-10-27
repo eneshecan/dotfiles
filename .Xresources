@@ -1,4 +1,4 @@
-xterm*background: black
+xterm*background: grey8
 xterm*foreground: grey
 xterm*faceName: Roboto Mono for Powerline
 xterm*faceSize: 9
