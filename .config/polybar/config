@@ -1,9 +1,9 @@
 [colors]
 background-dark  = "#2A0D45"
 background-light = "#551A8B"
-line             = #9975B9
-text-light       = "#F2F2F2"
-text-dark        = "#999999"
+accent           = "#9975B9"
+text-light       = "#E0E0E0"
+text-dark        = "#808080"
 degraded         = "#FFBF00"
 urgent           = "#4C0000"
 
@@ -25,7 +25,7 @@ font-1 = FontAwesome5Free:style=Regular:size=11;2
 font-2 = FontAwesome5Free:style=Solid:size=11;2
 font-3 = FontAwesome5Brands:style=Regular:size=11;2
 modules-left = i3
-modules-center =
+modules-center = music
 modules-right = cpu memory temperature filesystemroot filesystemhome wlan eth battery pulseaudio backlight date powermenu
 tray-position = right
 tray-padding = 2
@@ -45,7 +45,7 @@ label-mode-background = ${colors.background-dark}
 ; focused = Active workspace on focused monitor
 label-focused = %name%
 label-focused-background = ${colors.background-light}
-label-focused-underline = ${colors.line}
+label-focused-underline = ${colors.accent}
 label-focused-padding = 2
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %name%
@@ -55,7 +55,7 @@ label-unfocused-padding = 2
 ; visible = Active workspace on unfocused monitor
 label-visible = %name%
 label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${colors.line}
+label-visible-underline = ${colors.accent}
 label-visible-padding = ${self.label-focused-padding}
 ; urgent = Workspace with urgency hint set
 label-urgent = %name%
@@ -184,6 +184,14 @@ label-warn-foreground = ${colors.degraded}
 ramp-0 = ""
 ramp-1 = ""
 ramp-2 = ""
+
+
+[module/music]
+type = custom/script
+format-prefix = "   "
+interval = 3
+format-foreground = ${colors.accent}
+exec = ~/.config/polybar/scripts/music.sh
 
 
 [module/powermenu]
