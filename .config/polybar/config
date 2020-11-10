@@ -139,6 +139,7 @@ use-ui-max = false
 interval = 5
 format-volume = <ramp-volume> <label-volume>
 format-volume-underline = ${colors.background-light}
+format-muted-underline = ${colors.background-light}
 label-muted = ""
 ramp-volume-0 = ""
 ramp-volume-1 = ""
