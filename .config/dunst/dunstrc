@@ -78,7 +78,7 @@ shrink = no
 # The transparency of the window.  Range: [0; 100].
 # This option will only work if a compositing windowmanager is
 # present (e.g. xcompmgr, compiz, etc.).
-transparency = 20
+transparency = 12
 
 # Don't remove messages, if the user is idle (no mouse or keyboard input)
 # for longer than idle_threshold seconds.
@@ -126,6 +126,9 @@ padding = 6
 
 # Horizontal padding.
 horizontal_padding = 6
+
+# Radius
+corner_radius = 10
 
 # Define a color for the separator.
 # possible values are:

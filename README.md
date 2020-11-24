@@ -4,6 +4,7 @@ A collection of my configuration files for arch linux.
 ## Dependencies
 * [i3wm](https://www.archlinux.org/packages/community/x86_64/i3-wm/)
 * [polybar](https://aur.archlinux.org/packages/polybar)
+* [picom](https://www.archlinux.org/packages/community/x86_64/picom/)
 * [layan-gtk-theme](https://aur.archlinux.org/packages/layan-gtk-theme-git/)
 * [papirus-icon-theme](https://www.archlinux.org/packages/community/any/papirus-icon-theme/)
 * [ttf-roboto](https://www.archlinux.org/packages/community/any/ttf-roboto/)
