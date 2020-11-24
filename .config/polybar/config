@@ -1,11 +1,11 @@
 [colors]
-background-dark  = "#2A0D45"
-background-light = "#551A8B"
-accent           = "#9975B9"
-text-light       = "#E0E0E0"
-text-dark        = "#808080"
-degraded         = "#FFBF00"
-urgent           = "#4C0000"
+background-dark  = "#CC2A0D45"
+background-light = "#CC551A8B"
+accent           = "#CC9975B9"
+text-light       = "#FFE0E0E0"
+text-dark        = "#FF808080"
+degraded         = "#CCFFBF00"
+urgent           = "#CC4C0000"
 
 
 [bar/bottom]

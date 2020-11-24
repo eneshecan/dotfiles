@@ -12,12 +12,12 @@
 # Variables
 set $mod Mod4
 set $refresh_i3status killall -SIGUSR1 i3status
-set $bg_color_dark #2A0D45
-set $bg_color_light #551A8B
-set $border_color #9975B9
-set $text_color_light #E0E0E0
-set $text_color_dark #808080
-set $urgent_color #4C0000
+set $bg_color_dark #2A0D45CC
+set $bg_color_light #551A8BCC
+set $border_color #9975B9CC
+set $text_color_light #E0E0E0FF
+set $text_color_dark #808080FF
+set $urgent_color #4C0000CC
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
