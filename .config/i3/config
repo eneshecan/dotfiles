@@ -200,3 +200,4 @@ bindsym $mod+r mode "resize"
 # class                 border            background        text              indicator     child_border
 client.focused          $bg_color_light   $bg_color_dark    $text_color_light $border_color $bg_color_light
 client.unfocused        $bg_color_unfocus $bg_color_unfocus $text_color_dark  $border_color $bg_color_light
+client.focused_inactive $bg_color_unfocus $bg_color_unfocus $text_color_dark  $border_color $bg_color_ligh
