@@ -1,4 +1,4 @@
-rofi.theme: ~/.config/rofi/purple.rasi
+rofi.theme: ~/.config/rofi/dark.rasi
 rofi.font: Roboto 11
 rofi.show-icons: true
 rofi.icon-theme: Papirus-Dark

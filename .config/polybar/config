@@ -1,7 +1,6 @@
 [colors]
-background-dark  = "#CC2A0D45"
-background-light = "#CC551A8B"
-accent           = "#CC9975B9"
+background-dark  = "#DD111111"
+background-light = "#DD483018"
 text-light       = "#FFE0E0E0"
 text-dark        = "#FF808080"
 degraded         = "#CCFFBF00"
@@ -42,26 +41,18 @@ pin-workspaces = true
 label-mode-padding = 2
 label-mode-foreground = #000
 label-mode-background = ${colors.background-dark}
-; focused = Active workspace on focused monitor
 label-focused = %name%
 label-focused-background = ${colors.background-light}
-label-focused-underline = ${colors.accent}
 label-focused-padding = 2
-; unfocused = Inactive workspace on any monitor
 label-unfocused = %name%
 label-unfocused-foreground = ${colors.text-dark}
-label-unfocused-underline = ${colors.background-light}
 label-unfocused-padding = 2
-; visible = Active workspace on unfocused monitor
 label-visible = %name%
 label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${colors.accent}
 label-visible-padding = ${self.label-focused-padding}
-; urgent = Workspace with urgency hint set
 label-urgent = %name%
 label-urgent-background = ${colors.urgent}
 label-urgent-foreground = ${colors.text-dark}
-label-urgent-underline = ${colors.background-light}
 label-urgent-padding = 2
 ; separator
 label-separator = "  "
@@ -73,7 +64,6 @@ interval = 60
 mount-0 = /
 label-mounted = " %percentage_used%%"
 label-unmounted = ""
-format-mounted-underline = ${colors.background-light}
 
 
 [module/filesystemhome]
@@ -82,14 +72,12 @@ interval = 60
 mount-0 = /home
 label-mounted = " %percentage_used%%"
 label-unmounted = ""
-format-mounted-underline = ${colors.background-light}
 
 
 [module/cpu]
 type = internal/cpu
 interval = 2
 format-prefix = " "
-format-underline = ${colors.background-light}
 label = %percentage:2%%
 
 
@@ -97,7 +85,6 @@ label = %percentage:2%%
 type = internal/memory
 interval = 2
 format-prefix = " "
-format-underline = ${colors.background-light}
 label = %percentage_used%%
 
 
@@ -106,7 +93,6 @@ type = internal/network
 interface = wlp2s0
 interval = 3
 format-connected-prefix = " "
-format-connected-underline = ${colors.background-light}
 label-connected = %essid%
 label-disconnected =
 
@@ -116,7 +102,6 @@ type = internal/network
 interface = enp14s0u1u2
 interval = 3
 format-connected-prefix = " "
-format-connected-underline = ${colors.background-light}
 label-connected = %local_ip%
 label-disconnected =
 
@@ -129,7 +114,6 @@ date-alt = "%a %d %b"
 time = %I:%M %p
 time-alt = %I:%M:%S %p
 format-prefix = " "
-format-underline = ${colors.background-light}
 label = %date% %time%
 
 
@@ -138,8 +122,6 @@ type = internal/pulseaudio
 use-ui-max = false
 interval = 5
 format-volume = <ramp-volume> <label-volume>
-format-volume-underline = ${colors.background-light}
-format-muted-underline = ${colors.background-light}
 label-muted = ""
 ramp-volume-0 = ""
 ramp-volume-1 = ""
@@ -151,7 +133,6 @@ click-right = "pavucontrol >/dev/null 2>&1 &" ; Doesn't work yet
 type = internal/backlight
 card = intel_backlight
 enable-scroll = true ; Doesn't work!
-format-underline = ${colors.background-light}
 label = " %percentage%%"
 
 
@@ -161,9 +142,6 @@ battery = BAT0
 adapter = AC
 full-at = 81
 poll-interval = 10
-format-charging-underline = ${colors.background-light}
-format-discharging-underline = ${colors.background-light}
-format-full-underline = ${colors.background-light}
 label-charging = " %percentage%%"
 label-discharging = " %percentage%%"
 label-full = " %percentage%%"
@@ -176,7 +154,6 @@ hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon6/temp1_input
 base-temperature = 10
 warn-temperature = 100
 interval = 4
-format-underline = ${colors.background-light}
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
 label = %temperature-c%
@@ -191,7 +168,7 @@ ramp-2 = ""
 type = custom/script
 format-prefix = "   "
 interval = 3
-format-foreground = ${colors.accent}
+format-foreground = ${colors.text-dark}
 exec = ~/.config/polybar/scripts/music.sh
 
 
@@ -199,7 +176,6 @@ exec = ~/.config/polybar/scripts/music.sh
 type = custom/menu
 expand-right = true
 format-spacing = 2
-format-underline = ${colors.background-light}
 label-open = " "
 label-close = ""
 label-separator = "|"

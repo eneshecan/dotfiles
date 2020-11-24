@@ -156,7 +156,7 @@ max_icon_size = 80
 # Paths to default icons.
 icon_path = /usr/share/icons/Papirus-Dark/16x16/mimetypes/:/usr/share/icons/Papirus-Dark/48x48/status/:/usr/share/icons/Papirus-Dark/16x16/devices/:/usr/share/icons/Papirus-Dark/48x48/notifications/:/usr/share/icons/Papirus-Dark/48x48/emblems/
 
-frame_width = 3
+frame_width = 2
 frame_color = "#8EC07C"
 
 [shortcuts]
@@ -185,19 +185,19 @@ context = ctrl+shift+period
 # Otherwise the "#" and following would be interpreted as a comment.
 frame_color = "#3B7C87"
 foreground = "#AAAAAA"
-background = "#2A0D45"
+background = "#111111"
 timeout = 4
 
 [urgency_normal]
 frame_color = "#5B8234"
 foreground = "#AAAAAA"
-background = "#2A0D45"
+background = "#111111"
 timeout = 6
 
 [urgency_critical]
 frame_color = "#B7472A"
 foreground = "#AAAAAA"
-background = "#2A0D45"
+background = "#111111"
 timeout = 8
 
 
