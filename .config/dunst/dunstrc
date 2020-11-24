@@ -156,7 +156,7 @@ max_icon_size = 80
 # Paths to default icons.
 icon_path = /usr/share/icons/Papirus-Dark/16x16/mimetypes/:/usr/share/icons/Papirus-Dark/48x48/status/:/usr/share/icons/Papirus-Dark/16x16/devices/:/usr/share/icons/Papirus-Dark/48x48/notifications/:/usr/share/icons/Papirus-Dark/48x48/emblems/
 
-frame_width = 2
+frame_width = 1
 frame_color = "#8EC07C"
 
 [shortcuts]
