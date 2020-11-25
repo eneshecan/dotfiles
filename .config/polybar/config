@@ -92,7 +92,7 @@ type = internal/network
 interface = wlp2s0
 interval = 3
 format-connected-prefix = " "
-label-connected = %essid%
+label-connected = %signal%%
 label-disconnected =
 
 
@@ -101,7 +101,7 @@ type = internal/network
 interface = enp14s0u1u2
 interval = 3
 format-connected-prefix = " "
-label-connected = %local_ip%
+label-connected = %linkspeed%
 label-disconnected =
 
 
