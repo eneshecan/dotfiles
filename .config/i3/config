@@ -13,7 +13,7 @@
 set $mod Mod4
 set $refresh_i3status killall -SIGUSR1 i3status
 set $bg_color_dark #101010DD
-set $bg_color_unfocus #202020CC
+set $bg_color_unfocus #202020DD
 set $border_color #483018DD
 set $border_color_unfocus #303030DD
 set $text_color_light #E0E0E0FF
@@ -36,7 +36,7 @@ exec --no-startup-id pasystray
 bindsym $mod+shift+p exec scrot -u  ~/Pictures/%Y-%m-%d-%I-%M-%S-%p-Screenshot.png
 
 # Lock screen
-bindsym $mod+shift+x exec betterlockscreen -l dim -t "xeco's dell"
+bindsym $mod+shift+x exec ~/.config/i3/scripts/lock.sh
 
 # Volume controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status

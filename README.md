@@ -14,7 +14,7 @@ A collection of my configuration files for arch linux.
 * [powerline-fonts-git](https://aur.archlinux.org/packages/powerline-fonts-git)
 * [rofi](https://www.archlinux.org/packages/community/x86_64/rofi/)
 * [dunst](https://www.archlinux.org/packages/community/x86_64/dunst/)
-* [betterlockscreen](https://aur.archlinux.org/packages/betterlockscreen)
+* [i3lock-color](https://aur.archlinux.org/packages/i3lock-color)
 * [xorg-xrandr](https://www.archlinux.org/packages/extra/x86_64/xorg-xrandr/)
 * [autorandr](https://www.archlinux.org/packages/community/any/autorandr/)
 * [feh](https://www.archlinux.org/packages/extra/x86_64/feh/)
