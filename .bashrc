@@ -50,3 +50,4 @@ export LESS='-i -n -w -z-4 -R -X -F -M -PM%t?f%f :Standard Input .?pb%pb\%:?lbLi
 
 # dotfiles config
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+complete -F _complete_alias config
