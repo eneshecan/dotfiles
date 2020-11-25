@@ -25,7 +25,7 @@ font-2 = FontAwesome5Free:style=Solid:size=11;2
 font-3 = FontAwesome5Brands:style=Regular:size=11;2
 modules-left = i3
 modules-center = music
-modules-right = cpu memory temperature filesystemroot filesystemhome wlan eth battery pulseaudio backlight date powermenu
+modules-right = cpu memory temperature filesystemroot filesystemhome wlan eth battery pulseaudio backlight keyboard date powermenu
 tray-position = right
 tray-padding = 2
 cursor-click = pointer
@@ -54,7 +54,6 @@ label-urgent = %name%
 label-urgent-background = ${colors.urgent}
 label-urgent-foreground = ${colors.text-dark}
 label-urgent-padding = 2
-; separator
 label-separator = "  "
 
 
@@ -115,6 +114,14 @@ time = %I:%M %p
 time-alt = %I:%M:%S %p
 format-prefix = " "
 label = %date% %time%
+
+
+[module/keyboard]
+type = internal/xkeyboard
+blacklist-0 = caps lock
+format = <label-layout> <label-indicator>
+label-layout = "%layout%"
+format-prefix = " "
 
 
 [module/pulseaudio]
