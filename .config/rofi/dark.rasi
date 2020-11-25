@@ -1,7 +1,7 @@
 * {
     transparent-background:      #00000000;
     background-color:            @transparent-background;
-    background:                  #111111DD;
+    background:                  #101010DD;
     active-background:           @background;
     urgent-background:           @background;
     selected-normal-background:  @active-foreground;
