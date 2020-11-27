@@ -13,9 +13,9 @@
 set $mod Mod4
 set $refresh_i3status killall -SIGUSR1 i3status
 set $bg_color_dark #101010DD
-set $bg_color_unfocus #202020DD
-set $border_color #483018DD
-set $border_color_unfocus #303030DD
+set $bg_color_unfocus #303030DD
+set $indicator_color #483018DD
+set $border_color #00000000
 set $text_color_light #E0E0E0FF
 set $text_color_dark #808080FF
 
@@ -197,7 +197,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Client side decorations
-# class                 border                background        text              indicator     child_border
-client.focused          $border_color         $bg_color_dark    $text_color_light $border_color $border_color
-client.unfocused        $border_color_unfocus $bg_color_unfocus $text_color_dark  $border_color $border_color
-client.focused_inactive $border_color_unfocus $bg_color_unfocus $text_color_dark  $border_color $border_color
+# class                 border            background        text              indicator        child_border
+client.focused          $bg_color_dark    $bg_color_dark    $text_color_light $indicator_color $border_color
+client.unfocused        $bg_color_unfocus $bg_color_unfocus $text_color_dark  $indicator_color $border_color
+client.focused_inactive $bg_color_unfocus $bg_color_unfocus $text_color_dark  $indicator_color $border_color
