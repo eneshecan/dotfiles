@@ -27,7 +27,6 @@
 #window {
     background-color: @background;    
     border:           1;
-    border-radius:    10;
     padding:          5;
 }
 #mainbox {
