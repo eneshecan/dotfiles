@@ -133,13 +133,13 @@ label-muted = ""
 ramp-volume-0 = ""
 ramp-volume-1 = ""
 ramp-volume-2 = ""
-click-right = "pavucontrol >/dev/null 2>&1 &" ; Doesn't work yet
+click-right = "pavucontrol >/dev/null 2>&1 &"
 
 
 [module/backlight]
 type = internal/backlight
 card = intel_backlight
-enable-scroll = true ; Doesn't work!
+enable-scroll = true
 label = " %percentage%%"
 
 
