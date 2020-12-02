@@ -10,7 +10,7 @@ A collection of my configuration files for arch linux.
 * [ttf-roboto](https://www.archlinux.org/packages/community/any/ttf-roboto/)
 * [ttf-font-awesome](https://www.archlinux.org/packages/community/any/ttf-font-awesome/)
 * [xterm](https://www.archlinux.org/packages/extra/x86_64/xterm/)
-* [powerline-shell](https://aur.archlinux.org/packages/powerline-shell)
+* [powerline-shell-git](https://aur.archlinux.org/packages/powerline-shell-git/)
 * [powerline-fonts-git](https://aur.archlinux.org/packages/powerline-fonts-git)
 * [rofi](https://www.archlinux.org/packages/community/x86_64/rofi/)
 * [dunst](https://www.archlinux.org/packages/community/x86_64/dunst/)
