@@ -3,18 +3,16 @@
 OP=${1}
 
 getSink() {
-    pacmd list-sinks | awk '/index:/{i++} /* index:/{print i; exit}'
+    pacmd list-sinks | awk '/* index:/{print $3}'
 }
 
 getVolume() {
-    pacmd list-sinks | awk '/^\svolume:/{i++} i=='$(getSink)'{print $5; exit}'
+    pacmd list-sinks |grep -wA 15 'index: '$(getSink)'' |grep 'volume:' |egrep -v 'base volume:' |awk -F : '{print $3}' |grep -o -P '.{0,3}%'|sed s/.$// |tr -d ' '
 }
 
-# Doesn't detect mute yet
 getIcon() {
-    CURRENT_SINK=$(pactl info | grep "Default Sink" | cut -f3 -d" ")
-    MUTE_STATUS=$(pactl list sources | grep -A 10 ${CURRENT_SINK} | grep "Mute:")
-    if [ "${MUTE_STATUS}" == "Mute: yes" ]; then
+    muteStatus=$(pacmd list-sinks |grep -A 15 'index: '$(getSink)'' | awk '/muted/{ print $2}')
+    if [ "${muteStatus}" == "yes" ]; then
         echo "notification-audio-volume-muted"
     else
         echo "notification-audio-volume-medium"
