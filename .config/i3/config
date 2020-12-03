@@ -39,10 +39,10 @@ bindsym $mod+shift+p exec scrot -u  ~/Pictures/%Y-%m-%d-%I-%M-%S-%p-Screenshot.p
 bindsym $mod+shift+x exec ~/.config/i3/scripts/lock.sh
 
 # Volume controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume.sh inc
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume.sh dec
+bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/scripts/volume.sh mute
+bindsym XF86AudioMicMute exec --no-startup-id ~/.config/i3/scripts/volume.sh micmute
 
 # Media player controls
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
@@ -50,8 +50,8 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 # Brightness
-bindsym XF86_MonBrightnessUp exec --no-startup-id  xbacklight -inc 5
-bindsym XF86_MonBrightnessDown exec --no-startup-id xbacklight -dec 5
+bindsym XF86_MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/backlight.sh inc
+bindsym XF86_MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/backlight.sh dec
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
