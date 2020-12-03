@@ -183,19 +183,19 @@ context = ctrl+shift+period
 frame_color = "#3B7C87"
 foreground = "#AAAAAA"
 background = "#101010"
-timeout = 4
+timeout = 2
 
 [urgency_normal]
 frame_color = "#5B8234"
 foreground = "#AAAAAA"
 background = "#101010"
-timeout = 6
+timeout = 4
 
 [urgency_critical]
 frame_color = "#B7472A"
 foreground = "#AAAAAA"
 background = "#101010"
-timeout = 8
+timeout = 6
 
 
 # Every section that isn't one of the above is interpreted as a rules to
