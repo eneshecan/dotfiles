@@ -77,7 +77,7 @@ label-unmounted = ""
 type = internal/cpu
 interval = 2
 format-prefix = " "
-label = %percentage:2%%
+label = %percentage%%
 
 
 [module/memory]
@@ -133,7 +133,7 @@ label-muted = ""
 ramp-volume-0 = ""
 ramp-volume-1 = ""
 ramp-volume-2 = ""
-click-right = "pavucontrol >/dev/null 2>&1 &"
+click-right = "pavucontrol"
 
 
 [module/backlight]
