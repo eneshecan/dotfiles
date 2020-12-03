@@ -29,5 +29,5 @@ elif [ ${OP} == "micmute" ]; then
     pactl set-source-mute @DEFAULT_SOURCE@ toggle
 fi
 
-LEVEL=$(getVolume)
+LEVEL="$(getVolume)%"
 notify-send -u low -i $(getIcon) -h string:x-canonical-private-synchronous:anything ${LEVEL}
