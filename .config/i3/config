@@ -50,8 +50,8 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 # Brightness
-bindsym XF86_MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/backlight.sh inc
-bindsym XF86_MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/backlight.sh dec
+bindsym XF86_MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/brightness.sh inc
+bindsym XF86_MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/brightness.sh dec
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
