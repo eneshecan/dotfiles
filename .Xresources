@@ -3,7 +3,6 @@ xterm*foreground: grey
 xterm*faceName: Roboto Mono for Powerline
 xterm*faceSize: 9
 xterm*renderFont: true
-xterm*scrollTtyOutput: false
 xterm*VT100.Translations: #override \
     Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
     Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
