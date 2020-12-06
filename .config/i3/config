@@ -167,6 +167,7 @@ for_window [class="Mx_updater.x86"] floating enable
 for_window [class="Panel_emu.x86"] floating enable
 for_window [class="Image_creator.x86"] floating enable
 for_window [class="Whatsapp-for-linux"] floating enable
+for_window [class="VirtualBox Manager"] floating enable
 
 # Reload the configuration file
 bindsym $mod+Shift+c reload
