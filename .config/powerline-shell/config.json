@@ -10,7 +10,7 @@
     "root"
   ],
   "cwd": {
-    "max_depth": 4
+    "max_depth": 3
   },
   "vcs": {
     "show_symbol": "true"
