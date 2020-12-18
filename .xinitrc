@@ -32,6 +32,5 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-setxkbmap -model pc105 -layout us,de -variant dvorak
 autorandr --change
 i3
