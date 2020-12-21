@@ -177,6 +177,7 @@ type = custom/script
 format-prefix = "   "
 interval = 3
 format-foreground = ${colors.text-dark}
+label-maxlen = 40
 exec = ~/.config/polybar/scripts/music.sh
 
 
