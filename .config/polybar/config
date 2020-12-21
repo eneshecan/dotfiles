@@ -61,7 +61,7 @@ label-separator = "  "
 type = internal/fs
 interval = 60
 mount-0 = /
-label-mounted = " %percentage_used%%"
+label-mounted = " %percentage_used:02%%"
 label-unmounted = ""
 
 
@@ -69,7 +69,7 @@ label-unmounted = ""
 type = internal/fs
 interval = 60
 mount-0 = /home
-label-mounted = " %percentage_used%%"
+label-mounted = " %percentage_used:02%%"
 label-unmounted = ""
 
 
@@ -77,14 +77,14 @@ label-unmounted = ""
 type = internal/cpu
 interval = 2
 format-prefix = " "
-label = %percentage%%
+label = %percentage:02%%
 
 
 [module/memory]
 type = internal/memory
 interval = 2
 format-prefix = " "
-label = %percentage_used%%
+label = %percentage_used:02%%
 
 
 [module/wlan]
@@ -92,7 +92,7 @@ type = internal/network
 interface = wlp2s0
 interval = 3
 format-connected-prefix = " "
-label-connected = %signal%%
+label-connected = %signal:02%%
 label-disconnected =
 
 
@@ -129,7 +129,8 @@ type = internal/pulseaudio
 use-ui-max = false
 interval = 5
 format-volume = <ramp-volume> <label-volume>
-label-muted = ""
+label-volume = %percentage:02%%
+label-muted = " 00%"
 ramp-volume-0 = ""
 ramp-volume-1 = ""
 ramp-volume-2 = ""
@@ -140,7 +141,7 @@ click-right = "pavucontrol"
 type = internal/backlight
 card = intel_backlight
 enable-scroll = true
-label = " %percentage%%"
+label = " %percentage:02%%"
 
 
 [module/battery]
@@ -149,9 +150,9 @@ battery = BAT0
 adapter = AC
 full-at = 81
 poll-interval = 10
-label-charging = " %percentage%%"
-label-discharging = " %percentage%%"
-label-full = " %percentage%%"
+label-charging = " %percentage:02%%"
+label-discharging = " %percentage:02%%"
+label-full = " %percentage:02%%"
 
 
 [module/temperature]
