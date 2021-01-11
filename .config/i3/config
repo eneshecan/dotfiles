@@ -26,7 +26,7 @@ font pango:Roboto 11
 # Autostart apps
 exec_always feh --no-fehbg --bg-scale ~/.config/i3/wallpaper.jpg
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-exec --no-startup-id picom
+exec --no-startup-id picom --experimental-backends
 exec --no-startup-id dunst
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
