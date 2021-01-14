@@ -158,9 +158,9 @@ assign [class="jetbrains-clion"] $ws3
 assign [class="Microsoft Teams - Preview"] $ws6
 assign [class="Glade"] $ws4
 assign [class="VirtualBox Manager"] $ws4
-assign [class="VirtualBox Machine"] $ws5
+for_window [class="VirtualBox Machine"] move to workspace $ws5
 assign [class="Thunderbird"] $ws7
-for_window [class="Spotify"] move to workspace $ws8 # Workaround
+for_window [class="Spotify"] move to workspace $ws8
 
 # Set floating windows
 for_window [class="Gtkgui.x86"] floating enable
