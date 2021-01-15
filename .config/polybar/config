@@ -173,7 +173,7 @@ ramp-2 = ""
 
 [module/music]
 type = custom/script
-format-prefix = "   "
+format-prefix = "  "
 interval = 3
 format-foreground = ${colors.text-dark}
 label-maxlen = 40
