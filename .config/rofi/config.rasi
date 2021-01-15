@@ -1,7 +1,7 @@
 configuration {
 	modi: "run,drun";
-	width: 20;
-	font: "Roboto 11";
+	width: 22;
+	font: "JetBrains Mono 10";
 	show-icons: true;
 	icon-theme: "Papirus-Dark";
 	theme: "~/.config/rofi/dark.rasi";

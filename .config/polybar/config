@@ -10,24 +10,23 @@ urgent           = "#CC4C0000"
 [bar/bottom]
 monitor = ${env:MONITOR:}
 width = 100%
-height = 28
+height = 25
 bottom = true
 fixed-center = true
-line-size = 2
 background = ${colors.background-dark}
 foreground = ${colors.text-light}
 padding-left = 0
-padding-right = 2
-module-margin = 2
-font-0 = Roboto:pixelsize=11;2
-font-1 = FontAwesome5Free:style=Regular:size=11;2
-font-2 = FontAwesome5Free:style=Solid:size=11;2
-font-3 = FontAwesome5Brands:style=Regular:size=11;2
+padding-right = 1
+module-margin = 1
+font-0 = JetBrains Mono:pixelsize=10;2
+font-1 = FontAwesome5Free:style=Regular:size=10;2
+font-2 = FontAwesome5Free:style=Solid:size=10;2
+font-3 = FontAwesome5Brands:style=Regular:size=10;2
 modules-left = i3
 modules-center = music
 modules-right = cpu memory temperature filesystemroot filesystemhome wlan eth battery pulseaudio backlight keyboard date powermenu
 tray-position = right
-tray-padding = 2
+tray-padding = 4
 cursor-click = pointer
 cursor-scroll = ns-resize
 
@@ -38,23 +37,23 @@ format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
 pin-workspaces = true
-label-mode-padding = 2
+label-mode-padding = 1
 label-mode-foreground = #000
 label-mode-background = ${colors.background-dark}
 label-focused = %name%
 label-focused-background = ${colors.background-light}
-label-focused-padding = 2
+label-focused-padding = 1
 label-unfocused = %name%
 label-unfocused-foreground = ${colors.text-dark}
-label-unfocused-padding = 2
+label-unfocused-padding = 1
 label-visible = %name%
 label-visible-background = ${self.label-focused-background}
 label-visible-padding = ${self.label-focused-padding}
 label-urgent = %name%
 label-urgent-background = ${colors.urgent}
 label-urgent-foreground = ${colors.text-dark}
-label-urgent-padding = 2
-label-separator = "  "
+label-urgent-padding = 1
+label-separator = " "
 
 
 [module/filesystemroot]
@@ -77,14 +76,14 @@ label-unmounted = ""
 type = internal/cpu
 interval = 2
 format-prefix = " "
-label = %percentage:02%%
+label = "%percentage:02%%"
 
 
 [module/memory]
 type = internal/memory
 interval = 2
 format-prefix = " "
-label = %percentage_used:02%%
+label = "%percentage_used:02%%"
 
 
 [module/wlan]
@@ -92,7 +91,7 @@ type = internal/network
 interface = wlp2s0
 interval = 3
 format-connected-prefix = " "
-label-connected = %signal:02%%
+label-connected = "%signal:02%%"
 label-disconnected =
 
 
@@ -101,25 +100,25 @@ type = internal/network
 interface = enp14s0u1u2
 interval = 3
 format-connected-prefix = " "
-label-connected = %linkspeed%
+label-connected = "%linkspeed%"
 label-disconnected =
 
 
 [module/date]
 type = internal/date
 interval = 5
-date =
-date-alt = "%a %d %b"
-time = %I:%M %p
-time-alt = %I:%M:%S %p
-format-prefix = " "
-label = %date% %time%
+date = ""
+date-alt = " %a %d %b"
+time = "%I:%M %p"
+time-alt = "%I:%M:%S %p"
+format-prefix = ""
+label = "%date% %time%"
 
 
 [module/keyboard]
 type = internal/xkeyboard
 blacklist-0 = caps lock
-format = <label-layout> <label-indicator>
+format = <label-layout>
 label-layout = "%layout%"
 format-prefix = " "
 
@@ -164,8 +163,8 @@ warn-temperature = 100
 interval = 4
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
-label = %temperature-c%
-label-warn = %temperature-c%
+label = "%temperature-c%"
+label-warn = "%temperature-c%"
 label-warn-foreground = ${colors.degraded}
 ramp-0 = ""
 ramp-1 = ""
@@ -187,7 +186,6 @@ expand-right = true
 format-spacing = 2
 label-open = " "
 label-close = ""
-label-separator = "|"
 label-separator-foreground = ${colors.text-dark}
 menu-0-0 = ""
 menu-0-0-exec = #powermenu.open.1

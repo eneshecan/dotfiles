@@ -1,6 +1,6 @@
 xterm*background: grey8
 xterm*foreground: grey
-xterm*faceName: Roboto Mono for Powerline
+xterm*faceName: JetBrains Mono
 xterm*faceSize: 9
 xterm*renderFont: true
 xterm*saveLines: 100000

@@ -7,7 +7,7 @@ A collection of my configuration files for arch linux.
 * [picom](https://www.archlinux.org/packages/community/x86_64/picom/)
 * [layan-gtk-theme](https://aur.archlinux.org/packages/layan-gtk-theme-git/)
 * [papirus-icon-theme](https://www.archlinux.org/packages/community/any/papirus-icon-theme/)
-* [ttf-roboto](https://www.archlinux.org/packages/community/any/ttf-roboto/)
+* [ttf-jetbrains-mono](https://archlinux.org/packages/community/any/ttf-jetbrains-mono/)
 * [ttf-font-awesome](https://www.archlinux.org/packages/community/any/ttf-font-awesome/)
 * [xterm](https://www.archlinux.org/packages/extra/x86_64/xterm/)
 * [powerline-shell-git](https://aur.archlinux.org/packages/powerline-shell-git/)
