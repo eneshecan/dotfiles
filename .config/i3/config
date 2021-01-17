@@ -62,7 +62,7 @@ bindsym $mod+Shift+q kill
 
 # Keybindings for apps
 bindsym $mod+d exec rofi -show drun
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec kitty
 bindsym $mod+i exec firefox
 bindsym $mod+c exec clion
 bindsym $mod+t exec teams
