@@ -1,12 +1,1 @@
-xterm*background: grey8
-xterm*foreground: grey
-xterm*faceName: JetBrains Mono
-xterm*faceSize: 9
-xterm*renderFont: true
-xterm*saveLines: 100000
-xterm*VT100.Translations: #override \
-    Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
-    Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
-    Ctrl Shift <Key>C:    copy-selection(CLIPBOARD) \n\
-
 Xcursor.size: 16

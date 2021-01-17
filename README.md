@@ -9,7 +9,7 @@ A collection of my configuration files for arch linux.
 * [papirus-icon-theme](https://www.archlinux.org/packages/community/any/papirus-icon-theme/)
 * [ttf-jetbrains-mono](https://archlinux.org/packages/community/any/ttf-jetbrains-mono/)
 * [ttf-font-awesome](https://www.archlinux.org/packages/community/any/ttf-font-awesome/)
-* [xterm](https://www.archlinux.org/packages/extra/x86_64/xterm/)
+* [kitty](https://archlinux.org/packages/community/x86_64/kitty/)
 * [powerline-shell-git](https://aur.archlinux.org/packages/powerline-shell-git/)
 * [powerline-fonts-git](https://aur.archlinux.org/packages/powerline-fonts-git)
 * [rofi](https://www.archlinux.org/packages/community/x86_64/rofi/)
