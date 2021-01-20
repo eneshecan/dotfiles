@@ -23,7 +23,7 @@ font-1 = FontAwesome5Free:style=Regular:size=10;2
 font-2 = FontAwesome5Free:style=Solid:size=10;2
 font-3 = FontAwesome5Brands:style=Regular:size=10;2
 modules-left = i3
-modules-center = music
+modules-center = music music-prev music-play-pause music-next
 modules-right = cpu memory temperature filesystemroot filesystemhome wlan eth battery pulseaudio backlight keyboard date powermenu
 tray-position = right
 tray-padding = 4
@@ -173,11 +173,38 @@ ramp-2 = ""
 
 [module/music]
 type = custom/script
-format-prefix = "  "
+format-prefix = " "
 interval = 3
 format-foreground = ${colors.text-dark}
 label-maxlen = 40
 exec = ~/.config/polybar/scripts/music.sh
+
+
+[module/music-prev]
+type = custom/script
+interval = 3
+format-foreground = ${colors.text-dark}
+exec-if = playerctl status
+exec = echo ""
+click-left = playerctl previous
+
+
+[module/music-play-pause]
+type = custom/script
+interval = 3
+format-foreground = ${colors.text-dark}
+exec-if = playerctl status
+exec = ((playerctl status | grep "Playing">/dev/null) && echo "") || echo ""
+click-left = playerctl play-pause
+
+
+[module/music-next]
+type = custom/script
+interval = 3
+format-foreground = ${colors.text-dark}
+exec-if = playerctl status
+exec = echo ""
+click-left = playerctl next
 
 
 [module/powermenu]
