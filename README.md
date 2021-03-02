@@ -5,7 +5,7 @@ A collection of my configuration files for arch linux.
 * [i3wm](https://www.archlinux.org/packages/community/x86_64/i3-wm/)
 * [polybar](https://aur.archlinux.org/packages/polybar)
 * [picom](https://www.archlinux.org/packages/community/x86_64/picom/)
-* [layan-gtk-theme](https://aur.archlinux.org/packages/layan-gtk-theme-git/)
+* [yaru-gtk-theme](https://aur.archlinux.org/packages/yaru-gtk-theme/)
 * [papirus-icon-theme](https://www.archlinux.org/packages/community/any/papirus-icon-theme/)
 * [ttf-jetbrains-mono](https://archlinux.org/packages/community/any/ttf-jetbrains-mono/)
 * [ttf-font-awesome](https://www.archlinux.org/packages/community/any/ttf-font-awesome/)
