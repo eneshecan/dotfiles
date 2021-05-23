@@ -60,38 +60,35 @@ label-separator = " "
 type = internal/fs
 interval = 60
 mount-0 = /
-label-mounted = " %percentage_used:02%%"
-label-unmounted = ""
+label-mounted =  %percentage_used:02%%
+label-unmounted =
 
 
 [module/filesystemhome]
 type = internal/fs
 interval = 60
 mount-0 = /home
-label-mounted = " %percentage_used:02%%"
-label-unmounted = ""
+label-mounted =  %percentage_used:02%%
+label-unmounted =
 
 
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
-label = "%percentage:02%%"
+label =  %percentage:02%%
 
 
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
-label = "%percentage_used:02%%"
+label =  %percentage_used:02%%
 
 
 [module/wlan]
 type = internal/network
 interface = wlp2s0
 interval = 3
-format-connected-prefix = " "
-label-connected = "%signal:02%%"
+label-connected =  %signal:02%%
 label-disconnected =
 
 
@@ -99,19 +96,18 @@ label-disconnected =
 type = internal/network
 interface = enp14s0u1u2
 interval = 3
-format-connected-prefix = " "
-label-connected = "%linkspeed%"
+label-connected =  %linkspeed%
 label-disconnected =
 
 
 [module/date]
 type = internal/date
 interval = 5
-date = ""
-date-alt = " %a %d %b"
-time = "%I:%M %p"
-time-alt = "%I:%M:%S %p"
-label = "%date% %time%"
+date = 
+date-alt =  %a %d %b
+time = %I:%M %p
+time-alt = %I:%M:%S %p
+label = %date% %time%
 
 
 [module/keyboard]
@@ -120,8 +116,7 @@ blacklist-0 = caps lock
 blacklist-1 = num lock
 blacklist-2 = scroll lock
 format = <label-layout>
-label-layout = "%layout%"
-format-prefix = " "
+label-layout =  %layout%
 
 
 [module/pulseaudio]
@@ -130,18 +125,18 @@ use-ui-max = false
 interval = 5
 format-volume = <ramp-volume> <label-volume>
 label-volume = %percentage:02%%
-label-muted = " 00%"
-ramp-volume-0 = ""
-ramp-volume-1 = ""
-ramp-volume-2 = ""
-click-right = "pavucontrol"
+label-muted =  00%
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+click-right = pavucontrol
 
 
 [module/backlight]
 type = internal/backlight
 card = intel_backlight
 enable-scroll = true
-label = " %percentage:02%%"
+label =  %percentage:02%%
 
 
 [module/battery]
@@ -150,9 +145,18 @@ battery = BAT0
 adapter = AC
 full-at = 81
 poll-interval = 10
-label-charging = " %percentage:02%%"
-label-discharging = " %percentage:02%%"
-label-full = " %percentage:02%%"
+label-charging = %percentage:02%%
+label-discharging = %percentage:02%%
+label-full =  %percentage:02%%
+format-charging =  <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-0-foreground = ${colors.urgent}
+ramp-capacity-1-foreground = ${colors.degraded}
 
 
 [module/temperature]
@@ -164,12 +168,12 @@ warn-temperature = 100
 interval = 4
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
-label = "%temperature-c%"
-label-warn = "%temperature-c%"
+label = %temperature-c%
+label-warn = %temperature-c%
 label-warn-foreground = ${colors.degraded}
-ramp-0 = ""
-ramp-1 = ""
-ramp-2 = ""
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
 
 
 [module/music]
@@ -212,19 +216,19 @@ click-left = playerctl next
 type = custom/menu
 expand-right = true
 format-spacing = 2
-label-open = " "
-label-close = ""
-menu-0-0 = ""
+label-open =  
+label-close = 
+menu-0-0 = 
 menu-0-0-exec = #powermenu.open.1
-menu-0-1 = ""
+menu-0-1 = 
 menu-0-1-exec = #powermenu.open.2
-menu-1-0 = ""
+menu-1-0 = 
 menu-1-0-exec = systemctl reboot
-menu-1-1 = ""
+menu-1-1 = 
 menu-1-1-exec = #powermenu.open.0
-menu-2-0 = ""
+menu-2-0 = 
 menu-2-0-exec = systemctl poweroff
-menu-2-1 = ""
+menu-2-1 = 
 menu-2-1-exec = #powermenu.open.0
 
 
