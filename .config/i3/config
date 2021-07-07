@@ -43,7 +43,6 @@ bindsym $mod+shift+x exec ~/.config/i3/scripts/lock.sh
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume.sh inc
 bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume.sh dec
 bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/scripts/volume.sh mute
-bindsym XF86AudioMicMute exec --no-startup-id ~/.config/i3/scripts/volume.sh micmute
 
 # Media player controls
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
