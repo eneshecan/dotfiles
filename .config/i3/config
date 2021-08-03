@@ -155,6 +155,7 @@ assign [class="firefox"] $ws1
 assign [class="kitty"] $ws2
 assign [class="jetbrains-clion"] $ws3
 assign [class="Microsoft Teams - Preview"] $ws6
+assign [class="Signal"] $ws6
 assign [class="Glade"] $ws4
 assign [class="VirtualBox Manager"] $ws4
 for_window [class="VirtualBox Machine"] move to workspace $ws5
