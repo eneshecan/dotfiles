@@ -163,6 +163,9 @@ assign [class="Thunderbird"] $ws7
 for_window [class="Spotify"] move to workspace $ws8
 
 # Set floating windows
+for_window [class="Pavucontrol"] floating enable
+for_window [class="Blueman-manager"] floating enable
+for_window [class="Nm-connection-editor"] floating enable
 for_window [class="Gtkgui.x86"] floating enable
 for_window [class="Channeldisplay_gui.x86"] floating enable
 for_window [class="Consoledisplay.x86"] floating enable
