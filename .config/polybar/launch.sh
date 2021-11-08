@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BAR_NAME=bottom
+BAR_NAME=top
 
 # Terminate already running bar instances
 killall -q polybar
