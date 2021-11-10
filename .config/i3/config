@@ -34,7 +34,7 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id pasystray
 
 # Screenshot
-bindsym $mod+shift+p exec flameshot gui
+bindsym $mod+shift+p exec flameshot gui -p ~/Pictures
 
 # Lock screen
 bindsym $mod+shift+x exec ~/.config/i3/scripts/lock.sh
