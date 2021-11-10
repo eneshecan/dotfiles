@@ -34,7 +34,7 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id pasystray
 
 # Screenshot
-bindsym $mod+shift+p exec scrot -u ~/Pictures/%Y-%m-%d-%I-%M-%S-%p-Screenshot.png && notify-send -u low -i camera-photo "Screenshot captured"
+bindsym $mod+shift+p exec flameshot gui
 
 # Lock screen
 bindsym $mod+shift+x exec ~/.config/i3/scripts/lock.sh

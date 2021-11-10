@@ -22,5 +22,5 @@ A collection of my configuration files for arch linux.
 * [pamixer](https://archlinux.org/packages/community/x86_64/pamixer/)
 * [xorg-xbacklight](https://www.archlinux.org/packages/extra/x86_64/xorg-xbacklight/)
 * [playerctl](https://www.archlinux.org/packages/community/x86_64/playerctl/)
-* [scrot](https://www.archlinux.org/packages/community/x86_64/scrot/)
+* [flameshot](https://archlinux.org/packages/community/x86_64/flameshot/)
 * [nano-syntax-highlighting](https://www.archlinux.org/packages/community/any/nano-syntax-highlighting/)
