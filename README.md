@@ -2,8 +2,8 @@
 A collection of my configuration files for arch linux.
 
 ## Dependencies
-* [i3wm](https://www.archlinux.org/packages/community/x86_64/i3-wm/)
-* [polybar](https://aur.archlinux.org/packages/polybar)
+* [i3wm](https://www.archlinux.org/packages/community/x86_64/i3-wm/) or [sway](https://archlinux.org/packages/community/x86_64/sway/)
+* [polybar](https://aur.archlinux.org/packages/polybar) or [waybar](https://archlinux.org/packages/community/x86_64/waybar/)
 * [picom](https://www.archlinux.org/packages/community/x86_64/picom/)
 * [yaru-gtk-theme](https://aur.archlinux.org/packages/yaru-gtk-theme/)
 * [papirus-icon-theme](https://www.archlinux.org/packages/community/any/papirus-icon-theme/)
@@ -13,7 +13,7 @@ A collection of my configuration files for arch linux.
 * [powerline-shell-git](https://aur.archlinux.org/packages/powerline-shell-git/)
 * [powerline-fonts-git](https://aur.archlinux.org/packages/powerline-fonts-git)
 * [rofi](https://www.archlinux.org/packages/community/x86_64/rofi/)
-* [dunst](https://www.archlinux.org/packages/community/x86_64/dunst/)
+* [dunst](https://www.archlinux.org/packages/community/x86_64/dunst/) or [mako](https://archlinux.org/packages/community/x86_64/mako/)
 * [i3lock-color](https://aur.archlinux.org/packages/i3lock-color)
 * [xorg-xrandr](https://www.archlinux.org/packages/extra/x86_64/xorg-xrandr/)
 * [autorandr](https://www.archlinux.org/packages/community/any/autorandr/)
