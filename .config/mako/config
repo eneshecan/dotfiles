@@ -1,6 +1,7 @@
 sort=-time
 layer=overlay
 text-color=#e0e0e0FF
+text-alignment=center
 background-color=#2e3440ee
 width=300
 height=100
@@ -9,7 +10,7 @@ border-size=2
 border-color=#88c0d0ee
 border-radius=8
 icons=1
-icon-path=/usr/share/icons/Papirus-Dark/16x16/mimetypes/:/usr/share/icons/Papirus-Dark/48x48/status/:/usr/share/icons/Papirus-Dark/16x16/devices/:/usr/share/icons/Papirus-Dark/48x48/notifications/:/usr/share/icons/Papirus-Dark/48x48/emblems/
+icon-path=/usr/share/icons/Papirus-Dark
 max-icon-size=64
 default-timeout=5000
 ignore-timeout=1
