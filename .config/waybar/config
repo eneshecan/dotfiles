@@ -78,10 +78,10 @@
         "format": "{short}  ",
     },
     "cpu": {
-        "format": "{usage}% "
+        "format": "{usage:02}% "
     },
     "memory": {
-        "format": "{}%  "
+        "format": "{percentage:02}%  "
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -102,9 +102,9 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
+        "format": "{capacity:02}% {icon}",
+        "format-charging": "{capacity:02}% ",
+        "format-plugged": "{capacity:02}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
@@ -112,30 +112,34 @@
     },
     "disk#root": {
         "interval": 60,
-        "format": "{percentage_used}%  ",
+        "format": "{percentage_used:02}%  ",
         "path": "/"
     },
     "disk#home": {
         "interval": 60,
-        "format": "{percentage_used}%  ",
+        "format": "{percentage_used:02}%  ",
         "path": "/home"
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
+        "format-wifi": "{signalStrength}% ",
+        "format-ethernet": "",
+        "format-linked": "(No IP) ",
+        "format-disconnected": "⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "tooltip": true,
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ehternet": "{ifname}: {ipaddr}/{cidr} ",
+        "tooltip-format-disconnected": "Disconnected ⚠",
         "on-click-right": "kitty nmtui"
     },
     "pulseaudio": {
-        "scroll-step": 5, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "scroll-step": 2, // %, can be a float
+        "format": "{volume:02}% {icon} {format_source}",
+        "format-bluetooth": "{volume:02}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
+        "format-source": "{volume:02}% ",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
