@@ -78,8 +78,7 @@
         "format": "{short}  ",
     },
     "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
+        "format": "{usage}% "
     },
     "memory": {
         "format": "{}%  "
