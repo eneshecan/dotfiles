@@ -2,9 +2,9 @@
 
 op=${1}
 
-xbacklight "-${op}" 5
+light "${op}" 5
 
-brightness=$(($(xbacklight -get)))
+brightness=$( printf "%.0f" $(light -G) )
 icon="notification-display-brightness-medium"
 if [ ${brightness} -gt 70 ]; then
     icon="notification-display-brightness-high"
