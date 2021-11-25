@@ -65,7 +65,6 @@ exec --no-startup-id blueman-applet  # Required to run blueman-manager
 # Screenshot
 bindsym $mod+shift+p exec grim -g "$(slurp -d)" - | wl-copy && notify-send -u low -i camera-photo "Screenshot copied to clipboard"
 
-
 # Lock screen
 bindsym $mod+shift+x exec ~/.config/sway/scripts/lock.sh
 
@@ -214,8 +213,6 @@ for_window [app_id=".*"] opacity $opacity
 bindsym $mod+Shift+c reload
 # Restart sway inplace (preserves your layout/session, can be used to upgrade sway)
 bindsym $mod+Shift+r restart
-# Exit sway (logs you out of your X session)
-bindsym $mod+Shift+e exec "swaynag -t warning -m 'Do you really want to exit sway? This will end your session.' -B 'Yes, exit sway' 'swaymsg exit'"
 
 # Resize window (you can also use the mouse for that)
 mode "resize" {
