@@ -14,7 +14,7 @@ set $mod Mod4
 set $bg_color_dark #101010DD
 set $bg_color_unfocus #303030DD
 set $indicator_color #483018EE
-set $border_color #808080DD
+set $border_color #A0A0A0DD
 set $border_color_transparent #00000000
 set $text_color_light #E0E0E0FF
 set $text_color_dark #808080FF
@@ -46,7 +46,7 @@ exec_always {
 input type:touchpad {
     tap enabled
     natural_scroll enabled
-    scroll_factor 0.6
+    scroll_factor 0.8
 }
 
 # Keymap
