@@ -3,5 +3,5 @@ configuration {
 	font: "JetBrains Mono 10";
 	show-icons: true;
 	icon-theme: "Papirus-Dark";
-	theme: "~/.config/rofi/dark.rasi";
 }
+@theme "~/.config/rofi/dark.rasi"

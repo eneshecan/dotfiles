@@ -1,7 +1,6 @@
 {
   "segments": [
     "virtual_env",
-    "username",
     "ssh",
     "cwd",
     "git",
@@ -10,7 +9,7 @@
     "root"
   ],
   "cwd": {
-    "max_depth": 3
+    "max_depth": 2
   },
   "vcs": {
     "show_symbol": "true"

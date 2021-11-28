@@ -1,3 +1,8 @@
 profile single {
 	output eDP-1 enable scale 2
 }
+
+profile dual {
+    output eDP-1 enable scale 2 position 0,0
+    output HDMI-A-1 enable
+}

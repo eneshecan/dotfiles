@@ -11,8 +11,8 @@
     "modules-center": ["sway/window"],
     "modules-right": ["cpu", "memory", "network", "pulseaudio", "backlight", "bluetooth", "battery", "sway/language", "clock", "custom/power"],
     "sway/workspaces": {
-         "tooltip": false,
-         "disable-scroll": true
+        "tooltip": false,
+        "disable-scroll": true
     },
     "sway/mode": {
         "tooltip": false,
