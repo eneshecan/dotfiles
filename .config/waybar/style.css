@@ -241,6 +241,7 @@ label:focus {
 #language {
     background-color: rgba(0, 176, 147, 0.6);
     color: @black;
+    min-width: 40px;
 }
 
 #keyboard-state {

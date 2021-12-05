@@ -24,7 +24,7 @@ set $text_color_dark #808080FF
 font pango:JetBrains Mono 10
 
 # Window settings
-titlebar_padding 16 8
+titlebar_padding 16 6
 title_align center
 default_border pixel 2
 smart_borders on
@@ -58,6 +58,7 @@ input * {
 input <identifier> xkb_model "pc105"
 
 # Autostart apps
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id kanshi
 exec --no-startup-id mako
 exec --no-startup-id blueman-applet  # Required to run blueman-manager
@@ -146,14 +147,14 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1  "1: "
 set $ws2  "2: "
-set $ws3  "3: "
-set $ws4  "4: "
+set $ws3  "3: "
+set $ws4  "4: "
 set $ws5  "5: "
-set $ws6  "6: "
-set $ws7  "7: "
-set $ws8  "8: "
-set $ws9  "9: "
-set $ws10 "10: "
+set $ws6  "6: "
+set $ws7  "7: "
+set $ws8  "8: "
+set $ws9  "9: "
+set $ws10  "10: "
 
 # Switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -181,27 +182,27 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Assign windows to specific workspace
 assign [class="firefox"] $ws1
-assign [app_id="kitty"] $ws2
-assign [class="jetbrains-clion"] $ws3
-assign [class="Microsoft Teams - Preview"] $ws6
-assign [class="Signal"] $ws6
-assign [app_id="glade"] $ws4
-assign [class="VirtualBox Manager"] $ws4
-for_window [class="VirtualBox Machine"] move to workspace $ws5
-assign [class="Thunderbird"] $ws7
-for_window [class="Spotify"] move to workspace $ws8
+# assign [app_id="kitty"] $ws2
+assign [class="jetbrains-clion"] $ws4
+assign [class="Microsoft Teams - Preview"] $ws7
+assign [class="Signal"] $ws7
+assign [app_id="glade"] $ws5
+assign [class="VirtualBox Manager"] $ws6
+for_window [class="VirtualBox Machine"] move to workspace $ws6
+assign [class="Thunderbird"] $ws8
+for_window [class="Spotify"] move to workspace $ws9
 
 # Set floating windows
 for_window [app_id="pavucontrol"] floating enable
 for_window [app_id="blueman-manager"] floating enable
 for_window [title="nmtui"] floating enable
 for_window [class="Nm-connection-editor"] floating enable
-for_window [class="Gtkgui.x86"] floating enable
-for_window [class="Channeldisplay_gui.x86"] floating enable
-for_window [class="Consoledisplay.x86"] floating enable
-for_window [class="Mx_updater.x86"] floating enable
-for_window [class="Panel_emu.x86"] floating enable
-for_window [class="Image_creator.x86"] floating enable
+for_window [app_id="gtkgui.x86"] floating enable
+for_window [app_id="channeldisplay_gui.x86"] floating enable
+for_window [app_id="consoledisplay.x86"] floating enable
+for_window [app_id="mx_updater.x86"] floating enable
+for_window [app_id="panel_emu.x86"] floating enable
+for_window [app_id="image_creator.x86"] floating enable
 for_window [app_id="whatsapp-for-linux"] floating enable
 
 # Opacity
