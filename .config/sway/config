@@ -181,7 +181,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Assign windows to specific workspace
-assign [class="firefox"] $ws1
+assign [app_id="firefox"] $ws1
 # assign [app_id="kitty"] $ws2
 assign [class="jetbrains-clion"] $ws4
 assign [class="Microsoft Teams - Preview"] $ws7
@@ -189,7 +189,7 @@ assign [class="Signal"] $ws7
 assign [app_id="glade"] $ws5
 assign [class="VirtualBox Manager"] $ws6
 for_window [class="VirtualBox Machine"] move to workspace $ws6
-assign [class="Thunderbird"] $ws8
+assign [app_id="thunderbird"] $ws8
 for_window [class="Spotify"] move to workspace $ws9
 
 # Set floating windows
@@ -204,6 +204,7 @@ for_window [app_id="mx_updater.x86"] floating enable
 for_window [app_id="panel_emu.x86"] floating enable
 for_window [app_id="image_creator.x86"] floating enable
 for_window [app_id="whatsapp-for-linux"] floating enable
+for_window [title="xeyes"] floating enable
 
 # Opacity
 set $opacity 0.9
