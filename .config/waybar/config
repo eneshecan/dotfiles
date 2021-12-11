@@ -32,6 +32,7 @@
         }
     },
     "sway/mode": {
+        "tooltip": false,
         "format": "<span style=\"italic\">{}</span>"
     },
     "mpd": {
@@ -78,13 +79,13 @@
         "format-alt": "{:%a %d %b}  "
     },
     "sway/language": {
-        "format": "{short}  ",
+        "format": "{short} ",
     },
     "cpu": {
         "format": "{usage:02}% "
     },
     "memory": {
-        "format": "{percentage:02}%  "
+        "format": "{percentage:02}% "
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -97,7 +98,9 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["", ""]
+        "format-icons": ["", "", ""],
+        "on-scroll-up": "light -A 5",
+        "on-scroll-down": "light -U 5"
     },
     "battery": {
         "states": {
@@ -115,12 +118,12 @@
     },
     "disk#root": {
         "interval": 60,
-        "format": "{percentage_used:02}%  ",
+        "format": "{percentage_used:02}% ",
         "path": "/"
     },
     "disk#home": {
         "interval": 60,
-        "format": "{percentage_used:02}%  ",
+        "format": "{percentage_used:02}% ",
         "path": "/home"
     },
     "network": {
@@ -137,7 +140,7 @@
         "on-click-right": "kitty nmtui"
     },
     "pulseaudio": {
-        "scroll-step": 2, // %, can be a float
+        "scroll-step": 5, // %, can be a float
         "format": "{volume:02}% {icon} {format_source}",
         "format-bluetooth": "{volume:02}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
@@ -153,16 +156,17 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click-right": "pavucontrol"
     },
     "bluetooth": {
         "interval": 30,
         "format": "{icon}",
+        "format-alt": "{status} {icon}",
         "format-icons": {
             "enabled": "",
             "disabled": ""
         },
-        "on-click": "blueman-manager"
+        "on-click-right": "blueman-manager"
     },
     "custom/media": {
         "format": "{icon} {}",
