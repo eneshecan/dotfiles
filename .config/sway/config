@@ -66,6 +66,14 @@ exec --no-startup-id blueman-applet  # Required to run blueman-manager
 # Screenshot
 bindsym $mod+shift+p exec grim -g "$(slurp -d)" - | wl-copy && notify-send -u low -i camera-photo "Screenshot copied to clipboard"
 
+# Idle
+exec swayidle -w \
+    timeout 1800 '~/.config/sway/scripts/lock.sh' \
+    timeout 1805 'swaymsg "output * dpms off"' \
+    resume 'swaymsg "output * dpms on"' \
+    before-sleep 'playerctl pause' \
+    before-sleep '~/.config/sway/scripts/lock.sh'
+
 # Lock screen
 bindsym $mod+shift+x exec ~/.config/sway/scripts/lock.sh
 

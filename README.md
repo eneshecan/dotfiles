@@ -9,7 +9,7 @@ A collection of my configuration files for arch linux.
 * [ttf-jetbrains-mono](https://archlinux.org/packages/community/any/ttf-jetbrains-mono/)
 * [otf-font-awesome](https://www.archlinux.org/packages/community/any/otf-font-awesome/)
 * [kitty](https://archlinux.org/packages/community/x86_64/kitty/)
-* [powerline-shell-git](https://aur.archlinux.org/packages/powerline-shell-git/)
+* [powerline-shell](https://aur.archlinux.org/packages/powerline-shell/)
 * [powerline-fonts-git](https://aur.archlinux.org/packages/powerline-fonts-git)
 * [rofi](https://www.archlinux.org/packages/community/x86_64/rofi/)
 * [pipewire](https://archlinux.org/packages/extra/x86_64/pipewire/)
