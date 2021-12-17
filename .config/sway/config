@@ -31,7 +31,7 @@ smart_borders on
 gaps inner 8
 
 # Wallpaper
-output "*" bg ~/.config/sway/wallpaper.jpg fill
+output "*" bg ~/.config/sway/wallpaper.png fill
 
 # GTK Settings
 exec_always {
@@ -62,6 +62,8 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DE
 exec --no-startup-id kanshi
 exec --no-startup-id mako
 exec --no-startup-id blueman-applet  # Required to run blueman-manager
+exec --no-startup-id firefox
+exec --no-startup-id swaymsg 'workspace $ws2; exec kitty'
 
 # Screenshot
 bindsym $mod+shift+p exec grim -g "$(slurp -d)" - | wl-copy && notify-send -u low -i camera-photo "Screenshot copied to clipboard"
