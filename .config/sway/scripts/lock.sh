@@ -26,11 +26,14 @@ swaylock \
 --layout-text-color=$D   \
 --layout-border-color=$C \
 --layout-bg-color=$B     \
---key-hl-color=$W        \
---bs-hl-color=$W         \
+--key-hl-color=$V        \
+--bs-hl-color=$V         \
 \
---screenshot             \
---effect-blur 10x10      \
+--screenshots            \
+--effect-blur 6x6        \
+--fade-in 0.2            \
+--indicator-radius 100   \
+--indicator-thickness 8  \
 --clock                  \
 --indicator              \
 --timestr="%H:%M:%S"     \

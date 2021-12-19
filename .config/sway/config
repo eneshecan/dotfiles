@@ -100,7 +100,7 @@ floating_modifier $mod
 bindsym $mod+Shift+q kill
 
 # Keybindings for apps
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+d exec wofi --show drun
 bindsym $mod+Return exec kitty
 bindsym $mod+i exec firefox
 bindsym $mod+c exec clion
