@@ -1,3 +1,6 @@
 width=640
-height=400
-mode=run,drun
+height=360
+mode=drun,run
+allow_images=true
+image_size=16
+prompt=Search
