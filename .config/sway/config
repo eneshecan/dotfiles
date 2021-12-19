@@ -66,7 +66,7 @@ exec --no-startup-id firefox
 exec --no-startup-id swaymsg 'workspace $ws2; exec kitty'
 
 # Screenshot
-bindsym $mod+shift+p exec grim -g "$(slurp -d)" - | wl-copy && notify-send -u low -i camera-photo "Screenshot copied to clipboard"
+bindsym $mod+p exec grim -g "$(slurp -d)" - | wl-copy && notify-send -u low -i camera-photo "Screenshot copied to clipboard"
 
 # Idle
 exec swayidle -w \
@@ -78,6 +78,9 @@ exec swayidle -w \
 
 # Lock screen
 bindsym $mod+shift+x exec ~/.config/sway/scripts/lock.sh
+
+# Custom menus
+bindsym $mod+shift+p exec ~/.config/sway/scripts/powermenu.sh
 
 # Volume controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/sway/scripts/volume.sh inc

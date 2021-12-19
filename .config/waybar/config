@@ -9,7 +9,7 @@
     "margin-right": 8,
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": ["cpu", "memory", "network", "pulseaudio", "bluetooth", "battery", "sway/language", "clock", "custom/power"],
+    "modules-right": ["cpu", "memory", "network", "pulseaudio", "bluetooth", "battery", "sway/language", "clock"],
     "sway/workspaces": {
         "tooltip": false,
         "disable-scroll": true
