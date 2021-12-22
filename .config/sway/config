@@ -70,9 +70,7 @@ bindsym $mod+p exec grim -g "$(slurp -d)" - | wl-copy && notify-send -u low -i c
 
 # Idle
 exec swayidle -w \
-    timeout 1200 '~/.config/sway/scripts/lock.sh' \
-    timeout 1800 'swaymsg "output * dpms off"' \
-    resume 'swaymsg "output * dpms on"' \
+    timeout 900 '~/.config/sway/scripts/lock.sh' \
     before-sleep 'playerctl pause' \
     before-sleep '~/.config/sway/scripts/lock.sh'
 

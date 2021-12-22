@@ -1,21 +1,23 @@
 #!/usr/bin/env bash
 
 B='#00000000'  # blank
-C='#00000000'  # clear ish
+C='#000000AA'  # clear ish
 D='#483018DD'  # default
 T='#E0E0E0FF'  # text
 W='#660000DD'  # wrong
 V='#006600DD'  # verifying
 
 swaylock \
+--daemonize              \
 --font=Jetbrains Mono    \
---inside-ver-color=$C    \
+--font-size=24           \
+--inside-ver-color=$B    \
 --ring-ver-color=$V      \
 \
---inside-wrong-color=$C  \
+--inside-wrong-color=$B  \
 --ring-wrong-color=$W    \
 \
---inside-color=$B        \
+--inside-color=$C        \
 --ring-color=$D          \
 --line-color=$B          \
 --separator-color=$D     \
@@ -23,9 +25,9 @@ swaylock \
 --text-color=$T          \
 --text-ver-color=$V      \
 --text-wrong-color=$W    \
---layout-text-color=$D   \
---layout-border-color=$C \
---layout-bg-color=$B     \
+--layout-text-color=$T   \
+--layout-border-color=$B \
+--layout-bg-color=$C     \
 --key-hl-color=$V        \
 --bs-hl-color=$V         \
 \
@@ -36,7 +38,7 @@ swaylock \
 --indicator-thickness 8  \
 --clock                  \
 --indicator              \
---timestr="%H:%M:%S"     \
+--timestr="%I:%M %p"     \
 --datestr="%a %d %b"     \
 --show-keyboard-layout   \
 
