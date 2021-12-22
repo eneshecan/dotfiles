@@ -1,0 +1,25 @@
+# This is Git's per-user configuration file.
+[includeIf "gitdir:~/Workspace/lawo/"]
+    path = .gitconfig-lawo
+[includeIf "gitdir:~/Workspace/xeco/"]
+    path = .gitconfig-xeco
+[pull]
+    rebase = true
+[push]
+    default = simple
+    recurseSubmodules = on-demand
+[diff]
+    renameLimit = 10000
+    algorithm = patience
+[rerere]
+    enabled = true
+[rebase]
+    autoStash = true
+    missingCommitsCheck = error
+[filter "lfs"]
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+[core]
+    editor = nano

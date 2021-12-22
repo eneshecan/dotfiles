@@ -105,7 +105,7 @@ bindsym $mod+d exec wofi
 bindsym $mod+Return exec kitty
 bindsym $mod+i exec firefox
 bindsym $mod+c exec clion
-bindsym $mod+t exec teams
+bindsym $mod+t exec chromium --profile-directory=Default --app-id=ipfigjgcnonmflnplkgfnhmilbghenkp -enable-features=UseOzonePlatform -ozone-platform=wayland
 bindsym $mod+shift+t exec thunderbird
 bindsym $mod+shift+s exec spotify
 
@@ -193,6 +193,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Assign windows to specific workspace
 assign [app_id="firefox"] $ws1
+assign [app_id="chromium"] $ws7
 # assign [app_id="kitty"] $ws2
 assign [class="jetbrains-clion"] $ws4
 assign [class="Microsoft Teams - Preview"] $ws7
