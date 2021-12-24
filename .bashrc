@@ -57,4 +57,5 @@ LESSHISTFILE=/dev/null
 
 # dotfiles config
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-complete -F _complete_alias config
+source /usr/share/bash-completion/completions/git
+__git_complete config __git_main

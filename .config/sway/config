@@ -64,6 +64,7 @@ exec --no-startup-id mako
 exec --no-startup-id blueman-applet  # Required to run blueman-manager
 exec --no-startup-id firefox
 exec --no-startup-id swaymsg 'workspace $ws2; exec kitty'
+exec --no-startup-id wl-paste -t text --watch clipman store --no-persist
 
 # Screenshot
 bindsym $mod+p exec grim -g "$(slurp -d)" - | wl-copy && notify-send -u low -i camera-photo "Screenshot copied to clipboard"
@@ -106,7 +107,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+i exec firefox
 bindsym $mod+c exec clion
 bindsym $mod+t exec chromium --profile-directory=Default --app-id=ipfigjgcnonmflnplkgfnhmilbghenkp -enable-features=UseOzonePlatform -ozone-platform=wayland
-bindsym $mod+shift+t exec thunderbird
+bindsym $mod+m exec thunderbird
 bindsym $mod+shift+s exec spotify
 
 # Move focused workspace between monitors
