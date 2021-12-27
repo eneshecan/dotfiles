@@ -126,6 +126,7 @@ bindsym $mod+d exec wofi
 bindsym $mod+Return exec kitty
 bindsym $mod+i exec firefox
 bindsym $mod+c exec clion
+bindsym $mod+g exec gedit
 bindsym $mod+t exec chromium --profile-directory=Default --app-id=ipfigjgcnonmflnplkgfnhmilbghenkp -enable-features=UseOzonePlatform -ozone-platform=wayland
 bindsym $mod+m exec thunderbird
 bindsym $mod+shift+s exec spotify
@@ -231,6 +232,7 @@ assign [app_id="firefox"] $ws1
 assign [app_id="chromium"] $ws7
 # assign [app_id="kitty"] $ws2
 assign [class="jetbrains-clion"] $ws4
+assign [app_id="gedit"] $ws5
 assign [class="Microsoft Teams - Preview"] $ws7
 assign [class="Signal"] $ws7
 assign [app_id="glade"] $ws5
