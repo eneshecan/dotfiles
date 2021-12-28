@@ -1,5 +1,5 @@
 profile single {
-	output eDP-1 enable scale 2
+	output eDP-1 enable scale 2 position 0,0
 }
 
 profile dual {
