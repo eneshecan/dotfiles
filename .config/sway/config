@@ -98,9 +98,9 @@ exec_always --no-startup-id firefox  # Always because it crashes after restartin
 exec --no-startup-id swaymsg 'workspace $ws2; exec kitty'
 exec --no-startup-id wl-paste -t text --watch clipman store --no-persist
 exec swayidle -w \
-    timeout 900 '~/.config/sway/scripts/lock.sh' \
+    timeout 900  'swaylock' \
     before-sleep 'playerctl pause' \
-    before-sleep '~/.config/sway/scripts/lock.sh'
+    before-sleep 'swaylock'
 
 
 # Keybindings
@@ -108,7 +108,7 @@ exec swayidle -w \
 # General
 bindsym $mod+Shift+q kill
 bindsym $mod+p exec grim -g "$(slurp -d)" - | wl-copy && notify-send -u low -i camera-photo "Screenshot copied to clipboard"
-bindsym $mod+shift+x exec ~/.config/sway/scripts/lock.sh
+bindsym $mod+shift+x exec swaylock
 bindsym $mod+shift+p exec ~/.config/sway/scripts/powermenu.sh
 
 # Keyboard

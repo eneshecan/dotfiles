@@ -1,0 +1,42 @@
+#B=#00000000  # blank
+#C=#000000AA  # clear ish
+#D=#483018DD  # default
+#T=#E0E0E0FF  # text
+#W=#660000DD  # wrong
+#V=#006600DD  # verifying
+
+daemonize
+font=Jetbrains Mono
+font-size=24
+inside-ver-color=00000000
+ring-ver-color=006600DD
+
+inside-wrong-color=00000000
+ring-wrong-color=660000DD
+
+inside-color=000000AA
+ring-color=483018DD
+line-color=00000000
+separator-color=483018DD
+
+text-color=E0E0E0FF
+text-ver-color=006600DD
+text-wrong-color=660000DD
+layout-text-color=E0E0E0FF
+layout-border-color=00000000
+layout-bg-color=000000AA
+key-hl-color=006600DD
+bs-hl-color=006600DD
+
+screenshots
+effect-blur=6x6
+fade-in=0.2
+indicator-radius=100
+indicator-thickness=8
+ignore-empty-password
+clock
+indicator
+timestr=%I:%M %p
+datestr=%a %d %b
+show-keyboard-layout
+
