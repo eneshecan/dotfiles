@@ -6,7 +6,7 @@
 #V=#006600DD  # verifying
 
 daemonize
-font=Jetbrains Mono
+font=JetBrainsMono Nerd Font
 font-size=24
 inside-ver-color=00000000
 ring-ver-color=006600DD

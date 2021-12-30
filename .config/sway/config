@@ -41,7 +41,7 @@ set $ws10 "10"
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:JetBrains Mono 10
+font pango:JetBrainsMono Nerd Font 10
 
 
 # Window Settings
@@ -66,7 +66,7 @@ output "*" bg ~/.config/sway/wallpaper.png fill
 exec_always {
     gsettings set org.gnome.desktop.interface gtk-theme "Yaru-dark"
     gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
-    gsettings set org.gnome.desktop.interface font-name "Jetbrains Mono 10"
+    gsettings set org.gnome.desktop.interface font-name "JetBrainsMono Nerd Font 10"
     gsettings set org.gnome.desktop.interface cursor-theme-name "Adwaita"
     gsettings set org.gnome.desktop.interface cursor-theme-size "16"
 }

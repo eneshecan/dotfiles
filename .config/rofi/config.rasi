@@ -1,6 +1,6 @@
 configuration {
 	modi: "run,drun";
-	font: "JetBrains Mono 10";
+	font: "JetBrainsMono Nerd Font 10";
 	show-icons: true;
 	icon-theme: "Papirus-Dark";
 }

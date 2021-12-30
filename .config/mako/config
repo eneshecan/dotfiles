@@ -14,7 +14,7 @@ icon-path=/usr/share/icons/Papirus-Dark
 max-icon-size=64
 default-timeout=5000
 ignore-timeout=1
-font=JetBrains Mono 10
+font=JetBrainsMono Nerd Font 10
 
 [urgency=low]
 border-color=#ccccccee

@@ -4,9 +4,8 @@
 * {
     border: none;
     border-radius: 4px;
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: JetBrains Mono;
-    font-size: 13px;
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 14px;
     min-height: 0;
 }
 

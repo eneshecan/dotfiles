@@ -15,16 +15,16 @@
         "disable-scroll": true,
         "format": "{icon}",
         "format-icons": {
-            "1": "Ⅰ: ",
-            "2": "Ⅱ: ",
-            "3": "Ⅲ: ",
-            "4": "Ⅳ: ",
-            "5": "Ⅴ: ",
-            "6": "Ⅵ: ",
-            "7": "Ⅶ: ",
-            "8": "Ⅷ: ",
-            "9": "Ⅸ: ",
-            "10": "Ⅹ: "
+            "1":  "<span font='14'> 爵 </span>",
+            "2":  "<span font='14'>  </span>",
+            "3":  "<span font='14'>  </span>",
+            "4":  "<span font='14'>  </span>",
+            "5":  "<span font='14'>  </span>",
+            "6":  "<span font='14'>  </span>",
+            "7":  "<span font='14'>  </span>",
+            "8":  "<span font='14'>  </span>",
+            "9":  "<span font='14'>  </span>",
+            "10": "<span font='14'> 﫵 </span>"
         }
     },
     "sway/mode": {
@@ -40,45 +40,19 @@
         "capslock": true,
         "format": "{name} {icon}",
         "format-icons": {
-            "locked": "",
-            "unlocked": ""
+            "locked": "",
+            "unlocked": ""
         }
     },
     "sway/mode": {
         "tooltip": false,
         "format": "<span style=\"italic\">{}</span>"
     },
-    "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-        "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-        "unknown-tag": "N/A",
-        "interval": 2,
-        "consume-icons": {
-            "on": " "
-        },
-        "random-icons": {
-            "off": "<span color=\"#f53c3c\"></span> ",
-            "on": " "
-        },
-        "repeat-icons": {
-            "on": " "
-        },
-        "single-icons": {
-            "on": "1 "
-        },
-        "state-icons": {
-            "paused": "",
-            "playing": ""
-        },
-        "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)"
-    },
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "",
-            "deactivated": ""
+            "activated": "",
+            "deactivated": ""
         }
     },
     "tray": {
@@ -88,17 +62,17 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%I:%M %p}  ",
-        "format-alt": "{:%a %d %b}  "
+        "format": "{:%I:%M %p} ",
+        "format-alt": "{:%a %d %b} "
     },
     "sway/language": {
-        "format": "{short} ",
+        "format": "{short} ",
     },
     "cpu": {
-        "format": "{usage:02}% "
+        "format": "{usage:02}% 龍"
     },
     "memory": {
-        "format": "{percentage:02}% "
+        "format": "{percentage:02}% "
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -106,12 +80,12 @@
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""]
     },
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["", "", ""],
+        "format-icons": ["", "", "", ""],
         "on-scroll-up": "light -A 5",
         "on-scroll-down": "light -U 5"
     },
@@ -122,12 +96,12 @@
             "critical": 15
         },
         "format": "{capacity:02}% {icon}",
-        "format-charging": "{capacity:02}% ",
-        "format-plugged": "{capacity:02}% ",
+        "format-charging": "{capacity:02}% ",
+        "format-plugged": "{capacity:02}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""]
     },
     "disk#root": {
         "interval": 60,
@@ -141,33 +115,33 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{signalStrength}% ",
-        "format-ethernet": "",
-        "format-linked": "(No IP) ",
-        "format-disconnected": "⚠",
+        "format-wifi": "{signalStrength}% 直",
+        "format-ethernet": "",
+        "format-linked": "(No IP) ",
+        "format-disconnected": "",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "tooltip": true,
-        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-        "tooltip-format-ehternet": "{ifname}: {ipaddr}/{cidr} ",
-        "tooltip-format-disconnected": "Disconnected ⚠",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+        "tooltip-format-ehternet": "{ifname}: {ipaddr}/{cidr}",
+        "tooltip-format-disconnected": "Disconnected",
         "on-click-right": "kitty nmtui"
     },
     "pulseaudio": {
         "scroll-step": 5, // %, can be a float
         "format": "{volume:02}% {icon} {format_source}",
         "format-bluetooth": "{volume:02}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume:02}% ",
-        "format-source-muted": "",
+        "format-bluetooth-muted": "婢 {icon} {format_source}",
+        "format-muted": "婢 {format_source}",
+        "format-source": "{volume:02}% ",
+        "format-source-muted": "",
         "format-icons": {
-            "headphone": "",
+            "headphone": "",
             "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["奄", "奔", "墳"]
         },
         "on-click-right": "pavucontrol"
     },
@@ -176,18 +150,18 @@
         "format": "{icon}",
         "format-alt": "{status} {icon}",
         "format-icons": {
-            "enabled": "",
-            "disabled": ""
+            "enabled": "",
+            "disabled": ""
         },
         "on-click-right": "blueman-manager"
     },
     "custom/media": {
         "format": "{icon} {}",
         "return-type": "json",
-        "max-length": 40,
+        "max-length": 32,
         "format-icons": {
-            "spotify": "",
-            "default": ""
+            "spotify": "阮",
+            "default": "喇"
         },
         "escape": true,
         "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null" // Script in resources folder
