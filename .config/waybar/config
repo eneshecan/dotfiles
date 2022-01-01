@@ -7,7 +7,7 @@
     "margin-left": 8,
     "margin-bottom": 2,
     "margin-right": 8,
-    "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
+    "modules-left": ["custom/apps", "sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
     "modules-right": ["cpu", "memory", "network", "pulseaudio", "bluetooth", "battery", "sway/language", "clock"],
     "sway/workspaces": {
@@ -15,16 +15,16 @@
         "disable-scroll": true,
         "format": "{icon}",
         "format-icons": {
-            "1":  "<span font='14'> 爵 </span>",
-            "2":  "<span font='14'>  </span>",
-            "3":  "<span font='14'>  </span>",
-            "4":  "<span font='14'>  </span>",
-            "5":  "<span font='14'>  </span>",
-            "6":  "<span font='14'>  </span>",
-            "7":  "<span font='14'>  </span>",
-            "8":  "<span font='14'>  </span>",
-            "9":  "<span font='14'>  </span>",
-            "10": "<span font='14'> 﫵 </span>"
+            "1":  "<span font='13'> 爵 </span>",
+            "2":  "<span font='13'>  </span>",
+            "3":  "<span font='13'>  </span>",
+            "4":  "<span font='13'>  </span>",
+            "5":  "<span font='13'>  </span>",
+            "6":  "<span font='13'>  </span>",
+            "7":  "<span font='13'>  </span>",
+            "8":  "<span font='13'>  </span>",
+            "9":  "<span font='13'>  </span>",
+            "10": "<span font='13'> 﫵 </span>"
         }
     },
     "sway/mode": {
@@ -159,16 +159,24 @@
         "format": "{icon} {}",
         "return-type": "json",
         "max-length": 32,
+        "escape": true,
         "format-icons": {
             "spotify": "阮",
-            "default": "喇"
+            "default": ""
         },
-        "escape": true,
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl stop",
         "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "custom/apps": {
+        "tooltip": false,
+        "format":" ",
+        "on-click":"wofi"
     },
     "custom/power": {
         "format":"",
         "on-click":"swaynag -t warning -m 'Power Options' -b 'Logout' 'swaymsg exit' -b 'Poweroff' 'systemctl poweroff' -b 'Reboot' 'systemctl reboot' -b 'Suspend' 'systemctl suspend'"
     }
 }
+
