@@ -7,7 +7,7 @@
     "margin-left": 8,
     "margin-bottom": 2,
     "margin-right": 8,
-    "modules-left": ["custom/apps", "sway/workspaces", "sway/mode", "custom/media"],
+    "modules-left": ["custom/os", "sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
     "modules-right": ["cpu", "memory", "network", "pulseaudio", "bluetooth", "battery", "sway/language", "clock"],
     "sway/workspaces": {
@@ -148,11 +148,11 @@
     "bluetooth": {
         "interval": 30,
         "format": "{icon}",
-        "format-alt": "{status} {icon}",
         "format-icons": {
             "enabled": "",
             "disabled": ""
         },
+        "on-click": "rfkill toggle bluetooth",
         "on-click-right": "blueman-manager"
     },
     "custom/media": {
@@ -169,7 +169,7 @@
         "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
-    "custom/apps": {
+    "custom/os": {
         "tooltip": false,
         "format":" ",
         "on-click":"wofi"

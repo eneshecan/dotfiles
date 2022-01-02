@@ -72,7 +72,7 @@ window#waybar.chromium {
 #network,
 #pulseaudio,
 #custom-media,
-#custom-apps,
+#custom-os,
 #custom-power,
 #tray,
 #mode,
@@ -190,7 +190,7 @@ label:focus {
     background-color: rgba(255, 160, 0, 0.6);
 }
 
-#custom-apps {
+#custom-os {
     min-width: 24px;
     background-color: rgba(41, 128, 185, 0.6);
 }

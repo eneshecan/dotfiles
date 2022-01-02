@@ -10,5 +10,5 @@ profile dual_primary_off {
 
 profile dual {
     output eDP-1 enable scale 2 position 0,0
-    output DP-4 enable position 1920,0
+    output DP-7 enable position 1920,0
 }
