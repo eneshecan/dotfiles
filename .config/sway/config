@@ -18,7 +18,7 @@ set $mod Mod4
 # Colors
 set $bg_color_dark #101010DD
 set $bg_color_unfocus #303030DD
-set $indicator_color #483018EE
+set $indicator_color #E95420DD
 set $border_color #A0A0A0DD
 set $border_color_transparent #00000000
 set $text_color_light #E0E0E0FF
