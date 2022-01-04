@@ -94,7 +94,7 @@ exec --no-startup-id dbus-update-activation-environment --systemd WAYLAND_DISPLA
 exec --no-startup-id kanshi
 exec --no-startup-id mako
 exec --no-startup-id blueman-applet  # Required to run blueman-manager
-exec_always --no-startup-id firefox  # Always because it crashes after restarting sway
+exec --no-startup-id firefox
 exec --no-startup-id swaymsg 'workspace $ws2; exec kitty'
 exec --no-startup-id wl-paste -t text --watch clipman store --no-persist
 exec swayidle -w \

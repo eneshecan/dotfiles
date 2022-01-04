@@ -1,5 +1,6 @@
 @define-color white rgb(240, 240, 240);
 @define-color black rgb(16, 16, 16);
+@define-color red   rgb(194, 59, 35);
 
 * {
     border: none;
@@ -13,7 +14,7 @@ window#waybar {
     background-color: rgba(32, 32, 32, 0.8);
     color: @white;
     transition-property: background-color;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
 }
 
 window#waybar.hidden {
@@ -39,22 +40,24 @@ window#waybar.chromium {
 */
 
 #workspaces button {
-    padding: 0 8px;
-    margin: 0 2px;
+    padding: 0px 8px;
+    margin: 0px 2px;
     background-color: transparent;
     color: @white;
 }
 
 #workspaces button:hover {
-    background: rgba(100, 114, 125, 0.4);
+    background: rgba(100, 114, 125, 0.6);
 }
 
 #workspaces button.focused {
-    background-color: rgb(100, 114, 125);
+    background-color: rgba(240, 240, 240, 0.9);
+    color: @red;
+    border-bottom: 4px solid @red;
 }
 
 #workspaces button.urgent {
-    background-color: rgb(235, 77, 75);
+    background-color: @red;
 }
 
 #mode {
@@ -80,14 +83,14 @@ window#waybar.chromium {
 #bluetooth,
 #language,
 #mpd {
-    padding: 0 8px;
-    margin: 2 2px;
+    padding: 0px 8px;
+    margin: 2px 2px;
     color: @white;
 }
 
 #window,
 #workspaces {
-    margin: 2 2px;
+    margin: 2px 2px;
 }
 
 #clock {
@@ -168,7 +171,7 @@ label:focus {
 
 #bluetooth {
     background-color: rgba(65, 105, 225, 0.6);
-    padding: 0 4px;
+    padding: 0px 4px;
     min-width: 16px;
 }
 
@@ -192,7 +195,7 @@ label:focus {
 
 #custom-os {
     min-width: 24px;
-    background-color: rgba(41, 128, 185, 0.6);
+    background-color: rgba(23, 147, 209, 0.6);
 }
 
 #temperature {
@@ -252,12 +255,12 @@ label:focus {
 #keyboard-state {
     background-color: rgba(151, 225, 173, 0.6);
     color: @black;
-    padding: 0 4px;
+    padding: 0px 4px;
     min-width: 16px;
 }
 
 #keyboard-state > label {
-    padding: 0 5px;
+    padding: 0px 5px;
 }
 
 #keyboard-state > label.locked {
