@@ -93,6 +93,7 @@ input <identifier> xkb_model "pc105"
 exec --no-startup-id dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id kanshi
 exec --no-startup-id mako
+exec --no-startup-id eww daemon
 exec --no-startup-id blueman-applet  # Required to run blueman-manager
 exec --no-startup-id firefox
 exec --no-startup-id swaymsg 'workspace $ws2; exec kitty'
@@ -109,7 +110,7 @@ exec swayidle -w \
 bindsym $mod+Shift+q kill
 bindsym $mod+p exec grim -g "$(slurp -d)" - | wl-copy && notify-send -u low -i camera-photo "Screenshot copied to clipboard"
 bindsym $mod+shift+x exec swaylock
-bindsym $mod+shift+p exec ~/.config/sway/scripts/powermenu.sh
+bindsym $mod+shift+p exec ~/.config/eww/launch.sh
 
 # Keyboard
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/sway/scripts/volume.sh inc

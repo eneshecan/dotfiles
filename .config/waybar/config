@@ -9,7 +9,7 @@
     "margin-right": 8,
     "modules-left": ["custom/os", "sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": ["cpu", "memory", "network", "pulseaudio", "bluetooth", "battery", "sway/language", "clock"],
+    "modules-right": ["cpu", "memory", "network", "pulseaudio", "bluetooth", "battery", "sway/language", "clock", "custom/power"],
     "sway/workspaces": {
         "tooltip": false,
         "disable-scroll": true,
@@ -175,8 +175,8 @@
         "on-click":"wofi"
     },
     "custom/power": {
-        "format":"",
-        "on-click":"swaynag -t warning -m 'Power Options' -b 'Logout' 'swaymsg exit' -b 'Poweroff' 'systemctl poweroff' -b 'Reboot' 'systemctl reboot' -b 'Suspend' 'systemctl suspend'"
+        "format":"襤",
+        "on-click":"$HOME/.config/eww/launch.sh"
     }
 }
 

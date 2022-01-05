@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo -e $(cat /tmp/eww/weather/weather-quote) | tail -n1
+

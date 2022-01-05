@@ -1,0 +1,18 @@
+#!/bin/bash
+num=$(echo $((1 + $RANDOM % 500)))
+
+cat /tmp/eww/quotes/quotes.json | jq --arg num "$num" ".[$num]" | jq -r ".text" > /tmp/eww/quotes/quote
+cat /tmp/eww/quotes/quotes.json | jq --arg num "$num" ".[$num]" | jq -r ".author" > /tmp/eww/quotes/author
+
+quote=$(cat /tmp/eww/quotes/quote)
+qc=$(cat /tmp/eww/quotes/quote | wc -c)
+rm -f /tmp/eww/quotes/quote
+rm -f /tmp/eww/quotes/quote-tail
+if [ "$qc" -le 58 ]; then
+	echo "$quote" > /tmp/eww/quotes/quote
+        echo "" > /tmp/eww/quotes/quote-tail
+else
+     	printf '%s\n' "${quote:0:${#quote}/2}" > /tmp/eww/quotes/quote
+        printf '%s\n' "${quote:${#quote}/2}" > /tmp/eww/quotes/quote-tail
+fi
+

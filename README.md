@@ -33,6 +33,7 @@ A collection of my configuration files for arch linux.
 * [waybar](https://archlinux.org/packages/community/x86_64/waybar/)
 * [mako](https://archlinux.org/packages/community/x86_64/mako/)
 * [wofi](https://archlinux.org/packages/community/x86_64/wofi/)
+* [eww-wayland-git](https://aur.archlinux.org/packages/eww-wayland-git)
 * [swaylock-effects](https://aur.archlinux.org/packages/swaylock-effects/)
 * [wdisplays](https://aur.archlinux.org/packages/wdisplays/)
 * [kanshi](https://archlinux.org/packages/community/x86_64/kanshi/)

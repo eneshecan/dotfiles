@@ -53,7 +53,7 @@ window#waybar.chromium {
 #workspaces button.focused {
     background-color: rgba(240, 240, 240, 0.9);
     color: @red;
-    border-bottom: 4px solid @red;
+    border-bottom: 3px solid @red;
 }
 
 #workspaces button.urgent {
