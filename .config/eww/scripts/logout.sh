@@ -6,7 +6,7 @@ confirm_exit() {
 
 ans=$(confirm_exit &)
 if [[ $ans == "Yes" ]]; then
-	swaylock
+	swaymsg exit
 elif [[ $ans == "No" ]]; then
 	exit 0
 fi

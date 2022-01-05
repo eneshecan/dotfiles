@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 tmp_dir="/tmp/eww/spotify"
 tmp_cover_path=$tmp_dir/cover.png
 
@@ -12,3 +13,4 @@ if [ $(playerctl metadata mpris:artUrl) ]; then
 	curl -s "$artlink" --output $tmp_cover_path;
 else cp ~/.config/eww/images/image.png $tmp_cover_path;
 fi
+

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 tmp_weather="/tmp/eww/weather"
 tmp_weather_stat=$tmp_weather/weather-stat

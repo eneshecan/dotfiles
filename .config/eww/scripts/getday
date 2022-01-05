@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 day_num=$(date "+%u")
 
 if [ $day_num == 1 ]; then

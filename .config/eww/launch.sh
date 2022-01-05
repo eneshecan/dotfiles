@@ -9,7 +9,6 @@ run_eww() {
 	${EWW} open-many \
 		   time_side \
 		   weather_side \
-		   quotes_side \
 		   calendar_side \
 		   player_side \
 		   sliders_side \

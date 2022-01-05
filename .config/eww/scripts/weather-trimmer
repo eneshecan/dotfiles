@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 weather=$(cat /tmp/eww/weather/weather-stat)
 weather_count=$(cat /tmp/eww/weather/weather-stat | wc -c)
 

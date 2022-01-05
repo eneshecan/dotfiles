@@ -1,5 +1,4 @@
-;; TODO Make windows transparent and have their corners rounded
-;; TODO Add cpu 
+;; Cleanup code, css and scripts
 
 (defwidget weather_side [] 
   (box :orientation "h" :space-evenly "false" 
@@ -9,14 +8,14 @@
       (box :class "weather-stat-side" weather-stat-side))))
 
 (defwidget player_side []
-  (box :orientation "h" :space-evenly "false"
-    (box :class "musicart-side" art)
+  (box :orientation "h" :space-evenly "false" art
+    (image :class "musicart-side" :image-width "80" :image-height "80" :path cover)
     (box :class "musicstuff-side" :orientation "v" :space-evenly "false"
       (box :class "musicinfo-side" music_artist)
       (box :class "musicinfo-side" music_title)
       (box :orientation "h" :halign "center" :class "musicbtn-side" :space-evenly "false"
         (button :onclick "playerctl previous" "玲")
-         (button :class "pause-play-side" :onclick "playerctl play-pause" "懶")
+        (button :class "pause-play-side" :onclick "playerctl play-pause" "懶")
         (button :onclick "playerctl next" "怜")))))
   
 (defwidget time_side []
@@ -28,43 +27,40 @@
   (box :orientation "v" :space-evenly "false" :class "sliders-side" 
     (box :orientation "h" :class "slider-vol-side" :space-evenly "false" 
       (box :class "label-vol-side" "")
-      (scale :min 0 :max 101 :value volume :onchange "pamixer --set-volume {}"))
+      (scale :min 0 :max 101 :value volume :onchange "~/.config/eww/scripts/setvol {}"))
     (box :orientation "h" :class "slider-bright-side" :space-evenly "false"
       (box :class "label-bright-side" "")
       (scale :min 0 :max 101 :value bright :onchange "light -S {}"))
+    (box :orientation "h" :class "slider-cpu-side" :space-evenly "false"
+      (box :class "label-cpu-side" "龍")
+      (scale :min 0 :active "false" :max 101 :value {EWW_CPU.avg}))
     (box :orientation "h" :class "slider-ram-side" :space-evenly "false"
       (box :class "label-ram-side" "")
-      (scale :min 0 :active "false" :max 101 :value ram-used))
-    (box :orientation "h" :class "slider-battery-side" :space-evenly "false"
-      (box :class "label-battery-side" "")
-      (scale :min 0 :active "false" :max 101 :value battery-remaining))))
+      (scale :min 0 :active "false" :max 101 :value {EWW_RAM.used_mem_perc}))
+    (box :orientation "h" :class "slider-disk-root-side" :space-evenly "false"
+      (box :class "label-disk-root-side" "")
+      (scale :min 0 :active "false" :max 101 :value {EWW_DISK["/"].used_perc}))
+    (box :orientation "h" :class "slider-disk-home-side" :space-evenly "false"
+      (box :class "label-disk-home-side" "")
+      (scale :min 0 :active "false" :max 101 :value {EWW_DISK["/home"].used_perc}))))
 
 (defwidget sys_side []
   (box :orientation "h" :halign "center" :class "sysbtn" :space-evenly "true" 
-      (button :class "shutdown-side" :onclick "~/.config/eww/scripts/shutdown.sh" "襤")
-      (button :class "reboot-side" :onclick "~/.config/eww/scripts/reboot.sh" "漏")
-      (button :class "lock-side" :onclick "~/.config/eww/scripts/lockscreen.sh" "")
-      (button :class "suspend-side" :onclick "~/.config/eww/scripts/suspend.sh" "⏾")
-      (button :class "logout-side" :onclick "~/.config/eww/scripts/logout.sh" "﫼 ")))
-
-(defwidget quotes_side []
-  (box :orientation "v" :space-evenly "false" :class "quote-box"
-    (label :class "weather-quote" :text weather-quote :halign "start" :wrap "true")
-    (label :class "weather-quote2" :text weather-quote2 :halign "start" :wrap "true")
-    (label :class "weather-quote2" :text "" :halign "start" :wrap "true")
-    (label :class "quote-main" :halign "start" :text "${get-quotes}${quote-gen}${quote}" :wrap "true" :width 25)
-    (label :class "quote-tail" :halign "start" :text quote-tail :wrap "true" :width 25)
-    (label :class "quote-author" :text "- ${author-quote}" :halign "end" :wrap "true")))
+      (button :class "shutdown-side" :timeout "1m" :onclick "~/.config/eww/scripts/shutdown.sh" "襤")
+      (button :class "reboot-side" :timeout "1m" :onclick "~/.config/eww/scripts/reboot.sh" "漏")
+      (button :class "lock-side" :timeout "1m" :onclick "~/.config/eww/scripts/lockscreen.sh" "")
+      (button :class "suspend-side" :timeout "1m" :onclick "~/.config/eww/scripts/suspend.sh" "⏾")
+      (button :class "logout-side" :timeout "1m" :onclick "~/.config/eww/scripts/logout.sh" "﫼 ")))
 
 (defwidget calendar_side []
   (box :orientation "v" :halign "center" :space-evenly "false"
     (box :class "calendar_title" " ${day}, ${number_day} ${month_full} ${year_full}")
     (box :class "calendar" 
-      (calendar :show-details "true" ))))
+      (calendar :show-details "true"))))
       
 
 
-;;  Music vars
+;; Music vars
 (defpoll music_title :interval "5s"  "~/.config/eww/scripts/gettitle")
 (defpoll music_artist :interval "5s"  "~/.config/eww/scripts/getartist")
 (defpoll art :interval "5s"  "~/.config/eww/scripts/getart")
@@ -85,38 +81,9 @@
 (defpoll weather-icon :interval "20m"  "cat /tmp/eww/weather/weather-icon")
 (defpoll temperature :interval "20m"  "cat /tmp/eww/weather/weather-degree")
 (defpoll weather-hex :interval "20m"  "cat /tmp/eww/weather/weather-hex")
-(defpoll weather-quote :interval "20m"  "~/.config/eww/scripts/getwethquote")
-(defpoll weather-quote2 :interval "20m"  "~/.config/eww/scripts/getwethquote2")
 (defpoll weather-stat :interval "20m"  "cat /tmp/eww/weather/weather-stat")
 (defpoll weather-stat-side :interval "20m"  "~/.config/eww/scripts/weather-trimmer")
 
-;; Big brain RAM vars
-(defpoll ram-used :interval "1s"  "~/.config/eww/scripts/getram")
-
-;; Battery charge vars
-(defpoll battery-remaining :interval "2m"  "cat /sys/class/power_supply/BAT0/capacity")
-(defpoll bat-icon :interval "2m"  "~/.config/tint2/scripts/battery.sh")
-
-;;  Home-dir stuff 
-(defpoll l1-processed :interval "20h"  "~/.config/eww/scripts/home-dir/l1-processed")
-(defpoll l2-processed :interval "20h"  "~/.config/eww/scripts/home-dir/l2-processed")
-(defpoll l3-processed :interval "20h"  "~/.config/eww/scripts/home-dir/l3-processed")
-(defpoll l4-processed :interval "20h"  "~/.config/eww/scripts/home-dir/l4-processed")
-(defpoll l5-processed :interval "20h"  "~/.config/eww/scripts/home-dir/l5-processed")
-(defpoll l6-processed :interval "20h"  "~/.config/eww/scripts/home-dir/l6-processed")
-(defpoll l1 :interval "20h"  "~/.config/eww/scripts/home-dir/l1")
-(defpoll l2 :interval "20h"  "~/.config/eww/scripts/home-dir/l2")
-(defpoll l3 :interval "20h"  "~/.config/eww/scripts/home-dir/l3")
-(defpoll l4 :interval "20h"  "~/.config/eww/scripts/home-dir/l4")
-(defpoll l5 :interval "20h"  "~/.config/eww/scripts/home-dir/l5")
-(defpoll l6 :interval "20h"  "~/.config/eww/scripts/home-dir/l6")
-
-;;  Quote vars 
-(defpoll get-quotes :interval "60m"  "~/.config/eww/scripts/getquotes")
-(defpoll author-quote :interval "10m"  "cat /tmp/eww/quotes/author")
-(defpoll quote :interval "10m"  "cat /tmp/eww/quotes/quote")
-(defpoll quote-gen :interval "30m"  "~/.config/eww/scripts/quotes")
-(defpoll quote-tail :interval "10m"  "cat /tmp/eww/quotes/quote-tail")
 
 ;; Vpn stats
 (defpoll getvpnstat :interval "10s"  "~/.config/eww/scripts/getvpnstat")
@@ -147,24 +114,14 @@
                       :height "80px")
 (weather_side))
 
-(defwindow quotes_side
+(defwindow calendar_side
   :wm-ignore true
   :monitor 0
   :windowtype "dock"
   :geometry (geometry :x "1590px"
                       :y "95px"
                       :width "320px"
-                      :height "180px")
-(quotes_side))
-
-(defwindow calendar_side
-  :wm-ignore true
-  :monitor 0
-  :windowtype "dock"
-  :geometry (geometry :x "1590px"
-                      :y "280px"
-                      :width "320px"
-                      :height "165px")
+                      :height "245px")
 (calendar_side))
 
 (defwindow player_side
@@ -172,9 +129,9 @@
   :monitor 0
   :windowtype "dock"
   :geometry (geometry :x "1590px"
-                      :y "530px"
+                      :y "345px"
                       :width "320px"
-                      :height "110px")
+                      :height "115px")
 (player_side))
 
 (defwindow sliders_side
@@ -182,9 +139,9 @@
   :monitor 0
   :windowtype "dock"
   :geometry (geometry :x "1590px"
-                      :y "645px"
+                      :y "465px"
                       :width "320px"
-                      :height "205px")
+                      :height "300px")
 (sliders_side))
 
 (defwindow sys_side
@@ -192,7 +149,7 @@
   :monitor 0
   :windowtype "dock"
   :geometry (geometry :x "1590px"
-                      :y "855px"
+                      :y "770px"
                       :width "320px"
                       :height "60px")
 (sys_side))
