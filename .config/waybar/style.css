@@ -154,6 +154,8 @@ label:focus {
 
 #network {
     background-color: rgba(151, 110, 215, 0.6);
+    padding: 0px 4px 0px 2px;
+    min-width: 20px;
 }
 
 #network.disconnected {

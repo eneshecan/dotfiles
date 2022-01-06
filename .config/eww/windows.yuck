@@ -1,0 +1,62 @@
+(include "widgets.yuck")
+
+(defwindow time_side
+  :wm-ignore true
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry :x "1590px"
+                      :y "10px"
+                      :width "60px"
+                      :height "80px")
+(time_side))
+
+(defwindow weather_side
+  :wm-ignore true
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry :x "1715px"
+                      :y "10px"
+                      :width "195px"
+                      :height "80px")
+(weather_side))
+
+(defwindow calendar_side
+  :wm-ignore true
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry :x "1590px"
+                      :y "95px"
+                      :width "320px"
+                      :height "245px")
+(calendar_side))
+
+(defwindow player_side
+  :wm-ignore true
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry :x "1590px"
+                      :y "345px"
+                      :width "320px"
+                      :height "130px")
+(player_side))
+
+(defwindow sliders_side
+  :wm-ignore true
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry :x "1590px"
+                      :y "480px"
+                      :width "320px"
+                      :height "300px")
+(sliders_side))
+
+(defwindow power_side
+  :wm-ignore true
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry :x "1590px"
+                      :y "785px"
+                      :width "320px"
+                      :height "60px")
+(power_side))
+

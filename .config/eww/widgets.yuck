@@ -1,0 +1,60 @@
+(include "variables.yuck")
+
+(defwidget time_side []
+  (box :orientation "v" :class "time-side" :space-evenly "true"
+    (box :class "clock-side" clock)
+    (box :class "day-side" day)))
+
+(defwidget weather_side []
+  (box :orientation "h" :space-evenly "false" 
+    (box :class "weather-icon-side" :style "color: ${weather_hex}" "${get_weather}${weather_icon}")
+    (box :class "weather-info-side" :orientation "v" :space-evenly "false"
+      (box :class "weather-temp-side" "${weather_temp} ")
+      (box :class "weather-stat-side" weather_stat_side))))
+
+(defwidget player_side []
+  (box :orientation "h" :class "player-side" :space-evenly "false" get_music_art
+    (image :class "musicart-side" :image-width "80" :image-height "80" :path music_cover)
+    (box :orientation "v" :space-evenly "false"
+      (box :class "musicartist-side" music_artist)
+      (box :class "musicinfo-side" music_title)
+      (box :orientation "h" :halign "center" :class "musicbtn-side" :space-evenly "false"
+        (button :onclick "playerctl previous" "玲")
+        (button :class "pause-play-side" :onclick "playerctl play-pause" playing_icon)
+        (button :onclick "playerctl next" "怜")))))
+
+(defwidget sliders_side [] 
+  (box :orientation "v" :space-evenly "false" :class "sliders-side" 
+    (box :orientation "h" :class "slider-vol-side" :space-evenly "false" 
+      (box :class "label-vol-side" "")
+      (scale :min 0 :max 101 :value volume :onchange "~/.config/eww/scripts/setvol {}"))
+    (box :orientation "h" :class "slider-bright-side" :space-evenly "false"
+      (box :class "label-bright-side" "")
+      (scale :min 0 :max 101 :value bright :onchange "light -S {}"))
+    (box :orientation "h" :class "slider-cpu-side" :space-evenly "false"
+      (box :class "label-cpu-side" "龍")
+      (scale :min 0 :active "false" :max 101 :value {EWW_CPU.avg}))
+    (box :orientation "h" :class "slider-ram-side" :space-evenly "false"
+      (box :class "label-ram-side" "")
+      (scale :min 0 :active "false" :max 101 :value {EWW_RAM.used_mem_perc}))
+    (box :orientation "h" :class "slider-disk-root-side" :space-evenly "false"
+      (box :class "label-disk-root-side" "")
+      (scale :min 0 :active "false" :max 101 :value {EWW_DISK["/"].used_perc}))
+    (box :orientation "h" :class "slider-disk-home-side" :space-evenly "false"
+      (box :class "label-disk-home-side" "")
+      (scale :min 0 :active "false" :max 101 :value {EWW_DISK["/home"].used_perc}))))
+
+(defwidget power_side []
+  (box :orientation "h" :halign "center" :class "powerbtn-side" :space-evenly "true" 
+      (button :class "shutdown-side" :timeout "1m" :onclick "~/.config/eww/scripts/shutdown.sh" "襤")
+      (button :class "reboot-side" :timeout "1m" :onclick "~/.config/eww/scripts/reboot.sh" "ﰇ")
+      (button :class "lock-side" :onclick "~/.config/eww/scripts/lockscreen.sh" "")
+      (button :class "suspend-side" :timeout "1m" :onclick "~/.config/eww/scripts/suspend.sh" "⏾")
+      (button :class "logout-side" :timeout "1m" :onclick "~/.config/eww/scripts/logout.sh" "﫼 ")))
+
+(defwidget calendar_side []
+  (box :orientation "v" :halign "center" :space-evenly "false"
+    (box :class "calendar-side-title" " ${day}, ${number_day} ${month_full} ${year_full}")
+    (box :class "calendar-side" 
+      (calendar :show-details "true"))))
+

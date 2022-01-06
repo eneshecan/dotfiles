@@ -12,7 +12,7 @@ run_eww() {
 		   calendar_side \
 		   player_side \
 		   sliders_side \
-		   sys_side
+		   power_side
 }
 
 ## Launch or close widgets accordingly
