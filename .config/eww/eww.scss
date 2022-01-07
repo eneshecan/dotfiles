@@ -51,12 +51,12 @@ button {
 
 
 .calendar-side {
-    margin: 20px;
+    margin: 10px;
     font-size: 14px;
 }
 .calendar-side-title {
     margin: 20px 20px 0px 20px;
-    font-size: 16px;
+    font-size: 20px;
     color: #ff9f1a;
 }
 
@@ -70,32 +70,32 @@ button {
     background-size: 80px;
     min-height: 80px;
     min-width: 80px;
-    margin: 15px;
+    margin: 20px;
     border-radius: 8px;
 }
 .musicartist-side {
     font-size: 12px;
-    margin-left: 24px;
-    margin-top: 15px;
     font-weight: bold;
-    min-width: 40px;
+    margin-left: 20px;
+    margin-top: 15px;
+    min-width: 200px;
 }
 .musicinfo-side {
     font-size: 14px;
-    margin-left: 24px;
-    margin-top: 8px;
     font-weight: bold;
-    min-width: 40px;
-    color: #ff9f1a;
+    margin-left: 20px;
+    margin-top: 8px;
+    min-width:200px;
+    color: #D35D6E;
 }
-.musicbtn-side {
-    padding-left: 24px;
+.musicbuttonbox-side {
     font-size: 24px;
+    padding-left: 28px;
 }
-.musicbtn-side button {
-    padding-right: 16px;
+.musicbuttonbox-side button {
+    padding-right: 24px;
 }
-.musicbtn-side button:hover {
+.musicbuttonbox-side button:hover {
     color: #D35D6E;
 }
 .pause-play-side {
@@ -156,7 +156,7 @@ button {
 	background-color: #4e4e4e;
 	border-radius: 8px;
 	min-height: 16px;
-    min-width: 220px;
+    min-width: 260px;
     margin-top: 10px;
     margin-left: 17px;
 }
@@ -165,7 +165,7 @@ button {
 	background-color: #4e4e4e;
 	border-radius: 8px;
 	min-height: 16px;
-    min-width: 220px;
+    min-width: 260px;
     margin-top: 10px;
     margin-left: 17px;
 }
@@ -174,7 +174,7 @@ button {
 	background-color: #4e4e4e;
 	border-radius: 8px;
     min-height: 16px;
-    min-width: 220px;
+    min-width: 260px;
     margin-top: 10px;
     margin-left: 17px;
 }
@@ -183,7 +183,7 @@ button {
 	background-color: #4e4e4e;
 	border-radius: 8px;
     min-height: 16px;
-    min-width: 220px;
+    min-width: 260px;
     margin-top: 10px;
     margin-left: 17px;
 }
@@ -192,7 +192,7 @@ button {
 	background-color: #4e4e4e;
 	border-radius: 8px;
     min-height: 16px;
-    min-width: 220px;
+    min-width: 260px;
     margin-top: 10px;
     margin-left: 17px;
 }
@@ -201,12 +201,12 @@ button {
 	background-color: #4e4e4e;
 	border-radius: 8px;
 	min-height: 16px;
-    min-width: 220px;
+    min-width: 260px;
     margin-top: 10px;
     margin-left: 17px;
 }
 
-.label-cpu-side, .label-bright-side, .label-ram-side, .label-disk-root-side, .label-disk-home-side, .label-vol-side{
+.label-cpu-side, .label-bright-side, .label-ram-side, .label-disk-root-side, .label-disk-home-side, .label-vol-side {
     margin-top: 10px;
     margin-left: 35px;
     font-size: 28px;
@@ -232,7 +232,7 @@ button {
 
 
 .powerbtn-side button {
-    font-size: 30px;
+    font-size: 36px;
 }
 .shutdown-side ~ button:hover {
     color: #D35D6E;

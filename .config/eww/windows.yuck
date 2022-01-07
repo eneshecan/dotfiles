@@ -4,9 +4,9 @@
   :wm-ignore true
   :monitor 0
   :windowtype "dock"
-  :geometry (geometry :x "1590px"
+  :geometry (geometry :x "1550px"
                       :y "10px"
-                      :width "60px"
+                      :width "70px"
                       :height "80px")
 (time_side))
 
@@ -14,9 +14,9 @@
   :wm-ignore true
   :monitor 0
   :windowtype "dock"
-  :geometry (geometry :x "1715px"
+  :geometry (geometry :x "1675px"
                       :y "10px"
-                      :width "195px"
+                      :width "235px"
                       :height "80px")
 (weather_side))
 
@@ -24,9 +24,9 @@
   :wm-ignore true
   :monitor 0
   :windowtype "dock"
-  :geometry (geometry :x "1590px"
+  :geometry (geometry :x "1550px"
                       :y "95px"
-                      :width "320px"
+                      :width "360px"
                       :height "245px")
 (calendar_side))
 
@@ -34,9 +34,9 @@
   :wm-ignore true
   :monitor 0
   :windowtype "dock"
-  :geometry (geometry :x "1590px"
+  :geometry (geometry :x "1550px"
                       :y "345px"
-                      :width "320px"
+                      :width "360px"
                       :height "130px")
 (player_side))
 
@@ -44,9 +44,9 @@
   :wm-ignore true
   :monitor 0
   :windowtype "dock"
-  :geometry (geometry :x "1590px"
+  :geometry (geometry :x "1550px"
                       :y "480px"
-                      :width "320px"
+                      :width "360px"
                       :height "300px")
 (sliders_side))
 
@@ -54,9 +54,9 @@
   :wm-ignore true
   :monitor 0
   :windowtype "dock"
-  :geometry (geometry :x "1590px"
+  :geometry (geometry :x "1550px"
                       :y "785px"
-                      :width "320px"
-                      :height "60px")
+                      :width "360px"
+                      :height "70px")
 (power_side))
 

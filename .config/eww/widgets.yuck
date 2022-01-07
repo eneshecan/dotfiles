@@ -18,7 +18,7 @@
     (box :orientation "v" :space-evenly "false"
       (box :class "musicartist-side" music_artist)
       (box :class "musicinfo-side" music_title)
-      (box :orientation "h" :halign "center" :class "musicbtn-side" :space-evenly "false"
+      (box :orientation "h" :halign "center" :class "musicbuttonbox-side" :space-evenly "false"
         (button :onclick "playerctl previous" "玲")
         (button :class "pause-play-side" :onclick "playerctl play-pause" playing_icon)
         (button :onclick "playerctl next" "怜")))))
