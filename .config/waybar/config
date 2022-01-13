@@ -175,6 +175,7 @@
         "on-click":"wofi"
     },
     "custom/power": {
+        "tooltip": false,
         "format":"襤",
         "on-click":"$HOME/.config/eww/launch.sh"
     }

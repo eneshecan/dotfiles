@@ -6,9 +6,9 @@
     (box :class "day-side" day)))
 
 (defwidget weather_side []
-  (box :orientation "h" :space-evenly "false" 
+  (box :orientation "h" :space-evenly "true" 
     (box :class "weather-icon-side" :style "color: ${weather_hex}" "${get_weather}${weather_icon}")
-    (box :class "weather-info-side" :orientation "v" :space-evenly "false"
+    (box :class "weather-info-side" :orientation "v" :valign "center" :space-evenly "true"
       (box :class "weather-temp-side" "${weather_temp} ")
       (box :class "weather-stat-side" weather_stat_side))))
 

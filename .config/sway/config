@@ -82,7 +82,7 @@ input type:touchpad {
 
 # Keymap
 input * {
-    xkb_layout "us,de"
+    xkb_layout "us,de,tr"
     xkb_variant ""
     xkb_options "grp:alt_caps_toggle"
 }

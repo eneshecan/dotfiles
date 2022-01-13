@@ -19,7 +19,6 @@ button {
     font-size: 16px;
 }
 .clock-side {
-    font-size: 16px;
     color: #D35D6E;
 }
 .day-side {
@@ -30,23 +29,18 @@ button {
 
 
 .weather-icon-side {
-    font-size: 45px;
-    margin: 5px 20px 5px 20px;
+    font-size: 50px;
+    margin: 5px 20px;
 }
-.weather-stat-side {
-    font-size: 10px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    color: #D35D6E;
-}
-
 .weather-temp-side {
     font-size: 16px;
-    font-weight: 900;
-    padding-top: 15px;
-    padding-left: 10px;
-    // color: #c47eb7;
+    font-weight: bold;
+}
+.weather-stat-side {
+    font-size: 12px;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #D35D6E;
 }
 
 
@@ -56,7 +50,7 @@ button {
 }
 .calendar-side-title {
     margin: 20px 20px 0px 20px;
-    font-size: 20px;
+    font-size: 18px;
     color: #ff9f1a;
 }
 
