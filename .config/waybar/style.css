@@ -154,7 +154,7 @@ label:focus {
 
 #network {
     background-color: rgba(151, 110, 215, 0.6);
-    min-width: 20px;
+    min-width: 12px;
 }
 
 #network.disconnected {
@@ -251,7 +251,7 @@ label:focus {
 #language {
     background-color: rgba(0, 176, 147, 0.6);
     color: @black;
-    min-width: 40px;
+    min-width: 36px;
 }
 
 #keyboard-state {

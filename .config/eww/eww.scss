@@ -56,7 +56,7 @@ button {
 
 
 .player-side {
-    margin: 5px;
+    margin: 4px;
 }
 
 .musicart-side {
@@ -94,10 +94,7 @@ button {
 }
 .pause-play-side {
     font-size: 36px;
-    color: #D35D6E;
-}
-.pause-play-side:hover {
-    color: #ffd5cd;
+    color: #c47eb7;
 }
 
 
@@ -225,28 +222,26 @@ button {
 }
 
 
-.powerbtn-side button {
+.powerbutton-side button {
     font-size: 36px;
+    margin: 0px 12px;
 }
-.shutdown-side ~ button:hover {
+.powerbutton-side button:hover {
     color: #D35D6E;
 }
-.shutdown-side{
-    color: #D35D6E;
+.shutdown-side {
+    color: #BB5D6E;
 }
-.shutdown-side:hover{
-    color: #ffd5cd;
-}
-.reboot-side{
+.reboot-side {
     color: #84afdb;
 }
-.lock-side{
+.lock-side {
     color: #ffd5cd;
 }
-.suspend-side{
+.suspend-side {
     color: #c47eb7;
 }
-.logout-side{
+.logout-side {
     color: #90c861;
 }
 

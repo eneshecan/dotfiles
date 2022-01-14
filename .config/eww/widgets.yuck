@@ -45,12 +45,12 @@
       (scale :min 0 :active "false" :max 101 :value {EWW_DISK["/home"].used_perc}))))
 
 (defwidget power_side []
-  (box :orientation "h" :halign "center" :class "powerbtn-side" :space-evenly "true" 
-      (button :class "shutdown-side" :timeout "1m" :onclick "~/.config/eww/scripts/shutdown.sh" "襤")
-      (button :class "reboot-side" :timeout "1m" :onclick "~/.config/eww/scripts/reboot.sh" "ﰇ")
-      (button :class "lock-side" :onclick "~/.config/eww/scripts/lockscreen.sh" "")
-      (button :class "suspend-side" :timeout "1m" :onclick "~/.config/eww/scripts/suspend.sh" "⏾")
-      (button :class "logout-side" :timeout "1m" :onclick "~/.config/eww/scripts/logout.sh" "﫼 ")))
+  (box :orientation "h" :halign "center" :class "powerbutton-side" :space-evenly "true" 
+    (button :class "lock-side" :onclick "~/.config/eww/scripts/lockscreen.sh" "")
+    (button :class "logout-side" :timeout "1m" :onclick "~/.config/eww/scripts/logout.sh" "﫼")
+    (button :class "suspend-side" :timeout "1m" :onclick "~/.config/eww/scripts/suspend.sh" "⏾")
+    (button :class "reboot-side" :timeout "1m" :onclick "~/.config/eww/scripts/reboot.sh" "ﰇ")
+    (button :class "shutdown-side" :timeout "1m" :onclick "~/.config/eww/scripts/shutdown.sh" "襤")))
 
 (defwidget calendar_side []
   (box :orientation "v" :halign "center" :space-evenly "false"
