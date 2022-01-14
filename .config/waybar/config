@@ -115,13 +115,19 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{signalStrength}% 直",
-        "format-ethernet": "",
-        "format-linked": "(No IP) ",
-        "format-disconnected": "",
+        "format-wifi": "{signalStrength}% {icon}",
+        "format-ethernet": "{icon}",
+        "format-linked": "(No IP) {icon}",
+        "format-disconnected": "{icon}",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "format-icons": {
+            "wifi": "直",
+            "ethernet": "",
+            "linked": "",
+            "disconnected": ""
+        },
         "tooltip": true,
-        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+        "tooltip-format-wifi": "{essid} {signalStrength}%",
         "tooltip-format-ehternet": "{ifname}: {ipaddr}/{cidr}",
         "tooltip-format-disconnected": "Disconnected",
         "on-click-right": "kitty nmtui"
