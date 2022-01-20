@@ -98,9 +98,9 @@
         "format": "{capacity:02}% {icon}",
         "format-charging": "{capacity:02}% ",
         "format-plugged": "{capacity:02}% ",
+        "format-full": "Full {icon}",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
     "disk#root": {
@@ -114,9 +114,8 @@
         "path": "/home"
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{signalStrength}% {icon}",
-        "format-ethernet": "{icon}",
+        "format-ethernet": "{ifname} {icon}",
         "format-linked": "(No IP) {icon}",
         "format-disconnected": "{icon}",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
@@ -128,7 +127,7 @@
         },
         "tooltip": true,
         "tooltip-format-wifi": "{essid} {signalStrength}%",
-        "tooltip-format-ehternet": "{ifname}: {ipaddr}/{cidr}",
+        "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
         "tooltip-format-disconnected": "Disconnected",
         "on-click-right": "kitty nmtui"
     },
