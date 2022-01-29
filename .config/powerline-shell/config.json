@@ -9,7 +9,7 @@
     "root"
   ],
   "cwd": {
-    "max_depth": 2
+    "mode": "dironly"
   },
   "vcs": {
     "show_symbol": "true"
