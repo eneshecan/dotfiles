@@ -3,7 +3,7 @@
 title=$(playerctl metadata --format '{{ title }}')
 count=$(echo -n "$title" | wc -c)
 if [ -z "$title" ]; then
-	echo "Nothing Playing...";
+	echo "No Title...";
 else
 	if [ "$count" -le 18 ]; then
 		echo $title
