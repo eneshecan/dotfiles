@@ -167,8 +167,8 @@ label:focus {
 }
 
 #pulseaudio.muted {
-    background-color: rgba(144, 177, 177, 0.6);
-    color: #2a5c45;
+    background-color: rgba(100, 114, 125, 0.6);
+    color: @white;
 }
 
 #bluetooth {
@@ -268,3 +268,4 @@ label:focus {
 #keyboard-state > label.locked {
     background-color: rgba(0, 0, 0, 0.2);
 }
+

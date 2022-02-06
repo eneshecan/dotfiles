@@ -136,7 +136,7 @@
         "format": "{volume:02}% {icon} {format_source}",
         "format-bluetooth": "{volume:02}% {icon} {format_source}",
         "format-bluetooth-muted": "婢 {icon} {format_source}",
-        "format-muted": "婢 {format_source}",
+        "format-muted": "婢 {icon} {format_source}",
         "format-source": "{volume:02}% ",
         "format-source-muted": "",
         "format-icons": {
