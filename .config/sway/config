@@ -108,9 +108,9 @@ exec swayidle -w \
 
 # General
 bindsym $mod+Shift+q kill
-bindsym $mod+p exec grim -g "$(slurp -d)" - | wl-copy && notify-send -u low -i camera-photo "Screenshot copied to clipboard"
+bindsym Print exec grim -g "$(slurp -d)" - | wl-copy && notify-send -u low -i camera-photo "Screenshot copied to clipboard"
 bindsym $mod+shift+x exec swaylock
-bindsym $mod+shift+p exec ~/.config/eww/launch.sh
+bindsym $mod+p exec ~/.config/eww/launch.sh
 
 # Keyboard
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/sway/scripts/volume.sh inc
@@ -233,7 +233,7 @@ assign [app_id="firefox"] $ws1
 assign [app_id="chromium"] $ws7
 # assign [app_id="kitty"] $ws2
 assign [class="jetbrains-clion"] $ws4
-assign [app_id="gedit"] $ws4
+assign [app_id="gedit"] $ws5
 assign [class="Microsoft Teams - Preview"] $ws7
 assign [class="Signal"] $ws7
 assign [app_id="glade"] $ws5
