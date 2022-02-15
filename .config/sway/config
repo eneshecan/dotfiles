@@ -228,6 +228,19 @@ mode "resize" {
 }
 
 
+# Assign workspaces to specific monitors
+workspace $ws1  output DP-4 DP-7 eDP-1
+workspace $ws2  output DP-4 DP-7 eDP-1
+workspace $ws3  output DP-7 DP-4 eDP-1
+workspace $ws4  output DP-4 DP-7 eDP-1
+workspace $ws5  output DP-7 DP-4 eDP-1
+workspace $ws6  output DP-4 DP-7 eDP-1
+workspace $ws7  output DP-4 DP-7 eDP-1
+workspace $ws8  output DP-7 DP-4 eDP-1
+workspace $ws9  output DP-7 DP-4 eDP-1
+workspace $ws10 output DP-7 DP-4 eDP-1
+
+
 # Assign windows to specific workspace
 assign [app_id="firefox"] $ws1
 assign [app_id="chromium"] $ws7
