@@ -9,7 +9,6 @@ A collection of my configuration files for arch linux.
 * [yaru-gtk-theme](https://aur.archlinux.org/packages/yaru-gtk-theme/)
 * [papirus-icon-theme](https://www.archlinux.org/packages/community/any/papirus-icon-theme/)
 * [nerd-fonts-complete](https://aur.archlinux.org/packages/nerd-fonts-complete)
-* [kitty](https://archlinux.org/packages/community/x86_64/kitty/)
 * [powerline-shell](https://aur.archlinux.org/packages/powerline-shell/)
 * [pipewire](https://archlinux.org/packages/extra/x86_64/pipewire/)
 * [pamixer](https://archlinux.org/packages/community/x86_64/pamixer/)
@@ -19,6 +18,7 @@ A collection of my configuration files for arch linux.
 
 ### X11
 * [i3wm](https://www.archlinux.org/packages/community/x86_64/i3-wm/)
+* [kitty](https://archlinux.org/packages/community/x86_64/kitty/)
 * [feh](https://www.archlinux.org/packages/extra/x86_64/feh/)
 * [polybar](https://aur.archlinux.org/packages/polybar)
 * [picom](https://www.archlinux.org/packages/community/x86_64/picom/)
@@ -32,6 +32,7 @@ A collection of my configuration files for arch linux.
 
 ### Wayland
 * [sway](https://archlinux.org/packages/community/x86_64/sway/)
+* [foot](https://archlinux.org/packages/community/x86_64/foot/)
 * [waybar](https://archlinux.org/packages/community/x86_64/waybar/)
 * [mako](https://archlinux.org/packages/community/x86_64/mako/)
 * [wofi](https://archlinux.org/packages/community/x86_64/wofi/)
