@@ -15,6 +15,9 @@
 # Modifier
 set $mod Mod4
 
+# Terminal emulator
+set $term foot
+
 # Colors
 set $bg_color_dark #101010DD
 set $bg_color_unfocus #303030DD
@@ -96,7 +99,7 @@ exec --no-startup-id mako
 exec --no-startup-id eww daemon
 exec --no-startup-id blueman-applet  # Required to run blueman-manager
 exec --no-startup-id firefox
-exec --no-startup-id swaymsg 'workspace $ws2; exec foot'
+exec --no-startup-id swaymsg 'workspace $ws2; exec $term'
 exec --no-startup-id wl-paste -t text --watch clipman store --no-persist
 exec swayidle -w \
     timeout 900  'swaylock' \
@@ -124,7 +127,7 @@ bindsym XF86_MonBrightnessDown exec --no-startup-id ~/.config/sway/scripts/brigh
 
 # Commonly used apps
 bindsym $mod+d exec wofi
-bindsym $mod+Return exec foot
+bindsym $mod+Return exec $term
 bindsym $mod+i exec firefox
 bindsym $mod+c exec clion
 bindsym $mod+g exec gedit
@@ -244,7 +247,7 @@ workspace $ws10 output DP-7 DP-4 eDP-1
 # Assign windows to specific workspace
 assign [app_id="firefox"] $ws1
 assign [app_id="chromium"] $ws7
-# assign [app_id="foot"] $ws2
+# assign [app_id="$term"] $ws2
 assign [class="jetbrains-clion"] $ws4
 assign [app_id="gedit"] $ws5
 assign [class="Microsoft Teams - Preview"] $ws7
