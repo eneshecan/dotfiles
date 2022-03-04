@@ -114,6 +114,7 @@
         "path": "/home"
     },
     "network": {
+        "interval": 30,
         "format-wifi": "{signalStrength}% {icon}",
         "format-ethernet": "{ifname} {icon}",
         "format-linked": "(No IP) {icon}",
