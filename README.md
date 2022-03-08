@@ -33,6 +33,7 @@ A collection of my configuration files for arch linux.
 ### Wayland
 * [sway](https://archlinux.org/packages/community/x86_64/sway/)
 * [foot](https://archlinux.org/packages/community/x86_64/foot/)
+* [swayimg](https://aur.archlinux.org/packages/swayimg)
 * [waybar](https://archlinux.org/packages/community/x86_64/waybar/)
 * [mako](https://archlinux.org/packages/community/x86_64/mako/)
 * [wofi](https://archlinux.org/packages/community/x86_64/wofi/)
