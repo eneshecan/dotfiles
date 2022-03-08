@@ -94,7 +94,7 @@ input <identifier> xkb_model "pc105"
 
 # Autostart apps
 exec --no-startup-id dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-exec --no-startup-id kanshi
+exec_always --no-startup-id kanshi
 exec --no-startup-id mako
 exec --no-startup-id eww daemon
 exec --no-startup-id blueman-applet  # Required to run blueman-manager
@@ -103,6 +103,10 @@ exec --no-startup-id swaymsg 'workspace $ws2; exec $term'
 exec --no-startup-id wl-paste -t text --watch clipman store --no-persist
 exec swayidle -w \
     timeout 900  'swaylock' \
+    timeout 60 'if pgrep -x swaylock; then swaymsg "output * dpms off"; fi' \
+    resume 'swaymsg "output * dpms on"' \
+    timeout 3600 'systemctl suspend' \
+    resume 'swaymsg "output * dpms on"' \
     before-sleep 'playerctl pause' \
     before-sleep 'swaylock'
 
