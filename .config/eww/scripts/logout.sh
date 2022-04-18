@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 confirm_exit() {
-    echo -e "Yes\nNo" | wofi -p "Are you sure?" --width 200 --height 120 --dmenu
+    echo -e "Yes\nNo" | wofi -p "Do you want to logout?" --width 260 --height 120 --dmenu
 }
 
 ans=$(confirm_exit &)

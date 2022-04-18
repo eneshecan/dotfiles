@@ -2,41 +2,26 @@
     all: unset;
 }
 window {
-    background-color: rgba(32, 32, 32, 0.9);
-    color: #ffd5cd;
+    background-color: rgba(32, 32, 32, 0.8);
+    color: rgb(240, 240, 240);
     font-family: JetBrainsMono Nerd Font;
     border-radius: 8px;
 }
 
 button {
-    all: unset;
-    padding: 10px;
+    padding: 4px;
 }
 
 
-.time-side {
-    margin: 10px 20px;
-    font-size: 16px;
-}
-.clock-side {
-    color: #D35D6E;
-}
-.day-side {
-    font-size: 12px;
-    font-weight: bold;
-    color: #90c861;
-}
-
-
-.weather-icon-side {
+.weather-icon {
     font-size: 48px;
     margin: 5px 20px;
 }
-.weather-temp-side {
+.weather-temp {
     font-size: 16px;
     font-weight: bold;
 }
-.weather-stat-side {
+.weather-stat {
     font-size: 12px;
     margin-top: 8px;
     font-weight: bold;
@@ -44,204 +29,171 @@ button {
 }
 
 
-.calendar-side {
-    margin: 10px;
-    font-size: 14px;
+.calendar {
+    font-size: 12px;
+    margin: 10px 20px;
 }
-.calendar-side-title {
-    margin: 20px 20px 0px 20px;
-    font-size: 18px;
+.calendar-title {
+    font-size: 16px;
     color: #ff9f1a;
+    margin: 10px 20px;
 }
 
 
-.player-side {
-    margin: 4px;
-}
-
-.musicart-side {
+.musicart {
     // background-image: url("/tmp/eww/spotify/cover.png");
     background-size: 80px;
     min-height: 80px;
     min-width: 80px;
-    margin: 20px;
+    margin: 20px 0px 20px 20px;
     border-radius: 8px;
 }
-.musicartist-side {
+.musicartist {
     font-size: 12px;
     font-weight: bold;
-    margin-left: 20px;
     margin-top: 15px;
-    min-width: 200px;
+    min-width: 220px;
 }
-.musicinfo-side {
+.musicinfo {
     font-size: 14px;
     font-weight: bold;
-    margin-left: 20px;
     margin-top: 8px;
-    min-width:200px;
+    min-width: 220px;
     color: #D35D6E;
 }
-.musicbuttonbox-side {
+.musicbuttonbox {
     font-size: 24px;
-    padding-left: 28px;
+    padding-left: 10px;
 }
-.musicbuttonbox-side button {
+.musicbuttonbox button {
     padding-right: 24px;
 }
-.musicbuttonbox-side button:hover {
+.musicbuttonbox button:hover {
     color: #D35D6E;
 }
-.pause-play-side {
+.pause-play {
     font-size: 36px;
     color: #c47eb7;
 }
 
 
-.sliders-side slider {
-    all: unset;
+.sliders slider {
     color: #ffd5cd;
 }
 
-.slider-vol-side {
+.slider-vol {
     margin-top: 10px;
 }
-.slider-vol-side scale trough highlight {
-	all: unset;
+.slider-vol scale trough highlight {
 	background-color: #c47eb7;
 	color: #000000;
 	border-radius: 8px;
 }
-.slider-bright-side scale trough highlight {
-    all: unset;
+.slider-bright scale trough highlight {
 	background-color: #ff9f1a;
 	color: #000000;
 	border-radius: 8px;
 }
-.slider-ram-side scale trough highlight {
-    all: unset;
+.slider-ram scale trough highlight {
 	background-color: #D35D6E;
 	color: #000000;
 	border-radius: 8px;
 }
-.slider-disk-root-side scale trough highlight {
-    all: unset;
+.slider-disk-root scale trough highlight {
 	background-color: #84afdb;
 	color: #000000;
 	border-radius: 8px;
 }
-.slider-disk-home-side scale trough highlight {
-    all: unset;
+.slider-disk-home scale trough highlight {
 	background-color: #714eb3;
 	color: #000000;
 	border-radius: 8px;
 }
-.slider-cpu-side scale trough highlight {
-    all: unset;
+.slider-cpu scale trough highlight {
 	background-color: #90c861;
 	color: #000000;
 	border-radius: 8px;
 }
-.slider-vol-side scale trough {
-	all: unset;
+.slider-vol scale trough {
 	background-color: #4e4e4e;
 	border-radius: 8px;
 	min-height: 16px;
-    min-width: 260px;
+    min-width: 200px;
     margin-top: 10px;
     margin-left: 17px;
 }
-.slider-bright-side scale trough {
-	all: unset;
+.slider-bright scale trough {
 	background-color: #4e4e4e;
 	border-radius: 8px;
 	min-height: 16px;
-    min-width: 260px;
+    min-width: 200px;
     margin-top: 10px;
     margin-left: 17px;
 }
-.slider-ram-side scale trough {
-	all: unset;
+.slider-ram scale trough {
 	background-color: #4e4e4e;
 	border-radius: 8px;
     min-height: 16px;
-    min-width: 260px;
+    min-width: 200px;
     margin-top: 10px;
     margin-left: 17px;
 }
-.slider-disk-root-side scale trough {
-	all: unset;
+.slider-disk-root scale trough {
 	background-color: #4e4e4e;
 	border-radius: 8px;
     min-height: 16px;
-    min-width: 260px;
+    min-width: 200px;
     margin-top: 10px;
     margin-left: 17px;
 }
-.slider-disk-home-side scale trough {
-	all: unset;
+.slider-disk-home scale trough {
 	background-color: #4e4e4e;
 	border-radius: 8px;
     min-height: 16px;
-    min-width: 260px;
+    min-width: 200px;
     margin-top: 10px;
     margin-left: 17px;
 }
-.slider-cpu-side scale trough {
-	all: unset;
+.slider-cpu scale trough {
 	background-color: #4e4e4e;
 	border-radius: 8px;
 	min-height: 16px;
-    min-width: 260px;
+    min-width: 200px;
     margin-top: 10px;
     margin-left: 17px;
 }
 
-.label-cpu-side, .label-bright-side, .label-ram-side, .label-disk-root-side, .label-disk-home-side, .label-vol-side {
+.label-cpu, .label-bright, .label-ram, .label-disk-root, .label-disk-home, .label-vol {
     margin-top: 10px;
-    margin-left: 35px;
-    font-size: 28px;
+    margin-left: 20px;
+    font-size: 20px;
 }
-.label-vol-side {
+.label-vol {
     color: #c47eb7;
 }
-.label-bright-side {
+.label-bright {
     color: #ff9f1a;
 }
-.label-ram-side {
+.label-ram {
     color: #D35D6E;
 }
-.label-disk-root-side {
+.label-disk-root {
     color: #84afdb;
 }
-.label-disk-home-side {
+.label-disk-home {
     color: #714eb3;
 }
-.label-cpu-side {
+.label-cpu {
     color: #90c861;
 }
 
 
-.powerbutton-side button {
-    font-size: 36px;
-    margin: 0px 12px;
+.powerbutton button {
+    font-size: 13px;
+    margin: 4px;
 }
-.powerbutton-side button:hover {
-    color: #D35D6E;
-}
-.shutdown-side {
-    color: #BB5D6E;
-}
-.reboot-side {
-    color: #84afdb;
-}
-.lock-side {
-    color: #ffd5cd;
-}
-.suspend-side {
-    color: #c47eb7;
-}
-.logout-side {
-    color: #90c861;
+.powerbutton button:hover {
+    background-color: #4E4E4E;
+    border-radius: 8px;
 }
 

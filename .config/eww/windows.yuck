@@ -1,62 +1,22 @@
 (include "widgets.yuck")
 
-(defwindow time_side
+(defwindow status
   :wm-ignore true
   :monitor 0
   :windowtype "dock"
-  :geometry (geometry :x "1550px"
+  :geometry (geometry :x "640px"
                       :y "10px"
-                      :width "70px"
-                      :height "80px")
-(time_side))
+                      :width "620px"
+                      :height "280px")
+(status))
 
-(defwindow weather_side
+(defwindow power
   :wm-ignore true
   :monitor 0
   :windowtype "dock"
-  :geometry (geometry :x "1675px"
+  :geometry (geometry :x "1650px"
                       :y "10px"
-                      :width "235px"
-                      :height "80px")
-(weather_side))
-
-(defwindow calendar_side
-  :wm-ignore true
-  :monitor 0
-  :windowtype "dock"
-  :geometry (geometry :x "1550px"
-                      :y "95px"
-                      :width "360px"
-                      :height "245px")
-(calendar_side))
-
-(defwindow player_side
-  :wm-ignore true
-  :monitor 0
-  :windowtype "dock"
-  :geometry (geometry :x "1550px"
-                      :y "345px"
-                      :width "360px"
-                      :height "130px")
-(player_side))
-
-(defwindow sliders_side
-  :wm-ignore true
-  :monitor 0
-  :windowtype "dock"
-  :geometry (geometry :x "1550px"
-                      :y "480px"
-                      :width "360px"
-                      :height "300px")
-(sliders_side))
-
-(defwindow power_side
-  :wm-ignore true
-  :monitor 0
-  :windowtype "dock"
-  :geometry (geometry :x "1550px"
-                      :y "785px"
-                      :width "360px"
-                      :height "70px")
-(power_side))
+                      :width "260px"
+                      :height "400px")
+(power))
 

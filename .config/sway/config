@@ -107,8 +107,6 @@ exec swayidle -w \
     timeout 900  'swaylock' \
     timeout 60 'if pgrep -x swaylock; then swaymsg "output * dpms off"; fi' \
     resume 'swaymsg "output * dpms on"' \
-    timeout 3600 'systemctl suspend' \
-    resume 'swaymsg "output * dpms on"' \
     before-sleep 'playerctl pause' \
     before-sleep 'swaylock'
 
@@ -119,7 +117,6 @@ exec swayidle -w \
 bindsym $mod+Shift+q kill
 bindsym Print exec grim -g "$(slurp -d)" - | wl-copy && notify-send -u low -i camera-photo "Screenshot copied to clipboard"
 bindsym $mod+shift+x exec swaylock
-bindsym $mod+p exec ~/.config/eww/launch.sh
 
 # Keyboard
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/sway/scripts/volume.sh inc

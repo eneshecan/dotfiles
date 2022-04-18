@@ -8,8 +8,8 @@
     "margin-bottom": 2,
     "margin-right": 8,
     "modules-left": ["custom/os", "sway/workspaces", "sway/mode"],
-    "modules-center": ["sway/window"],
-    "modules-right": ["custom/media", "pulseaudio", "battery", "sway/language", "tray", "clock"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "battery", "sway/language", "tray", "custom/power"],
     "sway/workspaces": {
         "tooltip": false,
         "disable-scroll": true,
@@ -60,11 +60,9 @@
         "spacing": 8
     },
     "clock": {
-        // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%I:%M %p} ",
-        "format-alt": "{:%a %d %b} ",
-        "on-click-right":"$HOME/.config/eww/launch.sh"
+        "tooltip": false,
+        "format": "{:%a %d %b %I:%M %p}",
+        "on-click":"$HOME/.config/eww/launch-widget.sh status"
     },
     "sway/language": {
         "format": "{short} ",
@@ -184,7 +182,7 @@
     "custom/power": {
         "tooltip": false,
         "format":"襤",
-        "on-click":"$HOME/.config/eww/launch.sh"
+        "on-click":"$HOME/.config/eww/launch-widget.sh power"
     }
 }
 

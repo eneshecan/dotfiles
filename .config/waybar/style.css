@@ -95,7 +95,7 @@ window#waybar.chromium {
 }
 
 #clock {
-    background-color: rgba(100, 114, 125, 0.6);
+    background-color: transparent;
 }
 
 #battery {

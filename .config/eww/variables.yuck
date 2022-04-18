@@ -21,5 +21,8 @@
 (defpoll weather_temp :interval "20m"  "cat /tmp/eww/weather/weather-degree")
 (defpoll weather_hex :interval "20m"  "cat /tmp/eww/weather/weather-hex")
 (defpoll weather_stat :interval "20m"  "cat /tmp/eww/weather/weather-stat")
-(defpoll weather_stat_side :interval "20m"  "~/.config/eww/scripts/weather-trimmer")
+(defpoll weather_stat_trimmed :interval "20m"  "~/.config/eww/scripts/weather-trimmer")
+
+;; Power vars
+(defvar power_expanded false)
 
