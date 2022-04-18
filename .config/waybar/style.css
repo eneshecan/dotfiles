@@ -162,7 +162,7 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: rgba(241, 196, 15, 0.6);
+    background-color: rgba(196, 126, 183, 0.6);
     color: @black;
 }
 

@@ -13,7 +13,7 @@
           (button :onclick "playerctl next" "怜"))))
     (box :orientation "v" :space-evenly "false" :valign "center"
       (box :class "calendar-title" " ${day}, ${number_day} ${month_full} ${year_full}")
-      (calendar :class "calendar")
+      (calendar :class "calendar" :show-details true :show-week-numbers true)
       (box :orientation "h" :valign "center" :space-evenly "true"
         (box :class "weather-icon" :style "color: ${weather_hex}" "${get_weather}${weather_icon}")
         (box :class "weather-info" :orientation "v" :valign "center" :space-evenly "true"
@@ -25,6 +25,9 @@
     (box :orientation "h" :class "slider-vol" :space-evenly "false"
       (box :class "label-vol" "")
       (scale :min 0 :max 101 :value volume :onchange "~/.config/eww/scripts/setvol {}"))
+    (box :orientation "h" :class "slider-mic" :space-evenly "false"
+      (box :class "label-mic" "")
+      (scale :min 0 :max 101 :value mic_volume :onchange "~/.config/eww/scripts/setmicvol {}"))
     (box :orientation "h" :class "slider-bright" :space-evenly "false"
       (box :class "label-bright" "")
       (scale :min 0 :max 101 :value bright :onchange "light -S {}"))

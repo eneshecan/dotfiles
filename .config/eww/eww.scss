@@ -89,13 +89,18 @@ button {
 	color: #000000;
 	border-radius: 8px;
 }
+.slider-mic scale trough highlight {
+	background-color: #D35D6E;
+	color: #000000;
+	border-radius: 8px;
+}
 .slider-bright scale trough highlight {
 	background-color: #ff9f1a;
 	color: #000000;
 	border-radius: 8px;
 }
 .slider-ram scale trough highlight {
-	background-color: #D35D6E;
+	background-color: #2980b9;
 	color: #000000;
 	border-radius: 8px;
 }
@@ -117,7 +122,15 @@ button {
 .slider-vol scale trough {
 	background-color: #4e4e4e;
 	border-radius: 8px;
-	min-height: 16px;
+	min-height: 12px;
+    min-width: 200px;
+    margin-top: 10px;
+    margin-left: 17px;
+}
+.slider-mic scale trough {
+	background-color: #4e4e4e;
+	border-radius: 8px;
+	min-height: 12px;
     min-width: 200px;
     margin-top: 10px;
     margin-left: 17px;
@@ -125,7 +138,7 @@ button {
 .slider-bright scale trough {
 	background-color: #4e4e4e;
 	border-radius: 8px;
-	min-height: 16px;
+	min-height: 12px;
     min-width: 200px;
     margin-top: 10px;
     margin-left: 17px;
@@ -133,7 +146,7 @@ button {
 .slider-ram scale trough {
 	background-color: #4e4e4e;
 	border-radius: 8px;
-    min-height: 16px;
+    min-height: 12px;
     min-width: 200px;
     margin-top: 10px;
     margin-left: 17px;
@@ -141,7 +154,7 @@ button {
 .slider-disk-root scale trough {
 	background-color: #4e4e4e;
 	border-radius: 8px;
-    min-height: 16px;
+    min-height: 12px;
     min-width: 200px;
     margin-top: 10px;
     margin-left: 17px;
@@ -149,7 +162,7 @@ button {
 .slider-disk-home scale trough {
 	background-color: #4e4e4e;
 	border-radius: 8px;
-    min-height: 16px;
+    min-height: 12px;
     min-width: 200px;
     margin-top: 10px;
     margin-left: 17px;
@@ -157,13 +170,13 @@ button {
 .slider-cpu scale trough {
 	background-color: #4e4e4e;
 	border-radius: 8px;
-	min-height: 16px;
+	min-height: 12px;
     min-width: 200px;
     margin-top: 10px;
     margin-left: 17px;
 }
 
-.label-cpu, .label-bright, .label-ram, .label-disk-root, .label-disk-home, .label-vol {
+.label-cpu, .label-bright, .label-ram, .label-disk-root, .label-disk-home, .label-vol, .label-mic {
     margin-top: 10px;
     margin-left: 20px;
     font-size: 20px;
@@ -171,11 +184,14 @@ button {
 .label-vol {
     color: #c47eb7;
 }
+.label-mic {
+    color: #D35D6E;
+}
 .label-bright {
     color: #ff9f1a;
 }
 .label-ram {
-    color: #D35D6E;
+    color: #2980b9;
 }
 .label-disk-root {
     color: #84afdb;
