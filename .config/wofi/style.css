@@ -5,7 +5,7 @@ window {
 
 #input {
     margin: 5px;
-    border: 2px solid rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(0, 0, 0, 0.8);
 }
 
 #outer-box {
@@ -31,5 +31,6 @@ window {
 }
 
 #entry:selected {
-    background-color: rgba(72, 48, 24, 0.8);
+    background-color: rgba(78, 78, 78, 0.8);
 }
+

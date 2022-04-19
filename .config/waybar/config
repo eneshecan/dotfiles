@@ -62,7 +62,7 @@
     "clock": {
         "tooltip": false,
         "format": "{:%a %d %b %I:%M %p}",
-        "on-click":"$HOME/.config/eww/launch-widget.sh status"
+        "on-click":"$HOME/.config/eww/launch.sh status"
     },
     "sway/language": {
         "format": "{short} ",
@@ -148,7 +148,7 @@
             "car": "",
             "default": ["奄", "奔", "墳"]
         },
-        "on-click-right": "pavucontrol"
+        "on-click": "pavucontrol"
     },
     "bluetooth": {
         "interval": 30,
@@ -182,7 +182,7 @@
     "custom/power": {
         "tooltip": false,
         "format":"襤",
-        "on-click":"$HOME/.config/eww/launch-widget.sh power"
+        "on-click":"$HOME/.config/eww/launch.sh power"
     }
 }
 
