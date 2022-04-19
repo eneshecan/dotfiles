@@ -8,6 +8,10 @@ window {
     border-radius: 8px;
 }
 
+window>box {
+    margin: 8px;
+}
+
 button {
     padding: 4px;
 }
@@ -77,13 +81,14 @@ button {
 }
 
 
+.sliders {
+    margin-left: 20px;
+}
+
 .sliders slider {
     color: #FFD5CD;
 }
 
-.slider-vol {
-    margin-top: 10px;
-}
 .slider-vol scale trough highlight {
 	background-color: #C47EB7;
 	color: #000000;
@@ -99,31 +104,11 @@ button {
 	color: #000000;
 	border-radius: 8px;
 }
-.slider-ram scale trough highlight {
-	background-color: #2980B9;
-	color: #000000;
-	border-radius: 8px;
-}
-.slider-disk-root scale trough highlight {
-	background-color: #84AFDB;
-	color: #000000;
-	border-radius: 8px;
-}
-.slider-disk-home scale trough highlight {
-	background-color: #714EB3;
-	color: #000000;
-	border-radius: 8px;
-}
-.slider-cpu scale trough highlight {
-	background-color: #90C861;
-	color: #000000;
-	border-radius: 8px;
-}
 .slider-vol scale trough {
 	background-color: #4E4E4E;
 	border-radius: 8px;
 	min-height: 12px;
-    min-width: 200px;
+    min-width: 240px;
     margin-top: 10px;
     margin-left: 17px;
 }
@@ -131,7 +116,7 @@ button {
 	background-color: #4E4E4E;
 	border-radius: 8px;
 	min-height: 12px;
-    min-width: 200px;
+    min-width: 240px;
     margin-top: 10px;
     margin-left: 17px;
 }
@@ -139,46 +124,40 @@ button {
 	background-color: #4E4E4E;
 	border-radius: 8px;
 	min-height: 12px;
-    min-width: 200px;
-    margin-top: 10px;
-    margin-left: 17px;
-}
-.slider-ram scale trough {
-	background-color: #4E4E4E;
-	border-radius: 8px;
-    min-height: 12px;
-    min-width: 200px;
-    margin-top: 10px;
-    margin-left: 17px;
-}
-.slider-disk-root scale trough {
-	background-color: #4E4E4E;
-	border-radius: 8px;
-    min-height: 12px;
-    min-width: 200px;
-    margin-top: 10px;
-    margin-left: 17px;
-}
-.slider-disk-home scale trough {
-	background-color: #4E4E4E;
-	border-radius: 8px;
-    min-height: 12px;
-    min-width: 200px;
-    margin-top: 10px;
-    margin-left: 17px;
-}
-.slider-cpu scale trough {
-	background-color: #4E4E4E;
-	border-radius: 8px;
-	min-height: 12px;
-    min-width: 200px;
+    min-width: 240px;
     margin-top: 10px;
     margin-left: 17px;
 }
 
+
+.circulars {
+    margin-top: 10px;
+}
+
+.circulars circular-progress {
+    color: #FFD5CD;
+}
+
+.circular-cpu circular-progress {
+	color: #90C861;
+	background-color: #000000;
+}
+.circular-ram circular-progress {
+	color: #2980B9;
+	background-color: #000000;
+}
+.circular-disk-root circular-progress {
+	color: #84AFDB;
+	background-color: #000000;
+}
+.circular-disk-home circular-progress {
+	color: #714EB3;
+	background-color: #000000;
+}
+
+
 .label-cpu, .label-bright, .label-ram, .label-disk-root, .label-disk-home, .label-vol, .label-mic {
     margin-top: 10px;
-    margin-left: 20px;
     font-size: 20px;
 }
 .label-vol {
@@ -204,11 +183,11 @@ button {
 }
 
 
-.powerbutton button {
+.button-power {
     font-size: 13px;
     margin: 4px;
 }
-.powerbutton button:hover {
+.button-power:hover {
     background-color: #4E4E4E;
     border-radius: 8px;
 }

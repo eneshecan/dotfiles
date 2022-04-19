@@ -2,15 +2,26 @@
 
 (defwidget status []
   (box :orientation "h" :space-evenly "false"
-    (box :orientation "h" :space-evenly "false" :valign "center" get_music_art
-      (image :class "musicart" :image-width "80" :image-height "80" :path music_cover)
-      (box :orientation "v" :space-evenly "false"
-        (box :class "musicartist" music_artist)
-        (box :class "musicinfo" music_title)
-        (box :orientation "h" :halign "center" :class "musicbuttonbox" :space-evenly "false"
-          (button :onclick "playerctl previous" "玲")
-          (button :class "pause-play" :onclick "playerctl play-pause" playing_icon)
-          (button :onclick "playerctl next" "怜"))))
+    (box :orientation "v" :space-evenly "false" :valign "center"
+      (box :orientation "h" :space-evenly "false" get_music_art
+        (image :class "musicart" :image-width "80" :image-height "80" :path music_cover)
+        (box :orientation "v" :space-evenly "false"
+          (box :class "musicartist" music_artist)
+          (box :class "musicinfo" music_title)
+          (box :class "musicbuttonbox" :orientation "h" :halign "center" :space-evenly "false"
+            (button :onclick "playerctl previous" "玲")
+            (button :class "pause-play" :onclick "playerctl play-pause" playing_icon)
+            (button :onclick "playerctl next" "怜"))))
+      (box :class "sliders" :orientation "v" :space-evenly "false"
+        (box :orientation "h" :class "slider-vol" :space-evenly "false"
+          (box :class "label-vol" "")
+          (scale :min 0 :max 101 :value volume :onchange "~/.config/eww/scripts/setvol {}"))
+        (box :class "slider-mic" :orientation "h" :space-evenly "false"
+          (box :class "label-mic" "")
+          (scale :min 0 :max 101 :value mic_volume :onchange "~/.config/eww/scripts/setmicvol {}"))
+        (box :class "slider-bright" :orientation "h" :space-evenly "false"
+          (box :class "label-bright" "")
+          (scale :min 0 :max 101 :value bright :onchange "light -S {}"))))
     (box :orientation "v" :space-evenly "false" :valign "center"
       (box :class "calendar-title" " ${day}, ${number_day} ${month_full} ${year_full}")
       (calendar :class "calendar" :show-details true :show-week-numbers true)
@@ -21,31 +32,23 @@
         (box :class "weather-stat" "${weather_stat_trimmed}"))))))
 
 (defwidget power []
-  (box :orientation "v" :class "powerbutton" :space-evenly "false"
-    (box :orientation "h" :class "slider-vol" :space-evenly "false"
-      (box :class "label-vol" "")
-      (scale :min 0 :max 101 :value volume :onchange "~/.config/eww/scripts/setvol {}"))
-    (box :orientation "h" :class "slider-mic" :space-evenly "false"
-      (box :class "label-mic" "")
-      (scale :min 0 :max 101 :value mic_volume :onchange "~/.config/eww/scripts/setmicvol {}"))
-    (box :orientation "h" :class "slider-bright" :space-evenly "false"
-      (box :class "label-bright" "")
-      (scale :min 0 :max 101 :value bright :onchange "light -S {}"))
-    (box :orientation "h" :class "slider-cpu" :space-evenly "false"
-      (box :class "label-cpu" "龍")
-      (scale :min 0 :active "false" :max 101 :value {EWW_CPU.avg}))
-    (box :orientation "h" :class "slider-ram" :space-evenly "false"
-      (box :class "label-ram" "")
-      (scale :min 0 :active "false" :max 101 :value {EWW_RAM.used_mem_perc}))
-    (box :orientation "h" :class "slider-disk-root" :space-evenly "false"
-      (box :class "label-disk-root" "")
-      (scale :min 0 :active "false" :max 101 :value {EWW_DISK["/"].used_perc}))
-    (box :orientation "h" :class "slider-disk-home" :space-evenly "false"
-      (box :class "label-disk-home" "")
-      (scale :min 0 :active "false" :max 101 :value {EWW_DISK["/home"].used_perc}))
-    (button :onclick "~/.config/eww/scripts/lockscreen.sh" "Lock ")
-    (button :timeout "1m" :onclick "~/.config/eww/scripts/logout.sh" "Logout 﫼")
-    (button :timeout "1m" :onclick "~/.config/eww/scripts/suspend.sh" "Suspend ⏾")
-    (button :timeout "1m" :onclick "~/.config/eww/scripts/reboot.sh" "Reboot ﰇ")
-    (button :timeout "1m" :onclick "~/.config/eww/scripts/poweroff.sh" "Power Off 襤")))
+  (box :orientation "v" :space-evenly "false"
+    (box :class "circulars" :orientation "h" :space-evenly "true"
+      (box :class "circular-cpu" :orientation "v" :space-evenly "false"
+        (circular-progress :thickness 16 :value {EWW_CPU.avg})
+        (box :class "label-cpu" "龍"))
+      (box :class "circular-ram" :orientation "v" :space-evenly "false"
+        (circular-progress :thickness 16 :value {EWW_RAM.used_mem_perc})
+        (box :class "label-ram" ""))
+      (box :class "circular-disk-root" :orientation "v" :space-evenly "false"
+        (circular-progress :thickness 16 :value {EWW_DISK["/"].used_perc})
+        (box :class "label-disk-root" ""))
+      (box :class "circular-disk-home" :orientation "v" :space-evenly "false"
+        (circular-progress :thickness 16 :value {EWW_DISK["/home"].used_perc})
+        (box :class "label-disk-home" "")))
+    (button :class "button-power" :onclick "~/.config/eww/scripts/lockscreen.sh" "Lock ")
+    (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/logout.sh" "Logout 﫼")
+    (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/suspend.sh" "Suspend ⏾")
+    (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/reboot.sh" "Reboot ﰇ")
+    (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/poweroff.sh" "Power Off 襤")))
 
