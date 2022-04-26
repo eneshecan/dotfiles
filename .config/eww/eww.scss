@@ -45,17 +45,16 @@ button {
 
 
 .musicart {
-    // background-image: url("/tmp/eww/spotify/cover.png");
     background-size: 80px;
     min-height: 80px;
     min-width: 80px;
-    margin: 20px 0px 20px 20px;
+    margin: 0px 0px 20px 20px;
     border-radius: 8px;
+    box-shadow: 4px 4px 4px 4px #06060B;
 }
 .musicartist {
     font-size: 12px;
     font-weight: bold;
-    margin-top: 15px;
     min-width: 220px;
 }
 .musicinfo {
@@ -67,16 +66,17 @@ button {
 }
 .musicbuttonbox {
     font-size: 24px;
-    padding-left: 10px;
+    padding-left: 12px;
 }
 .musicbuttonbox button {
-    padding-right: 24px;
+    padding-right: 20px;
 }
 .musicbuttonbox button:hover {
     color: #D35D6E;
 }
 .pause-play {
     font-size: 36px;
+    margin-right: 6px;
     color: #C47EB7;
 }
 

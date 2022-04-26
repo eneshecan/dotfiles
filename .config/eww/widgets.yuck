@@ -4,7 +4,7 @@
   (box :orientation "h" :space-evenly "false"
     (box :orientation "v" :space-evenly "false" :valign "center"
       (box :orientation "h" :space-evenly "false" get_music_art
-        (image :class "musicart" :image-width "80" :image-height "80" :path music_cover)
+        (box :class "musicart" :style "background-image: url('${music_cover}');")
         (box :orientation "v" :space-evenly "false"
           (box :class "musicartist" music_artist)
           (box :class "musicinfo" music_title)
