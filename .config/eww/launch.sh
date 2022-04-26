@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 
-WIDGET=$1
-FILE="$HOME/.cache/eww_launch_${WIDGET}.xyz"
-EWW="/usr/bin/eww"
+widget=$1
+file="$HOME/.cache/eww_launch_${widget}.xyz"
+eww="/usr/bin/eww"
 
 run_eww() {
-	${EWW} open ${WIDGET}
+	${eww} open ${widget}
 }
 
-if [[ ! -f "$FILE" ]]; then
-	touch "$FILE"
+if [[ ! -f "$file" ]]; then
+	touch "$file"
 	run_eww
 else
-	${EWW} close ${WIDGET}
-	rm "$FILE"
+	${eww} close ${widget}
+	rm "$file"
 fi
 
