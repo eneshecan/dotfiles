@@ -132,7 +132,7 @@
         "on-click-right": "foot --app-id=nmtui --title=nmtui nmtui"
     },
     "pulseaudio": {
-        "scroll-step": 5, // %, can be a float
+        "scroll-step": 5,
         "format": "{volume:02}% {icon} {format_source}",
         "format-bluetooth": "{volume:02}% {icon} {format_source}",
         "format-bluetooth-muted": "婢 {icon} {format_source}",
@@ -176,13 +176,13 @@
     },
     "custom/os": {
         "tooltip": false,
-        "format":" ",
-        "on-click":"wofi"
+        "format": " ",
+        "on-click": "wofi"
     },
     "custom/power": {
         "tooltip": false,
-        "format":"襤",
-        "on-click":"$HOME/.config/eww/launch.sh power"
+        "format": "襤",
+        "on-click": "$HOME/.config/eww/launch.sh power"
     }
 }
 
