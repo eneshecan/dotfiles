@@ -1,6 +1,7 @@
 *{
     all: unset;
 }
+
 window {
     background-color: rgba(32, 32, 32, 0.8);
     color: rgb(240, 240, 240);
@@ -16,6 +17,18 @@ button {
     padding: 4px;
 }
 
+scale .top {
+    font-size: 10px;
+}
+scale .bottom {
+    font-size: 10px;
+}
+
+tooltip {
+    font-size: 10px;
+    background-color: #101010;
+    border-radius: 4px;
+}
 
 .weather-icon {
     font-size: 48px;

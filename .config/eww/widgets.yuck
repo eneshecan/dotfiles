@@ -35,16 +35,16 @@
   (box :orientation "v" :space-evenly "false"
     (box :class "circulars" :orientation "h" :space-evenly "true"
       (box :class "circular-cpu" :orientation "v" :space-evenly "false"
-        (circular-progress :thickness 16 :value {EWW_CPU.avg})
+        (circular-progress :thickness 16 :value {EWW_CPU.avg} :tooltip "${EWW_CPU.avg}%")
         (box :class "label-cpu" "龍"))
       (box :class "circular-ram" :orientation "v" :space-evenly "false"
-        (circular-progress :thickness 16 :value {EWW_RAM.used_mem_perc})
+        (circular-progress :thickness 16 :value {EWW_RAM.used_mem_perc} :tooltip "${EWW_RAM.used_mem / 1000} MB")
         (box :class "label-ram" ""))
       (box :class "circular-disk-root" :orientation "v" :space-evenly "false"
-        (circular-progress :thickness 16 :value {EWW_DISK["/"].used_perc})
+        (circular-progress :thickness 16 :value {EWW_DISK["/"].used_perc} :tooltip "${EWW_DISK["/"].used / 1000000000} GB")
         (box :class "label-disk-root" ""))
       (box :class "circular-disk-home" :orientation "v" :space-evenly "false"
-        (circular-progress :thickness 16 :value {EWW_DISK["/home"].used_perc})
+        (circular-progress :thickness 16 :value {EWW_DISK["/home"].used_perc} :tooltip "${EWW_DISK["/home"].used / 1000000000} GB")
         (box :class "label-disk-home" "")))
     (button :class "button-power" :onclick "~/.config/eww/scripts/power.sh lock" "Lock ")
     (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh logout" "Logout 﫼")
