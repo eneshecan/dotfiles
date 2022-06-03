@@ -135,7 +135,7 @@ bindsym $mod+d exec wofi
 bindsym $mod+Return exec $term
 bindsym $mod+i exec firefox
 bindsym $mod+c exec clion
-bindsym $mod+g exec gedit
+bindsym $mod+t exec subl
 bindsym $mod+m exec thunderbird
 bindsym $mod+shift+s exec spotify
 
@@ -252,7 +252,7 @@ workspace $ws10 output DP-7 DP-4 eDP-1
 assign [app_id="firefox"] $ws1
 # assign [app_id="$term"] $ws2
 assign [class="jetbrains-clion"] $ws4
-assign [app_id="gedit"] $ws5
+assign [app_id="subl"] $ws5
 assign [class="Microsoft Teams - Preview"] $ws7
 assign [class="Signal"] $ws7
 assign [app_id="glade"] $ws5
