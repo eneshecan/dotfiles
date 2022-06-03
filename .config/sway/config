@@ -137,7 +137,7 @@ bindsym $mod+i exec firefox
 bindsym $mod+c exec clion
 bindsym $mod+t exec subl
 bindsym $mod+m exec thunderbird
-bindsym $mod+shift+s exec spotify
+bindsym $mod+p exec spotify
 
 # Switch to workspace
 bindsym $mod+1 workspace number $ws1
