@@ -117,7 +117,7 @@ exec swayidle -w \
 
 # General
 bindsym $mod+Shift+q kill
-bindsym Print exec grim -g "$(slurp -d)" - | wl-copy && notify-send -u low -i camera-photo "Screenshot copied to clipboard"
+bindsym Print exec grim -g "$(slurp)" - | swappy -f -
 bindsym $mod+shift+x exec swaylock
 
 # Keyboard

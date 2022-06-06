@@ -44,4 +44,4 @@ A collection of my configuration files for Arch Linux.
 * [wdisplays](https://aur.archlinux.org/packages/wdisplays/)
 * [kanshi](https://archlinux.org/packages/community/x86_64/kanshi/)
 * [light](https://archlinux.org/packages/community/x86_64/light/)
-* [grim](https://archlinux.org/packages/community/x86_64/grim/) & [slurp](https://archlinux.org/packages/community/x86_64/slurp/)
+* [grim](https://archlinux.org/packages/community/x86_64/grim/) & [slurp](https://archlinux.org/packages/community/x86_64/slurp/) & [swappy](https://archlinux.org/packages/community/x86_64/swappy/)
