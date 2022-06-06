@@ -104,8 +104,8 @@ exec --no-startup-id firefox
 exec --no-startup-id swaymsg 'workspace $ws2; exec $term'
 exec --no-startup-id wl-paste -t text --watch clipman store --no-persist
 exec swayidle -w \
-    timeout 900  'swaylock' \
-    timeout 60 'if pgrep -x swaylock; then swaymsg "output * dpms off"; fi' \
+    timeout 900 'swaylock' \
+    timeout 60 'pgrep -x swaylock && swaymsg "output * dpms off"' \
     resume 'swaymsg "output * dpms on"' \
     timeout 7200 'systemctl suspend' \
     resume 'swaymsg "output * dpms on"' \
@@ -117,7 +117,7 @@ exec swayidle -w \
 
 # General
 bindsym $mod+Shift+q kill
-bindsym Print exec grim -g "$(slurp)" - | swappy -f -
+bindsym Print exec '! pgrep -x slurp && grim -g "$(slurp)" - | swappy -f -'
 bindsym $mod+shift+x exec swaylock
 
 # Keyboard
@@ -131,7 +131,7 @@ bindsym XF86_MonBrightnessUp exec --no-startup-id ~/.config/sway/scripts/brightn
 bindsym XF86_MonBrightnessDown exec --no-startup-id ~/.config/sway/scripts/brightness.sh -U
 
 # Commonly used apps
-bindsym $mod+d exec wofi
+bindsym $mod+d exec '! pgrep -x wofi && wofi'
 bindsym $mod+Return exec $term
 bindsym $mod+i exec firefox
 bindsym $mod+c exec clion

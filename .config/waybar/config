@@ -177,7 +177,7 @@
     "custom/os": {
         "tooltip": false,
         "format": " ",
-        "on-click": "wofi"
+        "on-click": "! pgrep -x wofi && wofi"
     },
     "custom/power": {
         "tooltip": false,
