@@ -1,7 +1,8 @@
 # dotfiles
-A collection of my configuration files for arch linux.
+A collection of my configuration files for Arch Linux.
 
-![sway](https://user-images.githubusercontent.com/21038896/167098866-2dd8e8a9-39e1-4a30-8ebe-0f5abad4548f.png "Sway")
+![i3](screenshot/i3wm.jpg "i3")
+![sway](screenshot/swaywm.png "sway")
 
 ## Dependencies
 
