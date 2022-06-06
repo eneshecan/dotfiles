@@ -2,6 +2,7 @@
 A collection of my configuration files for Arch Linux.
 
 ![i3](screenshot/i3wm.jpg "i3")
+
 ![sway](screenshot/swaywm.png "sway")
 
 ## Dependencies
