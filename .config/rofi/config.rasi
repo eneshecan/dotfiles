@@ -1,7 +1,0 @@
-configuration {
-	modi: "run,drun";
-	font: "JetBrainsMono Nerd Font 10";
-	show-icons: true;
-	icon-theme: "Papirus-Dark";
-}
-@theme "~/.config/rofi/dark.rasi"
