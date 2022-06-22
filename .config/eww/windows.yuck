@@ -14,9 +14,9 @@
   :wm-ignore true
   :monitor 0
   :windowtype "dock"
-  :geometry (geometry :x "1650px"
+  :geometry (geometry :x "1630px"
                       :y "10px"
-                      :width "260px"
-                      :height "250px")
+                      :width "280px"
+                      :height "130px")
 (power))
 

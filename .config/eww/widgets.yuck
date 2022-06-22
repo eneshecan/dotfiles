@@ -25,29 +25,34 @@
     (box :orientation "v" :space-evenly "false" :valign "center"
       (box :class "calendar-title" " ${day}, ${number_day} ${month_full} ${year_full}")
       (calendar :class "calendar" :show-details true :show-week-numbers true)
-      (box :orientation "h" :valign "center" :space-evenly "true"
+      (box :orientation "h" :valign "center" :space-evenly true
         (box :class "weather-icon" :style "color: ${weather_hex}" "${get_weather}${weather_icon}")
-        (box :class "weather-info" :orientation "v" :valign "center" :space-evenly "true"
+        (box :class "weather-info" :orientation "v" :valign "center" :space-evenly true
         (box :class "weather-temp" "${weather_temp} ")
         (box :class "weather-stat" "${weather_stat_trimmed}"))))))
 
 (defwidget power []
   (box :orientation "v" :space-evenly "false"
-    (box :class "circulars" :orientation "h" :spacing 10 :space-evenly "true"
-      (box :class "circular-cpu" :orientation "v" :space-evenly "true"
+    (box :class "circulars" :orientation "h" :spacing 12 :space-evenly true
+      (box :class "circular-cpu" :orientation "v" :space-evenly true
         (circular-progress :thickness 8 :value {EWW_CPU.avg} :tooltip "${EWW_CPU.avg}%"
           (label :text "龍")))
-      (box :class "circular-ram" :orientation "v" :space-evenly "true"
+      (box :class "circular-ram" :orientation "v" :space-evenly true
         (circular-progress :thickness 8 :value {EWW_RAM.used_mem_perc} :tooltip "${EWW_RAM.used_mem / 1000} MB"
           (label :text "")))
-      (box :class "circular-disk-root" :orientation "v" :space-evenly "true"
+      (box :class "circular-disk-root" :orientation "v" :space-evenly true
         (circular-progress :thickness 8 :value {EWW_DISK["/"].used_perc} :tooltip "${EWW_DISK["/"].used / 1000000000} GB"
           (label :text "")))
-      (box :class "circular-disk-home" :orientation "v" :space-evenly "true"
+      (box :class "circular-disk-home" :orientation "v" :space-evenly true
         (circular-progress :thickness 8 :value {EWW_DISK["/home"].used_perc} :tooltip "${EWW_DISK["/home"].used / 1000000000} GB"
           (label :text ""))))
-    (button :class "button-power" :onclick "~/.config/eww/scripts/power.sh lock" "Lock ")
-    (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh logout" "Logout 﫼")
-    (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh suspend" "Suspend ⏾")
-    (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh reboot" "Reboot ﰇ")
-    (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh poweroff" "Power Off 襤")))
+    (button :class "button-power" :onclick "wdisplays &" "  Display Settings")
+    (button :class "button-power" :onclick "~/.config/eww/scripts/power.sh lock" " Lock")
+    (eventbox :onhover "eww update power_options_rev=true" :onhoverlost "eww update power_options_rev=false"
+      (box :class "button-power" :orientation "v" :space-evenly "false" "襤 Power Options "
+        (expander :expanded power_options_rev
+          (box :orientation "v" :space-evenly "true"
+            (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh logout" "﫼 Logout")
+            (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh suspend" "⏾ Suspend")
+            (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh reboot" "菱 Reboot")
+            (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh poweroff" "襤 Power Off")))))))
