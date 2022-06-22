@@ -17,6 +17,6 @@
   :geometry (geometry :x "1650px"
                       :y "10px"
                       :width "260px"
-                      :height "260px")
+                      :height "250px")
 (power))
 

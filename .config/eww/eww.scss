@@ -9,7 +9,7 @@ window {
     border-radius: 8px;
 }
 
-window>box {
+window > box {
     margin: 8px;
 }
 
@@ -144,28 +144,27 @@ tooltip {
 
 
 .circulars {
-    margin-top: 10px;
+    font-size: 18px;
+    margin-top: 8px;
+    min-height: 64px;
 }
 
 .circulars circular-progress {
     color: #FFD5CD;
+    background-color: #000000;
 }
 
 .circular-cpu circular-progress {
 	color: #90C861;
-	background-color: #000000;
 }
 .circular-ram circular-progress {
 	color: #2980B9;
-	background-color: #000000;
 }
 .circular-disk-root circular-progress {
 	color: #84AFDB;
-	background-color: #000000;
 }
 .circular-disk-home circular-progress {
 	color: #714EB3;
-	background-color: #000000;
 }
 
 
