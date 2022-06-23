@@ -1,6 +1,6 @@
 (include "variables.yuck")
 
-(defwidget status []
+(defwidget statuswidget []
   (box :orientation "h" :space-evenly "false"
     (box :orientation "v" :space-evenly "false" :valign "center"
       (box :orientation "h" :space-evenly "false" get_music_art
@@ -31,7 +31,7 @@
         (box :class "weather-temp" "${weather_temp} ")
         (box :class "weather-stat" "${weather_stat_trimmed}"))))))
 
-(defwidget power []
+(defwidget powerwidget []
   (box :orientation "v" :space-evenly "false"
     (box :class "circulars" :orientation "h" :spacing 12 :space-evenly true
       (box :class "circular-cpu" :orientation "v" :space-evenly true
