@@ -24,7 +24,7 @@
           (scale :min 0 :max 101 :value bright :onchange "light -S {}"))))
     (box :orientation "v" :space-evenly "false" :valign "center"
       (box :class "calendar-title" " ${day}, ${number_day} ${month_full} ${year_full}")
-      (calendar :class "calendar" :show-details true :show-week-numbers true)
+      (calendar :class "calendar" :show-details true)
       (box :orientation "h" :valign "center" :space-evenly true
         (box :class "weather-icon" :style "color: ${weather_hex}" "${get_weather}${weather_icon}")
         (box :class "weather-info" :orientation "v" :valign "center" :space-evenly true
