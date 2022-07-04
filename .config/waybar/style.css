@@ -39,6 +39,10 @@ window#waybar.chromium {
 }
 */
 
+label:focus {
+    background-color: @black;
+}
+
 #workspaces button {
     padding: 0px 8px;
     margin: 0px 2px;
@@ -67,6 +71,7 @@ window#waybar.chromium {
 
 #clock,
 #battery,
+#upower,
 #bluetooth,
 #cpu,
 #memory,
@@ -98,12 +103,12 @@ window#waybar.chromium {
     background-color: transparent;
 }
 
-#battery {
+#battery, #upower {
     background-color: rgba(240, 240, 240, 0.6);
     color: @black;
 }
 
-#battery.charging, #battery.plugged {
+#battery.charging, #battery.plugged, #upower.charging {
     background-color: rgba(38, 166, 91, 0.6);
     color: @white;
 }
@@ -115,18 +120,14 @@ window#waybar.chromium {
     }
 }
 
-#battery.critical:not(.charging) {
+#battery.critical:not(.charging), #upower.empty {
     background-color: rgba(245, 60, 60, 0.6);
     color: @white;
     animation-name: blink;
-    animation-duration: 0.5s;
+    animation-duration: 1.0s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-}
-
-label:focus {
-    background-color: @black;
 }
 
 #cpu {

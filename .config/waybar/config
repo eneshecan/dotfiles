@@ -9,7 +9,7 @@
     "margin-right": 8,
     "modules-left": ["custom/os", "sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "battery", "sway/language", "tray", "custom/power"],
+    "modules-right": ["pulseaudio", "upower", "sway/language", "tray", "custom/power"],
     "sway/workspaces": {
         "tooltip": false,
         "disable-scroll": true,
@@ -101,6 +101,12 @@
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         "format-icons": ["", "", "", "", ""]
+    },
+    "upower": {
+        "icon-size": 14,
+        "hide-if-empty": true,
+        "tooltip": true,
+        "tooltip-spacing": 16
     },
     "disk#root": {
         "interval": 60,
