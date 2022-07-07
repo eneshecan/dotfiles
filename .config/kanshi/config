@@ -1,19 +1,20 @@
 profile single {
-	output eDP-1 enable scale 2 position 0,0
-}
-
-profile single_external {
-    output eDP-1 disable
-    output HDMI-A-1 enable position 0,0
+    output eDP-1 enable scale 2 position 0,0
 }
 
 profile dual {
     output eDP-1 enable scale 2 position 0,0
-    output "Dell Inc. DELL P2419H 8BD7QF3" enable position 1920,0
+    output HDMI-A-1 enable position 1920,0
+}
+
+profile single_external {
+    output eDP-1 disable
+    output * enable position 0,0
 }
 
 profile dual_external {
     output eDP-1 disable
     output "Dell Inc. DELL P2419H 8BD7QF3" enable position 0,0
-    output "Dell Inc. DELL U2412M Y1H5T29Q0PFL" enable position 1920,0
+    output * enable position 1920,0
 }
+
