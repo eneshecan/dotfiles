@@ -30,6 +30,7 @@ tooltip {
     border-radius: 4px;
 }
 
+
 .weather-icon {
     font-size: 48px;
     margin: 5px 20px;
@@ -58,9 +59,9 @@ tooltip {
 
 
 .musicart {
-    background-size: 80px;
-    min-height: 80px;
-    min-width: 80px;
+    background-size: 100px;
+    min-height: 100px;
+    min-width: 100px;
     margin: 0px 0px 20px 20px;
     border-radius: 8px;
     box-shadow: 4px 4px 4px 4px #06060B;
@@ -90,7 +91,19 @@ tooltip {
 .pause-play {
     font-size: 36px;
     margin-right: 6px;
-    color: #C47EB7;
+    color: #FF9F1A;
+}
+.music-position trough {
+    min-height: 12px;
+    min-width: 100px;
+    margin: 0px 20px;
+    background-color: #101010;
+    border-radius: 8px;
+}
+.music-position trough highlight {
+    margin: 3px;
+    border-radius: 8px;
+    background-color: #C47EB7;
 }
 
 
@@ -102,6 +115,30 @@ tooltip {
     color: #FFD5CD;
 }
 
+.slider-vol scale trough {
+    background-color: #101010;
+    border-radius: 8px;
+    min-height: 12px;
+    min-width: 270px;
+    margin-top: 10px;
+    margin-left: 17px;
+}
+.slider-mic scale trough {
+    background-color: #101010;
+    border-radius: 8px;
+    min-height: 12px;
+    min-width: 270px;
+    margin-top: 10px;
+    margin-left: 17px;
+}
+.slider-bright scale trough {
+    background-color: #101010;
+    border-radius: 8px;
+    min-height: 12px;
+    min-width: 270px;
+    margin-top: 10px;
+    margin-left: 17px;
+}
 .slider-vol scale trough highlight {
 	background-color: #C47EB7;
 	color: #000000;
@@ -113,33 +150,9 @@ tooltip {
 	border-radius: 8px;
 }
 .slider-bright scale trough highlight {
-	background-color: #FF9f1A;
+	background-color: #FF9F1A;
 	color: #000000;
 	border-radius: 8px;
-}
-.slider-vol scale trough {
-	background-color: #4E4E4E;
-	border-radius: 8px;
-	min-height: 12px;
-    min-width: 240px;
-    margin-top: 10px;
-    margin-left: 17px;
-}
-.slider-mic scale trough {
-	background-color: #4E4E4E;
-	border-radius: 8px;
-	min-height: 12px;
-    min-width: 240px;
-    margin-top: 10px;
-    margin-left: 17px;
-}
-.slider-bright scale trough {
-	background-color: #4E4E4E;
-	border-radius: 8px;
-	min-height: 12px;
-    min-width: 240px;
-    margin-top: 10px;
-    margin-left: 17px;
 }
 
 

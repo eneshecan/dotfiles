@@ -82,7 +82,7 @@ input <identifier> xkb_model "pc105"
 
 # Autostart apps
 exec --no-startup-id dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-exec_always --no-startup-id pkill kanshi; exec kanshi
+exec_always --no-startup-id '! pgrep -x kanshi && exec kanshi'
 exec --no-startup-id mako
 exec --no-startup-id eww daemon
 exec --no-startup-id pasystray

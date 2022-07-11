@@ -4,7 +4,7 @@
   :wm-ignore true
   :monitor 0
   :windowtype "dock"
-  :geometry (geometry :x "640px" :y "10px" :width "620px" :height "280px")
+  :geometry (geometry :x "640px" :y "10px" :width "630px" :height "275px")
 (statuswidget))
 
 (defwindow power

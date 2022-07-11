@@ -8,4 +8,3 @@ if [ "$weather_count" -lt 10 ]; then
 else 
 	echo $(cat /tmp/eww/weather/weather-stat | cut -c1-16)...
 fi
-

@@ -10,15 +10,16 @@
           (box :class "musicinfo" music_title)
           (box :class "musicbuttonbox" :orientation "h" :halign "center" :space-evenly "false"
             (button :onclick "playerctl previous" "玲")
-            (button :class "pause-play" :onclick "playerctl play-pause" playing_icon)
-            (button :onclick "playerctl next" "怜"))))
+            (button :class "pause-play" :onclick "playerctl play-pause" play_icon)
+            (button :onclick "playerctl next" "怜"))
+          (scale :class "music-position" :value music_pos :onchange "~/.config/eww/scripts/setmusicpos.sh {}")))
       (box :class "sliders" :orientation "v" :space-evenly "false"
         (box :orientation "h" :class "slider-vol" :space-evenly "false"
           (box :class "label-vol" "")
-          (scale :min 0 :max 101 :value volume :onchange "~/.config/eww/scripts/setvol {}"))
+          (scale :min 0 :max 101 :value volume :onchange "~/.config/eww/scripts/setvol.sh {}"))
         (box :class "slider-mic" :orientation "h" :space-evenly "false"
           (box :class "label-mic" "")
-          (scale :min 0 :max 101 :value mic_volume :onchange "~/.config/eww/scripts/setmicvol {}"))
+          (scale :min 0 :max 101 :value mic_volume :onchange "~/.config/eww/scripts/setmicvol.sh {}"))
         (box :class "slider-bright" :orientation "h" :space-evenly "false"
           (box :class "label-bright" "")
           (scale :min 0 :max 101 :value bright :onchange "light -S {}"))))

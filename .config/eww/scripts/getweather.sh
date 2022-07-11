@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 tmp_weather="/tmp/eww/weather"
-tmp_weather_stat=$tmp_weather/weather-stat
-tmp_weather_degree=$tmp_weather/weather-degree
-tmp_weather_quote=$tmp_weather/weather-quote
-tmp_weather_hex=$tmp_weather/weather-hex
-tmp_weather_icon=$tmp_weather/weather-icon
+tmp_weather_stat=$tmp_weather/weatherstat
+tmp_weather_degree=$tmp_weather/weatherdegree
+tmp_weather_quote=$tmp_weather/weatherquote
+tmp_weather_hex=$tmp_weather/weatherhex
+tmp_weather_icon=$tmp_weather/weathericon
 
 if [ ! -d $tmp_weather ]; then
         mkdir -p $tmp_weather
