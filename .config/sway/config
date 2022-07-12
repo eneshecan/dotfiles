@@ -7,10 +7,10 @@ set $mod Mod4
 set $term foot
 
 # Colors
-set $bg_color_dark #101010DD
-set $bg_color_unfocus #303030DD
-set $indicator_color #E95420DD
-set $border_color #A0A0A0DD
+set $bg_color_dark #101010E6
+set $bg_color_unfocus #303030E6
+set $indicator_color #E95420E6
+set $border_color #A0A0A0E6
 set $border_color_transparent #00000000
 set $text_color_light #E0E0E0FF
 set $text_color_dark #808080FF
@@ -82,7 +82,7 @@ input <identifier> xkb_model "pc105"
 
 # Autostart apps
 exec --no-startup-id dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-exec_always --no-startup-id '! pgrep -x kanshi && exec kanshi'
+exec_always --no-startup-id 'sleep 2; pkill kanshi; exec kanshi'
 exec --no-startup-id mako
 exec --no-startup-id eww daemon
 exec --no-startup-id pasystray

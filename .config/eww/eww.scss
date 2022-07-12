@@ -4,7 +4,7 @@
 
 
 $bg_dark: #101010;
-$bg_light: #303030;
+$bg_light: rgba(48, 48, 48, 0.6);
 $black: #000000;
 $shadow: #06060B;
 $pink: #C47EB7;
@@ -60,7 +60,7 @@ tooltip {
     background-color: $bg_light;
     border-radius: 8px;
     padding: 8px;
-    box-shadow: 1px 1px 1px 1px $shadow;
+    box-shadow: 0px 0px 1px 1px $shadow;
 }
 .weather-icon {
     font-size: 48px;
@@ -83,7 +83,7 @@ tooltip {
     background-color: $bg_light;
     border-radius: 8px;
     padding: 8px;
-    box-shadow: 1px 1px 1px 1px $shadow;
+    box-shadow: 0px 0px 1px 1px $shadow;
 }
 .calendar-title {
     font-size: 16px;
@@ -96,7 +96,7 @@ tooltip {
     background-color: $bg_light;
     border-radius: 8px;
     padding: 8px;
-    box-shadow: 1px 1px 1px 1px $shadow;
+    box-shadow: 0px 0px 1px 1px $shadow;
 }
 .musicart {
     background-size: 132px;
@@ -151,7 +151,7 @@ tooltip {
     background-color: $bg_light;
     border-radius: 8px;
     padding: 8px;
-    box-shadow: 1px 1px 1px 1px $shadow;
+    box-shadow: 0px 0px 1px 1px $shadow;
 }
 
 .sliders slider {
@@ -212,7 +212,7 @@ tooltip {
     background-color: $bg_light;
     border-radius: 8px;
     padding: 8px;
-    box-shadow: 1px 1px 1px 1px $shadow;
+    box-shadow: 0px 0px 1px 1px $shadow;
 }
 
 .circulars circular-progress {
@@ -240,7 +240,7 @@ tooltip {
     background-color: $bg_light;
     border-radius: 8px;
     padding: 8px;
-    box-shadow: 1px 1px 1px 1px $shadow;
+    box-shadow: 0px 0px 1px 1px $shadow;
 }
 .button-power {
     font-size: 13px;

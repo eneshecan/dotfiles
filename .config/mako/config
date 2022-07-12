@@ -6,7 +6,7 @@ background-color=#202020E6
 width=300
 height=100
 padding=8
-border-size=1
+border-size=0
 border-radius=8
 icons=1
 icon-path=/usr/share/icons/Papirus-Dark
@@ -19,10 +19,10 @@ font=JetBrainsMono Nerd Font 10
 background-color=#202020E6
 
 [urgency=normal]
-background-color=#2980b9E6
+background-color=#2980B9E6
 
 [urgency=high]
-background-color=#bf616aE6
+background-color=#BF616AE6
 default-timeout=0
 
 [category=mpd]
