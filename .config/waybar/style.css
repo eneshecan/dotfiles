@@ -60,6 +60,14 @@ label:focus {
     border-bottom: 3px solid @red;
 }
 
+
+#workspaces button.active {
+    background-color: rgba(240, 240, 240, 0.9);
+    color: @red;
+    border-bottom: 3px solid @red;
+}
+
+
 #workspaces button.urgent {
     background-color: @red;
     color: @white;

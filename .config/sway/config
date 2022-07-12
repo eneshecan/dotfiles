@@ -89,7 +89,7 @@ exec --no-startup-id pasystray
 exec --no-startup-id nm-applet --indicator
 exec --no-startup-id blueman-applet
 exec --no-startup-id firefox
-exec --no-startup-id tunderbird
+exec --no-startup-id thunderbird
 exec --no-startup-id teams-for-linux
 exec --no-startup-id swaymsg 'workspace $ws2; exec $term; exec $term'
 exec --no-startup-id wl-paste -t text --watch clipman store --no-persist
