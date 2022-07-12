@@ -1,40 +1,42 @@
 (include "variables.yuck")
 
 (defwidget statuswidget []
-  (box :orientation "h" :space-evenly "false"
-    (box :orientation "v" :space-evenly "false" :valign "center"
-      (box :orientation "h" :space-evenly "false" get_music_art
+  (box :class "widget" :orientation "h" :spacing 8 :space-evenly false
+    (box :orientation "v" :spacing 8 :space-evenly false
+      (box :class "music" :orientation "h" :space-evenly false get_music_art
         (box :class "musicart" :style "background-image: url('${music_cover}');")
-        (box :orientation "v" :space-evenly "false"
+        (box :orientation "v" :space-evenly false
           (box :class "musicartist" music_artist)
           (box :class "musicinfo" music_title)
-          (box :class "musicbuttonbox" :orientation "h" :halign "center" :space-evenly "false"
+          (box :class "musicbuttonbox" :orientation "h" :halign "center" :space-evenly false
             (button :onclick "playerctl previous" "玲")
             (button :class "pause-play" :onclick "playerctl play-pause" play_icon)
             (button :onclick "playerctl next" "怜"))
           (scale :class "music-position" :value music_pos :onchange "~/.config/eww/scripts/setmusicpos.sh {}")))
-      (box :class "sliders" :orientation "v" :space-evenly "false"
-        (box :orientation "h" :class "slider-vol" :space-evenly "false"
+      (box :class "sliders" :orientation "v" :spacing 8 :space-evenly false
+        (box :orientation "h" :class "slider-vol" :space-evenly false
           (box :class "label-vol" "")
-          (scale :min 0 :max 101 :value volume :onchange "~/.config/eww/scripts/setvol.sh {}"))
-        (box :class "slider-mic" :orientation "h" :space-evenly "false"
+          (scale :hexpand true :min 0 :max 101 :value volume :onchange "~/.config/eww/scripts/setvol.sh {}"))
+        (box :class "slider-mic" :orientation "h" :space-evenly false
           (box :class "label-mic" "")
-          (scale :min 0 :max 101 :value mic_volume :onchange "~/.config/eww/scripts/setmicvol.sh {}"))
-        (box :class "slider-bright" :orientation "h" :space-evenly "false"
+          (scale :hexpand true :min 0 :max 101 :value mic_volume :onchange "~/.config/eww/scripts/setmicvol.sh {}"))
+        (box :class "slider-bright" :orientation "h" :space-evenly false
           (box :class "label-bright" "")
-          (scale :min 0 :max 101 :value bright :onchange "light -S {}"))))
-    (box :orientation "v" :space-evenly "false" :valign "center"
-      (box :class "calendar-title" " ${day}, ${number_day} ${month_full} ${year_full}")
-      (calendar :class "calendar" :show-details true)
-      (box :orientation "h" :valign "center" :space-evenly true
-        (box :class "weather-icon" :style "color: ${weather_hex}" "${get_weather}${weather_icon}")
-        (box :class "weather-info" :orientation "v" :valign "center" :space-evenly true
-        (box :class "weather-temp" "${weather_temp} ")
-        (box :class "weather-stat" "${weather_stat_trimmed}"))))))
+          (scale :hexpand true :min 0 :max 101 :value bright :onchange "light -S {}"))))
+    (box :orientation "v" :spacing 8 :space-evenly false
+      (box :class "calendar" :orientation "v" :spacing 4 :space-evenly false
+        (box :class "calendar-title" " ${day}, ${number_day} ${month_full} ${year_full}")
+        (calendar :show-details true))
+      (box :class "weather" :orientation "h" :space-evenly true
+        (box :class "weather-icon" :style "color: ${weather_hex}" :halign "start" "${get_weather}${weather_icon}")
+        (box :orientation "v" :space-evenly true
+          (box :class "weather-location" :halign "end" weather_location)
+          (box :class "weather-temp" :halign "end" "${weather_temp} ")
+          (box :class "weather-stat" :halign "end" "${weather_stat_trimmed}"))))))
 
 (defwidget powerwidget []
-  (box :orientation "v" :space-evenly "false"
-    (box :class "circulars" :orientation "h" :spacing 12 :space-evenly true
+  (box :class "widget" :orientation "v" :spacing 8 :space-evenly "false"
+    (box :class "circulars" :orientation "h" :spacing 8 :space-evenly true
       (box :class "circular-cpu" :orientation "v" :space-evenly true
         (circular-progress :thickness 8 :value {EWW_CPU.avg} :tooltip "${EWW_CPU.avg}%"
           (label :text "龍")))
@@ -47,13 +49,14 @@
       (box :class "circular-disk-home" :orientation "v" :space-evenly true
         (circular-progress :thickness 8 :value {EWW_DISK["/home"].used_perc} :tooltip "${EWW_DISK["/home"].used / 1000000000} GB"
           (label :text ""))))
-    (button :class "button-power" :onclick "wdisplays &" "  Display Settings")
-    (button :class "button-power" :onclick "~/.config/eww/scripts/power.sh lock" " Lock")
-    (eventbox :onhover "eww update power_options_rev=true" :onhoverlost "eww update power_options_rev=false"
-      (box :class "button-power" :orientation "v" :space-evenly "false" "襤 Power Options "
-        (expander :expanded power_options_rev
-          (box :orientation "v" :space-evenly "true"
-            (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh logout" "﫼 Logout")
-            (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh suspend" "⏾ Suspend")
-            (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh reboot" "菱 Reboot")
-            (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh poweroff" "襤 Power Off")))))))
+    (box :class "power-buttons" :orientation "v" :spacing 8 :space-evenly false
+      (button :class "button-power" :onclick "wdisplays &" "  Display Settings")
+      (button :class "button-power" :onclick "~/.config/eww/scripts/power.sh lock" " Lock")
+      (eventbox :onhover "eww update power_options_rev=true" :onhoverlost "eww update power_options_rev=false"
+        (box :class "button-power" :orientation "v" :space-evenly "false" "襤 Power Options "
+          (expander :expanded power_options_rev
+            (box :orientation "v" :space-evenly "true"
+              (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh logout" "﫼 Logout")
+              (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh suspend" "⏾ Suspend")
+              (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh reboot" "菱 Reboot")
+              (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh poweroff" "襤 Power Off"))))))))

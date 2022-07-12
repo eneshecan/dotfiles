@@ -2,15 +2,30 @@
     all: unset;
 }
 
+
+$bg_dark: #101010;
+$bg_light: #303030;
+$black: #000000;
+$shadow: #06060B;
+$pink: #C47EB7;
+$light_pink: #FFD5CD;
+$red: #D35D6E;
+$yellow: #FF9F1A;
+$green: #90C861;
+$dark_blue: #2980B9;
+$light_blue: #84AFDB;
+$purple: #714EB3;
+$grey: #4E4E4E;
+
+
 window {
-    background-color: rgba(32, 32, 32, 0.8);
+    background-color: rgba(0, 0, 0, 0);
     color: rgb(240, 240, 240);
     font-family: JetBrainsMono Nerd Font;
-    border-radius: 8px;
 }
 
 window > box {
-    margin: 8px;
+    margin: 16px;
 }
 
 button {
@@ -26,45 +41,69 @@ scale .bottom {
 
 tooltip {
     font-size: 10px;
-    background-color: #101010;
+    background-color: $bg_dark;
     border-radius: 4px;
 }
 
 
+.widget {
+    margin: 16px;
+    padding:  16px;
+    background-color: rgba(32, 32, 32, 0.9);
+    border-radius: 8px;
+    box-shadow: 8px 8px 4px 1px #06060B;
+}
+
+
+.weather {
+    font-size: 12px;
+    background-color: $bg_light;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 1px 1px 1px 1px $shadow;
+}
 .weather-icon {
     font-size: 48px;
-    margin: 5px 20px;
+}
+.weather-location {
+    font-size: 10px;
 }
 .weather-temp {
     font-size: 16px;
     font-weight: bold;
 }
 .weather-stat {
-    font-size: 12px;
-    margin-top: 8px;
     font-weight: bold;
-    color: #D35D6E;
+    color: $red;
 }
 
 
 .calendar {
     font-size: 12px;
-    margin: 10px 20px;
+    background-color: $bg_light;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 1px 1px 1px 1px $shadow;
 }
 .calendar-title {
     font-size: 16px;
-    color: #FF9F1A;
-    margin: 10px 20px;
+    color: $yellow;
 }
 
 
-.musicart {
-    background-size: 100px;
-    min-height: 100px;
-    min-width: 100px;
-    margin: 0px 0px 20px 20px;
+.music {
+    font-size: 12px;
+    background-color: $bg_light;
     border-radius: 8px;
-    box-shadow: 4px 4px 4px 4px #06060B;
+    padding: 8px;
+    box-shadow: 1px 1px 1px 1px $shadow;
+}
+.musicart {
+    background-size: 132px;
+    min-height: 132px;
+    min-width: 132px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px $shadow;
 }
 .musicartist {
     font-size: 12px;
@@ -76,143 +115,137 @@ tooltip {
     font-weight: bold;
     margin-top: 8px;
     min-width: 220px;
-    color: #D35D6E;
+    color: $red;
 }
 .musicbuttonbox {
-    font-size: 24px;
+    font-size: 32px;
     padding-left: 12px;
 }
 .musicbuttonbox button {
     padding-right: 20px;
 }
 .musicbuttonbox button:hover {
-    color: #D35D6E;
+    color: $red;
 }
 .pause-play {
-    font-size: 36px;
-    margin-right: 6px;
-    color: #FF9F1A;
+    font-size: 48px;
+    margin-right: 12px;
+    color: $yellow;
 }
 .music-position trough {
     min-height: 12px;
-    min-width: 100px;
-    margin: 0px 20px;
-    background-color: #101010;
+    margin-top: 8px;
+    margin-left: 12px;
+    background-color: $bg_dark;
     border-radius: 8px;
 }
 .music-position trough highlight {
     margin: 3px;
     border-radius: 8px;
-    background-color: #C47EB7;
+    background-color: $pink;
 }
 
 
 .sliders {
-    margin-left: 20px;
+    font-size: 12px;
+    background-color: $bg_light;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 1px 1px 1px 1px $shadow;
 }
 
 .sliders slider {
-    color: #FFD5CD;
+    color: $light_pink;
 }
 
 .slider-vol scale trough {
-    background-color: #101010;
+    background-color: $bg_dark;
     border-radius: 8px;
-    min-height: 12px;
-    min-width: 270px;
-    margin-top: 10px;
+    min-height: 16px;
     margin-left: 17px;
 }
 .slider-mic scale trough {
-    background-color: #101010;
+    background-color: $bg_dark;
     border-radius: 8px;
-    min-height: 12px;
-    min-width: 270px;
-    margin-top: 10px;
+    min-height: 16px;
     margin-left: 17px;
 }
 .slider-bright scale trough {
-    background-color: #101010;
+    background-color: $bg_dark;
     border-radius: 8px;
-    min-height: 12px;
-    min-width: 270px;
-    margin-top: 10px;
+    min-height: 16px;
     margin-left: 17px;
 }
 .slider-vol scale trough highlight {
-	background-color: #C47EB7;
-	color: #000000;
+    margin: 3px;
+	background-color: $pink;
 	border-radius: 8px;
 }
 .slider-mic scale trough highlight {
-	background-color: #D35D6E;
-	color: #000000;
+    margin: 3px;
+	background-color: $red;
 	border-radius: 8px;
 }
 .slider-bright scale trough highlight {
-	background-color: #FF9F1A;
-	color: #000000;
+    margin: 3px;
+	background-color: $yellow;
 	border-radius: 8px;
+}
+
+.label-bright, .label-vol, .label-mic {
+    font-size: 20px;
+}
+.label-vol {
+    color: $pink;
+}
+.label-mic {
+    color: $red;
+}
+.label-bright {
+    color: $yellow;
 }
 
 
 .circulars {
     font-size: 18px;
-    margin: 8px 2px;
     min-height: 64px;
+    background-color: $bg_light;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 1px 1px 1px 1px $shadow;
 }
 
 .circulars circular-progress {
-    color: #FFD5CD;
-    background-color: #000000;
+    color: $light_pink;
+    background-color: $bg_dark;
 }
 
 .circular-cpu circular-progress {
-	color: #90C861;
+	color: $green;
 }
 .circular-ram circular-progress {
-	color: #2980B9;
+	color: $dark_blue;
 }
 .circular-disk-root circular-progress {
-	color: #84AFDB;
+	color: $light_blue;
 }
 .circular-disk-home circular-progress {
-	color: #714EB3;
+	color: $purple;
 }
 
 
-.label-cpu, .label-bright, .label-ram, .label-disk-root, .label-disk-home, .label-vol, .label-mic {
-    margin-top: 10px;
-    font-size: 20px;
-}
-.label-vol {
-    color: #C47EB7;
-}
-.label-mic {
-    color: #D35D6E;
-}
-.label-bright {
-    color: #FF9F1A;
-}
-.label-ram {
-    color: #2980B9;
-}
-.label-disk-root {
-    color: #84AFDB;
-}
-.label-disk-home {
-    color: #714EB3;
-}
-.label-cpu {
-    color: #90C861;
-}
 
-
+.power-buttons {
+    font-size: 12px;
+    background-color: $bg_light;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 1px 1px 1px 1px $shadow;
+}
 .button-power {
     font-size: 13px;
-    margin: 4px;
 }
 .button-power:hover {
-    background-color: #4E4E4E;
+    background-color: $grey;
     border-radius: 8px;
 }

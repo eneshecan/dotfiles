@@ -13,4 +13,3 @@ if [ $(playerctl metadata mpris:artUrl) ]; then
 	curl -s "$artlink" --output $tmp_cover_path;
 else cp ~/.config/eww/images/image.png $tmp_cover_path;
 fi
-

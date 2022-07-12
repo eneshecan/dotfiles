@@ -89,7 +89,9 @@ exec --no-startup-id pasystray
 exec --no-startup-id nm-applet --indicator
 exec --no-startup-id blueman-applet
 exec --no-startup-id firefox
-exec --no-startup-id swaymsg 'workspace $ws2; exec $term'
+exec --no-startup-id tunderbird
+exec --no-startup-id teams-for-linux
+exec --no-startup-id swaymsg 'workspace $ws2; exec $term; exec $term'
 exec --no-startup-id wl-paste -t text --watch clipman store --no-persist
 exec swayidle -w \
     timeout 900 'swaylock' \
@@ -241,7 +243,7 @@ assign [app_id="firefox"] $ws1
 # assign [app_id="$term"] $ws2
 assign [class="jetbrains-clion"] $ws4
 assign [app_id="subl"] $ws5
-assign [class="Microsoft Teams - Preview"] $ws7
+assign [class="teams-for-linux"] $ws7
 assign [class="Signal"] $ws7
 assign [app_id="glade"] $ws5
 assign [class="VirtualBox Manager"] $ws5

@@ -2,11 +2,11 @@ sort=-time
 layer=overlay
 text-color=#e0e0e0FF
 text-alignment=center
-background-color=#202020dd
+background-color=#202020E6
 width=300
 height=100
 padding=8
-border-size=0
+border-size=1
 border-radius=8
 icons=1
 icon-path=/usr/share/icons/Papirus-Dark
@@ -16,16 +16,15 @@ ignore-timeout=1
 font=JetBrainsMono Nerd Font 10
 
 [urgency=low]
-background-color=#202020dd
+background-color=#202020E6
 
 [urgency=normal]
-background-color=#2980b9dd
+background-color=#2980b9E6
 
 [urgency=high]
-background-color=#bf616add
+background-color=#bf616aE6
 default-timeout=0
 
 [category=mpd]
 default-timeout=2000
 group-by=category
-

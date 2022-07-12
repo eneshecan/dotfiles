@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-weather=$(cat /tmp/eww/weather/weather-stat)
-weather_count=$(cat /tmp/eww/weather/weather-stat | wc -c)
+weather=$(cat /tmp/eww/weather/weatherstat)
+weather_count=$(cat /tmp/eww/weather/weatherstat | wc -c)
 
 if [ "$weather_count" -lt 10 ]; then
 	echo $weather;
 else 
-	echo $(cat /tmp/eww/weather/weather-stat | cut -c1-16)...
+	echo $(cat /tmp/eww/weather/weatherstat | cut -c1-16)...
 fi

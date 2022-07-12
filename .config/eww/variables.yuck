@@ -24,6 +24,7 @@
 (defpoll weather_hex :interval "20m"  "cat /tmp/eww/weather/weatherhex")
 (defpoll weather_stat :interval "20m"  "cat /tmp/eww/weather/weatherstat")
 (defpoll weather_stat_trimmed :interval "20m"  "~/.config/eww/scripts/weathertrimmer.sh")
+(defpoll weather_location :interval "20m" "cat /tmp/eww/weather/weatherlocation")
 
 ;; Power vars
 (defvar power_options_rev false)
