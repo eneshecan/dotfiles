@@ -94,13 +94,13 @@ exec --no-startup-id teams-for-linux
 exec --no-startup-id swaymsg 'workspace $ws2; exec $term; exec $term'
 exec --no-startup-id wl-paste -t text --watch clipman store --no-persist
 exec swayidle -w \
-    timeout 900 'swaylock' \
-    timeout 60 'pgrep -x swaylock && swaymsg "output * dpms off"' \
+    timeout 900 'gtklock' \
+    timeout 60 'pgrep -x gtklock && swaymsg "output * dpms off"' \
     resume 'swaymsg "output * dpms on"' \
     timeout 7200 'systemctl suspend' \
     resume 'swaymsg "output * dpms on"' \
     before-sleep 'playerctl pause' \
-    before-sleep 'swaylock'
+    before-sleep 'gtklock'
 
 
 # Keybindings
@@ -108,7 +108,7 @@ exec swayidle -w \
 # General
 bindsym $mod+Shift+q kill
 bindsym Print exec '! pgrep -x slurp && grim -g "$(slurp)" - | swappy -f -'
-bindsym $mod+shift+x exec swaylock
+bindsym $mod+shift+x exec gtklock
 
 # Keyboard
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/sway/scripts/volume.sh inc

@@ -21,7 +21,7 @@ A collection of my configuration files for Arch Linux.
 * [mako](https://archlinux.org/packages/community/x86_64/mako/)
 * [wofi](https://archlinux.org/packages/community/x86_64/wofi/)
 * [eww-wayland-git](https://aur.archlinux.org/packages/eww-wayland-git)
-* [swaylock](https://archlinux.org/packages/community/x86_64/swaylock/)
+* [gtklock](https://aur.archlinux.org/packages/gtklock)
 * [wdisplays](https://aur.archlinux.org/packages/wdisplays/)
 * [kanshi](https://archlinux.org/packages/community/x86_64/kanshi/)
 * [light](https://archlinux.org/packages/community/x86_64/light/)

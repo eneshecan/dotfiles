@@ -1,0 +1,14 @@
+window {
+   background-image: url("background.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: rgba(0, 0, 0, 0);
+}
+
+#window-box {
+   padding: 64px;
+   border-radius: 8px;
+   box-shadow: 8px 8px 4px 1px #101010;
+   background-color: rgba(32, 32, 32, 0.9);
+}
