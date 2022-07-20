@@ -85,9 +85,9 @@ exec --no-startup-id dbus-update-activation-environment --systemd WAYLAND_DISPLA
 exec_always --no-startup-id 'sleep 2; pkill kanshi; exec kanshi'
 exec --no-startup-id mako
 exec --no-startup-id eww daemon
-exec --no-startup-id pasystray
-exec --no-startup-id nm-applet --indicator
-exec --no-startup-id blueman-applet
+exec --no-startup-id XDG_CURRENT_DESKTOP=Unity pasystray
+exec --no-startup-id XDG_CURRENT_DESKTOP=Unity nm-applet --indicator
+exec --no-startup-id XDG_CURRENT_DESKTOP=Unity blueman-applet
 exec --no-startup-id firefox
 exec --no-startup-id thunderbird
 exec --no-startup-id teams-for-linux

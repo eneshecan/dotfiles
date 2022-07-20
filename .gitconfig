@@ -22,4 +22,4 @@
     required = true
     clean = git-lfs clean -- %f
 [core]
-    editor = nano
+    editor = vim
