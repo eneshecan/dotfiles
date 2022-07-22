@@ -1,7 +1,7 @@
 # dotfiles
 A collection of my configuration files for Arch Linux.
 
-![sway](screenshot/swaywm.png "sway")
+![Hyprland](screenshot/hyprland.png "hyprland")
 
 ## Dependencies
 
