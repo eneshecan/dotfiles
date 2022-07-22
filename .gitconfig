@@ -8,6 +8,8 @@
 [push]
     default = simple
     recurseSubmodules = on-demand
+[merge]
+    tool = vimdiff
 [diff]
     renameLimit = 10000
     algorithm = patience
@@ -23,3 +25,5 @@
     clean = git-lfs clean -- %f
 [core]
     editor = vim
+[alias]
+    lg = log --graph --abbrev-commit --decorate --format=format:'%C(blue)%h%C(reset) - %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
