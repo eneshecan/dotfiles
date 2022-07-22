@@ -1,16 +1,16 @@
 {
-    "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
+    "layer": "top",
+    "gtk-layer-shell": false,
+    "position": "top",
+    "height": 30,
     "margin-top": 8,
     "margin-left": 8,
     "margin-bottom": 2,
     "margin-right": 8,
-    "modules-left": ["custom/os", "sway/workspaces", "sway/mode"],
+    "modules-left": ["custom/os", "wlr/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "upower", "sway/language", "tray", "custom/power"],
-    "sway/workspaces": {
+    "modules-right": ["pulseaudio", "bluetooth", "network", "battery", "custom/power"],
+    "wlr/workspaces": {
         "tooltip": false,
         "disable-scroll": true,
         "format": "{icon}",
@@ -155,11 +155,17 @@
             "car": "",
             "default": ["奄", "奔", "墳"]
         },
-        "on-click": "pavucontrol"
+        "on-click-right": "pavucontrol"
     },
     "bluetooth": {
-        "interval": 30,
-        "format": "{icon}",
+        "format": "{icon} {status}",
+        "format-connected": " {device_alias}",
+        "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+        "format": "{icon} {status}",
         "format-icons": {
             "enabled": "",
             "disabled": ""

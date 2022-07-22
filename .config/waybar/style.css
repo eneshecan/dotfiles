@@ -11,6 +11,7 @@
 }
 
 window#waybar {
+    border-radius: 8px;
     background-color: rgba(32, 32, 32, 0.9);
     color: @white;
     transition-property: background-color;
@@ -152,8 +153,8 @@ label:focus {
 }
 
 #disk.home {
-     background-color: rgba(154, 154, 154, 0.6);
-     color: @black;
+    background-color: rgba(154, 154, 154, 0.6);
+    color: @black;
 }
 
 #backlight {
@@ -162,8 +163,8 @@ label:focus {
 }
 
 #network {
-    background-color: rgba(151, 110, 215, 0.6);
-    min-width: 12px;
+    background-color: rgba(144, 200, 97, 0.6);
+    color: @black;
 }
 
 #network.disconnected {
@@ -182,8 +183,6 @@ label:focus {
 
 #bluetooth {
     background-color: rgba(65, 105, 225, 0.6);
-    padding: 0px 4px;
-    min-width: 16px;
 }
 
 #custom-media {
