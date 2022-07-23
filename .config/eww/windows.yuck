@@ -4,12 +4,12 @@
   :wm-ignore true
   :monitor 0
   :windowtype "dock"
-  :geometry (geometry :x "632px" :y "-6px" :width "654px" :height "300px")
+  :geometry (geometry :x "624px" :y "0px" :width "654px" :height "300px")
 (statuswidget))
 
 (defwindow power
   :wm-ignore true
   :monitor 0
   :windowtype "dock"
-  :geometry (geometry :x "1646px" :y "-6px" :width "280px" :height "230px")
+  :geometry (geometry :x "1638px" :y "0px" :width "280px" :height "230px")
 (powerwidget))

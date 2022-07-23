@@ -5,18 +5,22 @@ window {
 
 #input {
     margin: 8px;
-    border: 2px solid rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.9);
 }
 
 #outer-box {
-    margin: 16px;
+    margin: 8px;
     background-color: rgba(32, 32, 32, 0.9);
     border-radius: 8px;
-    box-shadow: 8px 8px 4px 1px #101010;
+    box-shadow: 4px 4px 2px 1px #101010;
 }
 
 #inner-box {
     margin: 8px;
+    padding: 8px;
+    background-color: rgba(48, 48, 48, 0.6);
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px 1px #101010;
 }
 
 #text {
@@ -26,7 +30,7 @@ window {
 #scroll {
     margin: 8px 0px;
     font-size: 12px;
-    color: rgba(172, 172, 172, 1);
+    color: rgb(172, 172, 172);
 }
 
 #scroll label {
