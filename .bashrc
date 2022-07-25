@@ -9,6 +9,8 @@
 # Common Aliases
 alias ls='ls --color=auto'
 alias ll='ls -lah'
+alias clean-system='yes | pacaur -Sc'
+alias upgrade-system='pacaur -Syu && pacaur -Qdt && pacaur -Rns $(pacaur -Qdtq)'
 
 
 # powerline-shell
