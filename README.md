@@ -16,7 +16,6 @@ A collection of my configuration files for Arch Linux.
 * [nano-syntax-highlighting](https://www.archlinux.org/packages/community/any/nano-syntax-highlighting/)
 * [hyprland](https://aur.archlinux.org/packages/hyprland-git)
 * [foot](https://archlinux.org/packages/community/x86_64/foot/)
-* [swayimg](https://aur.archlinux.org/packages/swayimg)
 * [waybar](https://archlinux.org/packages/community/x86_64/waybar/)
 * [mako](https://archlinux.org/packages/community/x86_64/mako/)
 * [wofi](https://archlinux.org/packages/community/x86_64/wofi/)
