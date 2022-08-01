@@ -18,7 +18,7 @@ else
     ans=$(confirm_exit &)
     if [[ $ans == "Yes" ]]; then
         if [[ $op == "logout" ]]; then
-            pkill -x Hyprland
+            hyprctl dispatch exit 0
         elif [[ $op == "suspend" ]]; then
             systemctl suspend
         elif [[ $op == "reboot" ]]; then
