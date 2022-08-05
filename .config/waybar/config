@@ -3,7 +3,7 @@
     "gtk-layer-shell": false,
     "position": "top",
     "height": 30,
-    "margin": "8 8 0 8",
+    "margin": "4 8 0 8",
     "modules-left": ["custom/os", "wlr/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "bluetooth", "network", "battery", "custom/power"],
