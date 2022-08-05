@@ -1,5 +1,5 @@
 sort=-time
-layer=overlay
+layer=top
 text-color=#e0e0e0FF
 text-alignment=center
 background-color=#202020E6
