@@ -13,6 +13,7 @@ window#waybar {
     background-color: rgba(32, 32, 32, 0.75);
     color: @white;
     padding: 0px 16px;
+    border-radius: 8px;
 }
 
 window#waybar.hidden {
