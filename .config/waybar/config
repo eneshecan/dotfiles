@@ -127,7 +127,7 @@
         "tooltip-format-wifi": "{essid} {signalStrength}%",
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
         "tooltip-format-disconnected": "Disconnected",
-        "on-click-right": "foot --app-id=nmtui --title=nmtui nmtui"
+        "on-click-right": "foot -w 720x420 -a nmtui -T nmtui nmtui"
     },
     "pulseaudio": {
         "scroll-step": 1,
