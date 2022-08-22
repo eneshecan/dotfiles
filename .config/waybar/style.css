@@ -10,10 +10,16 @@
 }
 
 window#waybar {
-    background-color: rgba(32, 32, 32, 0.75);
+    background-color: transparent;
     color: @white;
-    padding: 0px 16px;
+}
+
+window#waybar > box {
+    margin: 4px 8px 8px 8px;
+    padding: 0px 2px;
+    background-color: rgba(32, 32, 32, 0.75);
     border-radius: 8px;
+    box-shadow: 4px 4px 2px 1px #101010;
 }
 
 window#waybar.hidden {

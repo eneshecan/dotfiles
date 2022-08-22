@@ -2,8 +2,8 @@
     "layer": "top",
     "gtk-layer-shell": false,
     "position": "top",
-    "height": 30,
-    "margin": "4 8 0 8",
+    "height": 36,
+    "margin": 0,
     "modules-left": ["custom/os", "wlr/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "bluetooth", "network", "battery", "custom/power"],
@@ -62,7 +62,7 @@
         "format": "{:%a %d %b %I:%M %p}",
         "on-click":"$HOME/.config/eww/launch.sh status"
     },
-    "sway/language": {
+    "hyprland/language": {
         "format": " {short}",
     },
     "cpu": {
