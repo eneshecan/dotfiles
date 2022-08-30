@@ -1,6 +1,5 @@
 {
     "layer": "top",
-    "gtk-layer-shell": false,
     "position": "top",
     "height": 36,
     "margin": 0,
@@ -10,6 +9,7 @@
     "wlr/workspaces": {
         "tooltip": false,
         "disable-scroll": true,
+        "on-click": "activate",
         "format": "{icon}",
         "format-icons": {
             "1":  "<span font='13'> 爵 </span>",
