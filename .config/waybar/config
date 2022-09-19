@@ -1,11 +1,11 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 36,
+    "height": 44,
     "margin": 0,
     "modules-left": ["custom/os", "wlr/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "bluetooth", "network", "battery", "custom/power"],
+    "modules-right": ["pulseaudio", "bluetooth", "network", "battery", "hyprland/language", "custom/power"],
     "wlr/workspaces": {
         "tooltip": false,
         "disable-scroll": true,
@@ -63,7 +63,10 @@
         "on-click":"$HOME/.config/eww/launch.sh status"
     },
     "hyprland/language": {
-        "format": " {short}",
+        "format": " {}",
+        "format-en": "us",
+        "format-de": "de",
+        "format-tr": "tr"
     },
     "cpu": {
         "format": "龍 {usage:02}%"
