@@ -64,7 +64,7 @@
     },
     "hyprland/language": {
         "format": " {}",
-        "format-en": "us",
+        "format-en": "en",
         "format-de": "de",
         "format-tr": "tr"
     },
