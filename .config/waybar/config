@@ -153,8 +153,9 @@
     },
     "bluetooth": {
         "format": "{icon} {status}",
-        "format-connected": " {device_alias}",
-        "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+        "format-connected": "{icon} {device_alias}",
+        "format-connected-battery": "{icon} {device_alias} {device_battery_percentage}%",
+        "format-disabled": "{icon} off",
         "format-icons": {
             "enabled": "",
             "disabled": ""
