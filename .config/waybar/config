@@ -142,7 +142,8 @@
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
+            "speaker": "蓼",
+            "hands-free": "魯",
             "headset": "",
             "phone": "",
             "portable": "",
