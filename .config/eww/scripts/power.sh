@@ -13,7 +13,7 @@ confirm_exit() {
 }
 
 if [[ $op == "lock" ]]; then
-    gtklock
+    gtklock -d
 else
     ans=$(confirm_exit &)
     if [[ $ans == "Yes" ]]; then
