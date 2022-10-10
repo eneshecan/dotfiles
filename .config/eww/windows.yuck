@@ -1,15 +1,11 @@
 (include "widgets.yuck")
 
 (defwindow status
-  :wm-ignore true
   :monitor 0
-  :windowtype "dock"
-  :geometry (geometry :x "605px" :y "0px" :width "710px" :height "336px")
+  :geometry (geometry :x "615px" :y "0px" :width "690px" :height "336px")
 (statuswidget))
 
 (defwindow power
-  :wm-ignore true
   :monitor 0
-  :windowtype "dock"
   :geometry (geometry :x "1640px" :y "0px" :width "280px" :height "248px")
 (powerwidget))
