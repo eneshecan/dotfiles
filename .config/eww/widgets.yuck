@@ -41,7 +41,7 @@
         (circular-progress :thickness 8 :value {EWW_CPU.avg} :tooltip "${EWW_CPU.avg}%"
           (label :text "龍")))
       (box :class "circular-ram" :orientation "v" :space-evenly true
-        (circular-progress :thickness 8 :value {EWW_RAM.used_mem_perc} :tooltip "${EWW_RAM.used_mem / 1000} MB"
+        (circular-progress :thickness 8 :value {EWW_RAM.used_mem_perc} :tooltip "${EWW_RAM.used_mem / 1000000} MB"
           (label :text "")))
       (box :class "circular-disk-root" :orientation "v" :space-evenly true
         (circular-progress :thickness 8 :value {EWW_DISK["/"].used_perc} :tooltip "${EWW_DISK["/"].used / 1000000000} GB"
