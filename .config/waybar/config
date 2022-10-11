@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 44,
+    "height": 42,
     "margin": 0,
     "modules-left": ["custom/os", "wlr/workspaces"],
     "modules-center": ["clock"],
