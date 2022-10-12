@@ -9,7 +9,7 @@ fi
 op=$1
 
 confirm_exit() {
-    echo -e "Yes\nNo" | (! pgrep -x wofi && wofi -p "Do you really want to ${op}?" --width 300 --height 100 --dmenu)
+    echo -e "Yes\nNo" | (! pgrep -x wofi && wofi -p "Do you really want to ${op}?" --width 300 --height 140 --dmenu)
 }
 
 if [[ $op == "lock" ]]; then
