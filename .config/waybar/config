@@ -5,7 +5,7 @@
     "margin": 0,
     "modules-left": ["custom/os", "wlr/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "bluetooth", "network", "battery", "hyprland/language", "custom/power"],
+    "modules-right": ["pulseaudio", "bluetooth", "network", "custom/vpn", "battery", "hyprland/language", "custom/power"],
     "wlr/workspaces": {
         "tooltip": false,
         "disable-scroll": true,
@@ -32,15 +32,6 @@
     "sway/window": {
         "tooltip": false,
         "max-length": 32
-    },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{icon} {name}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
     },
     "sway/mode": {
         "tooltip": false,
@@ -137,7 +128,7 @@
         "format": "{icon} {volume:02}% {format_source}",
         "format-bluetooth": "{icon} {volume:02}% {format_source}",
         "format-bluetooth-muted": "{icon} 婢 {format_source}",
-        "format-muted": "{icon} 婢 {format_source}",
+        "format-muted": "{icon}  婢  {format_source}",
         "format-source": " {volume:02}%",
         "format-source-muted": "",
         "format-icons": {
@@ -167,6 +158,13 @@
         "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
         "on-click": "rfkill toggle bluetooth",
         "on-click-right": "blueman-manager"
+    },
+    "custom/vpn": {
+        "interval": 4,
+        "format": "{}",
+        "exec": "$HOME/.config/waybar/scripts/vpn.sh gettext",
+        "return-type": "json",
+        "on-click": "$HOME/.config/waybar/scripts/vpn.sh toggle"
     },
     "custom/media": {
         "format": "{icon} {}",

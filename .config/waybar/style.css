@@ -101,13 +101,12 @@ label:focus {
 #pulseaudio,
 #custom-media,
 #custom-os,
+#custom-vpn,
 #custom-power,
 #tray,
 #mode,
 #idle_inhibitor,
-#bluetooth,
-#language,
-#mpd {
+#language {
     padding: 0px 8px;
     margin: 2px 2px;
     color: @white;
@@ -119,24 +118,24 @@ label:focus {
 }
 
 #battery, #upower {
-    background-color: rgba(240, 240, 240, 0.6);
+    background-color: rgba(240, 240, 240, 0.);
     color: @black;
 }
 
 #battery.charging, #battery.plugged, #upower.charging {
-    background-color: rgba(38, 166, 91, 0.6);
+    background-color: rgba(38, 166, 91, 0.8);
     color: @white;
 }
 
 @keyframes blink {
     to {
-        background-color: rgba(240, 240, 240, 0.6);
+        background-color: rgba(240, 240, 240, 0.8);
         color: @black;
     }
 }
 
 #battery.critical:not(.charging), #upower.empty {
-    background-color: rgba(245, 60, 60, 0.6);
+    background-color: rgba(245, 60, 60, 0.8);
     color: @white;
     animation-name: blink;
     animation-duration: 1.0s;
@@ -146,30 +145,30 @@ label:focus {
 }
 
 #cpu {
-    background-color: rgba(46, 204, 113, 0.6);
+    background-color: rgba(46, 204, 113, 0.8);
     color: @black;
 }
 
 #memory {
-    background-color: rgba(155, 89, 182, 0.6);
+    background-color: rgba(155, 89, 182, 0.8);
 }
 
 #disk {
-    background-color: rgba(150, 75, 0, 0.6);
+    background-color: rgba(150, 75, 0, 0.8);
 }
 
 #disk.home {
-    background-color: rgba(154, 154, 154, 0.6);
+    background-color: rgba(154, 154, 154, 0.8);
     color: @black;
 }
 
 #backlight {
-    background-color: rgba(144, 177, 177, 0.6);
+    background-color: rgba(144, 177, 177, 0.8);
     color: @black;
 }
 
 #network {
-    background-color: rgba(144, 200, 97, 0.6);
+    background-color: rgba(144, 200, 97, 0.8);
     color: @black;
 }
 
@@ -178,53 +177,65 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: rgba(196, 126, 183, 0.6);
+    background-color: rgba(196, 126, 183, 0.8);
     color: @black;
 }
 
 #pulseaudio.muted {
-    background-color: rgba(100, 114, 125, 0.6);
-    color: @white;
+    background-color: rgba(196, 126, 183, 0.6);
 }
 
 #bluetooth {
+    background-color: rgba(65, 105, 225, 0.8);
+}
+
+#bluetooth.disabled {
     background-color: rgba(65, 105, 225, 0.6);
 }
 
-#custom-media {
+#custom-vpn {
+    background-color: rgba(102, 204, 153, 0.8);
+    color: @black;
+}
+
+#custom-vpn.disconnected {
     background-color: rgba(102, 204, 153, 0.6);
+}
+
+#custom-media {
+    background-color: rgba(102, 204, 153, 0.8);
     color: @black;
     min-width: 100px;
 }
 
-#custom-power {
-    background-color: rgba(69, 69, 69, 0.6);
-}
-
 #custom-media.custom-spotify {
-    background-color: rgba(102, 204, 153, 0.6);
+    background-color: rgba(102, 204, 153, 0.8);
 }
 
 #custom-media.custom-vlc {
-    background-color: rgba(255, 160, 0, 0.6);
+    background-color: rgba(255, 160, 0, 0.8);
+}
+
+#custom-power {
+    background-color: rgba(69, 69, 69, 0.8);
 }
 
 #custom-os {
     min-width: 24px;
-    background-color: rgba(23, 147, 209, 0.6);
+    background-color: rgba(23, 147, 209, 0.8);
 }
 
 #temperature {
-    background-color: rgba(240, 147, 43, 0.6);
+    background-color: rgba(240, 147, 43, 0.8);
     color: @black;
 }
 
 #temperature.critical {
-    background-color: rgba(235, 77, 75, 0.6);
+    background-color: rgba(235, 77, 75, 0.8);
 }
 
 #tray {
-    background-color: rgba(41, 128, 185, 0.6);
+    background-color: rgba(41, 128, 185, 0.8);
 }
 
 #tray > .passive {
@@ -233,7 +244,7 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: rgba(255, 77, 75, 0.6);
+    background-color: rgba(255, 77, 75, 0.8);
 }
 
 #idle_inhibitor {
@@ -241,44 +252,11 @@ label:focus {
 }
 
 #idle_inhibitor.activated {
-    background-color: rgba(236, 240, 241, 0.6);
+    background-color: rgba(236, 240, 241, 0.8);
     color: #2d3436;
 }
 
-#mpd {
-    background-color: rgba(102, 204, 153, 0.6);
-    color: #2a5c45;
-}
-
-#mpd.disconnected {
-    background-color: rgba(245, 60, 60, 0.6);
-}
-
-#mpd.stopped {
-    background-color: rgba(144, 177, 177, 0.6);
-}
-
-#mpd.paused {
-    background-color: rgba(81, 163, 122, 0.6);
-}
-
 #language {
-    background-color: rgba(0, 176, 147, 0.6);
+    background-color: rgba(0, 176, 147, 0.8);
     color: @black;
 }
-
-#keyboard-state {
-    background-color: rgba(151, 225, 173, 0.6);
-    color: @black;
-    padding: 0px 4px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0px 5px;
-}
-
-#keyboard-state > label.locked {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
