@@ -118,7 +118,7 @@ label:focus {
 }
 
 #battery, #upower {
-    background-color: rgba(240, 240, 240, 0.);
+    background-color: rgba(240, 240, 240, 0.8);
     color: @black;
 }
 
