@@ -71,7 +71,7 @@
         "format": "{icon} {capacity:02}%",
         "format-charging": " {capacity:02}%",
         "format-plugged": " {capacity:02}%",
-        "format-full": "{icon} Full",
+        "format-full": "{icon} full",
         "format-alt": "{icon} {time}",
         "format-icons": ["", "", "", "", ""]
     },
@@ -96,7 +96,7 @@
         "max-length": 8,
         "format-wifi": "{icon} {signalStrength}%",
         "format-ethernet": "{icon} {ifname}",
-        "format-linked": "{icon} (No IP)",
+        "format-linked": "{icon} (no ip)",
         "format-disconnected": "{icon}",
         "format-icons": {
             "wifi": "直",
