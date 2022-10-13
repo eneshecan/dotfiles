@@ -5,21 +5,14 @@
 
 $bg_dark: #101010;
 $bg_light: rgba(48, 48, 48, 0.6);
-$black: #000000;
-$pink: #C47EB7;
-$light_pink: #FFD5CD;
-$red: #D35D6E;
-$yellow: #FF9F1A;
-$green: #90C861;
-$dark_blue: #2980B9;
-$light_blue: #84AFDB;
-$purple: #714EB3;
-$grey: #4E4E4E;
+$black: #101010;
+$white: #F0F0F0;
+$grey: #808080;
 
 
 window {
     background-color: transparent;
-    color: rgb(240, 240, 240);
+    color: $white;
     font-family: JetBrainsMono Nerd Font;
 }
 
@@ -41,7 +34,7 @@ scale .bottom {
 tooltip {
     font-size: 10px;
     background-color: $bg_dark;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 
@@ -49,7 +42,7 @@ tooltip {
     margin: 8px;
     padding: 16px;
     background-color: rgba(32, 32, 32, 0.9);
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 4px 4px 2px 1px $bg_dark;
 }
 
@@ -57,7 +50,7 @@ tooltip {
 .weather {
     font-size: 12px;
     background-color: $bg_light;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 8px;
     box-shadow: 0px 0px 1px 1px $bg_dark;
 }
@@ -73,27 +66,25 @@ tooltip {
 }
 .weather-stat {
     font-weight: bold;
-    color: $red;
 }
 
 
 .calendar {
     font-size: 12px;
     background-color: $bg_light;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 8px;
     box-shadow: 0px 0px 1px 1px $bg_dark;
 }
 .calendar-title {
     font-size: 16px;
-    color: $yellow;
 }
 
 
 .music {
     font-size: 12px;
     background-color: $bg_light;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 8px;
     box-shadow: 0px 0px 1px 1px $bg_dark;
 }
@@ -101,7 +92,7 @@ tooltip {
     background-size: 132px;
     min-height: 132px;
     min-width: 132px;
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 2px 2px 2px 2px $bg_dark;
 }
 .musicartist {
@@ -114,7 +105,6 @@ tooltip {
     font-weight: bold;
     margin-top: 8px;
     min-width: 220px;
-    color: $red;
 }
 .musicbuttonbox {
     font-size: 32px;
@@ -124,12 +114,11 @@ tooltip {
     padding-right: 20px;
 }
 .musicbuttonbox button:hover {
-    color: $red;
+    color: $grey;
 }
 .pause-play {
     font-size: 48px;
     margin-right: 12px;
-    color: $yellow;
 }
 .music-position trough {
     min-height: 12px;
@@ -141,20 +130,16 @@ tooltip {
 .music-position trough highlight {
     margin: 3px;
     border-radius: 8px;
-    background-color: $pink;
+    background-color: $grey;
 }
 
 
 .sliders {
     font-size: 12px;
     background-color: $bg_light;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 8px;
     box-shadow: 0px 0px 1px 1px $bg_dark;
-}
-
-.sliders slider {
-    color: $light_pink;
 }
 
 .slider-vol scale trough {
@@ -177,31 +162,22 @@ tooltip {
 }
 .slider-vol scale trough highlight {
     margin: 3px;
-	background-color: $pink;
+	background-color: $grey;
 	border-radius: 8px;
 }
 .slider-mic scale trough highlight {
     margin: 3px;
-	background-color: $red;
+	background-color: $grey;
 	border-radius: 8px;
 }
 .slider-bright scale trough highlight {
     margin: 3px;
-	background-color: $yellow;
+	background-color: $grey;
 	border-radius: 8px;
 }
 
 .label-bright, .label-vol, .label-mic {
     font-size: 20px;
-}
-.label-vol {
-    color: $pink;
-}
-.label-mic {
-    color: $red;
-}
-.label-bright {
-    color: $yellow;
 }
 
 
@@ -209,35 +185,20 @@ tooltip {
     font-size: 18px;
     min-height: 64px;
     background-color: $bg_light;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 8px;
     box-shadow: 0px 0px 1px 1px $bg_dark;
 }
 
 .circulars circular-progress {
-    color: $light_pink;
     background-color: $bg_dark;
 }
-
-.circular-cpu circular-progress {
-	color: $green;
-}
-.circular-ram circular-progress {
-	color: $dark_blue;
-}
-.circular-disk-root circular-progress {
-	color: $light_blue;
-}
-.circular-disk-home circular-progress {
-	color: $purple;
-}
-
 
 
 .power-buttons {
     font-size: 12px;
     background-color: $bg_light;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 8px;
     box-shadow: 0px 0px 1px 1px $bg_dark;
 }
@@ -246,5 +207,6 @@ tooltip {
 }
 .button-power:hover {
     background-color: $grey;
+    color: $black;
     border-radius: 8px;
 }

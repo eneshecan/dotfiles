@@ -12,30 +12,17 @@
         "on-click": "activate",
         "format": "{icon}",
         "format-icons": {
-            "1":  "<span font='13'> 爵 </span>",
-            "2":  "<span font='13'>  </span>",
-            "3":  "<span font='13'>  </span>",
-            "4":  "<span font='13'>  </span>",
-            "5":  "<span font='13'>  </span>",
-            "6":  "<span font='13'>  </span>",
-            "7":  "<span font='13'>  </span>",
-            "8":  "<span font='13'>  </span>",
-            "9":  "<span font='13'>  </span>",
-            "10": "<span font='13'> 﫵 </span>"
+            "1":  "<span font='13'> 爵</span>",
+            "2":  "<span font='13'> </span>",
+            "3":  "<span font='13'> </span>",
+            "4":  "<span font='13'> </span>",
+            "5":  "<span font='13'> </span>",
+            "6":  "<span font='13'> </span>",
+            "7":  "<span font='13'> </span>",
+            "8":  "<span font='13'> </span>",
+            "9":  "<span font='13'> </span>",
+            "10": "<span font='13'> 﫵</span>"
         }
-    },
-    "sway/mode": {
-        "tooltip": false,
-        "icon": true,
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    "sway/window": {
-        "tooltip": false,
-        "max-length": 32
-    },
-    "sway/mode": {
-        "tooltip": false,
-        "format": "<span style=\"italic\">{}</span>"
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -50,7 +37,7 @@
     },
     "clock": {
         "tooltip": false,
-        "format": "{:%a %d %b %I:%M %p}",
+        "format": "  {:%a %d %b %I:%M %p}",
         "on-click":"$HOME/.config/eww/launch.sh status"
     },
     "hyprland/language": {
@@ -182,7 +169,7 @@
     },
     "custom/os": {
         "tooltip": false,
-        "format": " ",
+        "format": "",
         "on-click": "! pgrep -x wofi && wofi"
     },
     "custom/power": {
