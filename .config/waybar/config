@@ -96,7 +96,7 @@
         "max-length": 8,
         "format-wifi": "{icon} {signalStrength}%",
         "format-ethernet": "{icon} {ifname}",
-        "format-linked": "{icon} (no ip)",
+        "format-linked": "{icon} no ip",
         "format-disconnected": "{icon}",
         "format-icons": {
             "wifi": "直",
