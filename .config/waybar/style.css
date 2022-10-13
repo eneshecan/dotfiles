@@ -46,17 +46,10 @@ label:focus {
     background-color: @black;
 }
 
-#window,
-#workspaces {
-    margin: 2px 2px;
-}
-
 #workspaces button {
-    padding: 0px 8px;
-    margin: 0px 6px;
+    margin: 0px 4px;
     background-color: transparent;
     color: @grey;
-    border-radius: 4px;
 }
 
 #workspaces button:hover {
@@ -98,11 +91,9 @@ label:focus {
 #mode,
 #idle_inhibitor,
 #language {
-    padding: 0px 8px;
-    margin: 2px 2px;
+    margin: 0px 8px;
     background-color: transparent;
     color: @white;
-    border-radius: 4px;
 }
 
 #battery.charging, #battery.plugged, #upower.charging {
