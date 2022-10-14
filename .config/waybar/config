@@ -164,8 +164,7 @@
         },
         "on-click": "playerctl play-pause",
         "on-click-right": "playerctl stop",
-        "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+        "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null"
     },
     "custom/os": {
         "tooltip": false,

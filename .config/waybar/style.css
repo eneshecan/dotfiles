@@ -24,24 +24,6 @@ window#waybar {
     box-shadow: 4px 4px 2px 1px @black;
 }
 
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-
-window#waybar.termite {
-    background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
-}
-*/
-
 label:focus {
     background-color: @black;
 }
