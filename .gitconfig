@@ -8,6 +8,7 @@
 [push]
     default = simple
     recurseSubmodules = on-demand
+    autoSetupRemote = true
 [merge]
     tool = vimdiff
 [diff]
