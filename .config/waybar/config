@@ -72,7 +72,6 @@
         "format-charging": " {capacity:02}%",
         "format-plugged": " {capacity:02}%",
         "format-full": "{icon} full",
-        "format-alt": "{icon} {time}",
         "format-icons": ["", "", "", "", ""]
     },
     "upower": {
