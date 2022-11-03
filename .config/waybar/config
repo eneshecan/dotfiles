@@ -5,7 +5,7 @@
     "margin": 0,
     "modules-left": ["custom/os", "wlr/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "bluetooth", "network", "custom/vpn", "battery", "hyprland/language", "custom/power"],
+    "modules-right": ["pulseaudio", "bluetooth", "network", "battery", "hyprland/language", "custom/power"],
     "wlr/workspaces": {
         "tooltip": false,
         "disable-scroll": true,
@@ -107,6 +107,7 @@
         "tooltip-format-wifi": "{essid} {signalStrength}%",
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
         "tooltip-format-disconnected": "Disconnected",
+        "on-click": "$HOME/.config/waybar/scripts/vpn.sh toggle",
         "on-click-right": "foot -w 720x420 -a nmtui -T nmtui nmtui"
     },
     "pulseaudio": {
