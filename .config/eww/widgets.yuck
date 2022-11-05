@@ -3,8 +3,7 @@
 (defwidget statuswidget []
   (box :class "widget" :orientation "h" :spacing 8 :space-evenly false
     (box :orientation "v" :spacing 8 :space-evenly false
-      (box :class "music" :orientation "h" :space-evenly false get_music_art
-        (box :class "musicart" :style "background-image: url('${music_cover}');")
+      (box :class "music" :style "background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('${music_cover}');" :orientation "h" :space-evenly false get_music_art
         (box :orientation "v" :space-evenly false
           (box :class "musicartist" music_artist)
           (box :class "musicinfo" music_title)

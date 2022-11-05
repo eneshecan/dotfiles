@@ -5,10 +5,10 @@ count=$(echo -n "$title" | wc -c)
 if [ -z "$title" ]; then
 	echo "No Title...";
 else
-	if [ "$count" -le 18 ]; then
+	if [ "$count" -le 36 ]; then
 		echo $title
-	else 
-		echo $(playerctl metadata --format '{{ title }}' | awk '{print $1, $2}')...
+	else
+		echo $(playerctl metadata --format '{{ title }}' | awk '{print $1, $2, $3, $4}')...
 	fi
 fi
 

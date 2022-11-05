@@ -84,17 +84,11 @@ tooltip {
 
 .music {
     font-size: 12px;
-    background-color: $bg_light;
+    background-size: cover;
+    background-position: center;
     border-radius: 12px;
     padding: 8px;
     box-shadow: 0px 0px 1px 1px $bg_dark;
-}
-.musicart {
-    background-size: 132px;
-    min-height: 132px;
-    min-width: 132px;
-    border-radius: 12px;
-    box-shadow: 2px 2px 2px 2px $bg_dark;
 }
 .musicartist {
     font-size: 12px;
@@ -105,7 +99,7 @@ tooltip {
     font-size: 14px;
     font-weight: bold;
     margin-top: 8px;
-    min-width: 220px;
+    min-width: 320px;
 }
 .musicbuttonbox {
     font-size: 32px;
@@ -118,7 +112,7 @@ tooltip {
     color: $grey;
 }
 .pause-play {
-    font-size: 48px;
+    font-size: 58px;
     margin-right: 12px;
 }
 .music-position trough {
