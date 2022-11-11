@@ -22,7 +22,7 @@
         (box :class "slider-bright" :orientation "h" :space-evenly false
           (box :class "label-bright" "")
           (scale :hexpand true :min 0 :max 101 :value bright :onchange "light -S {}"))))
-    (box :orientation "v" :spacing 8 :space-evenly false
+    (box :orientation "v"  :hexpand true :spacing 8 :space-evenly false
       (box :class "calendar" :orientation "v" :spacing 4 :space-evenly false
         (box :class "calendar-title" " ${day}, ${number_day} ${month_full} ${year_full}")
         (calendar :show-details true))

@@ -2,10 +2,10 @@
 
 (defwindow status
   :monitor 0
-  :geometry (geometry :x "615px" :y "0px" :width "680px" :height "336px")
+  :geometry (geometry :x "0" :y "0" :width "36%" :height "28%" :anchor "top center")
 (statuswidget))
 
 (defwindow power
   :monitor 0
-  :geometry (geometry :x "1640px" :y "0px" :width "280px" :height "248px")
+  :geometry (geometry :x "0" :y "0" :width "16%" :height "20%" :anchor "top right")
 (powerwidget))
