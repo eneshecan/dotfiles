@@ -1,15 +1,15 @@
 profile single {
-    output eDP-1 enable scale 2 position 0,0
+    output eDP-1 enable scale 2.2
 }
 
 profile dual {
-    output eDP-1 enable scale 2 position 0,0
+    output eDP-1 enable scale 2.2 position 0,0
     output HDMI-A-1 enable position 1920,0
 }
 
 profile single_external {
     output eDP-1 disable
-    output * enable position 0,0
+    output * enable
 }
 
 profile dual_external {
