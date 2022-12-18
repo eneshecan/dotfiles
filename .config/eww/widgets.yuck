@@ -37,16 +37,16 @@
   (box :class "widget" :orientation "v" :spacing 8 :space-evenly "false"
     (box :class "circulars" :orientation "h" :spacing 8 :space-evenly true
       (box :orientation "v" :space-evenly true
-        (circular-progress :thickness 8 :value {EWW_CPU.avg} :tooltip "${round(EWW_CPU.avg, 2)}%"
+        (circular-progress :thickness 6 :value {EWW_CPU.avg} :tooltip "${round(EWW_CPU.avg, 2)}%"
           (label :text "龍")))
       (box :orientation "v" :space-evenly true
-        (circular-progress :thickness 8 :value {EWW_RAM.used_mem_perc} :tooltip "${round(EWW_RAM.used_mem / 1000000000, 2)} GB"
+        (circular-progress :thickness 6 :value {EWW_RAM.used_mem_perc} :tooltip "${round(EWW_RAM.used_mem / 1000000000, 2)} GB"
           (label :text "")))
       (box :orientation "v" :space-evenly true
-        (circular-progress :thickness 8 :value {EWW_DISK["/"].used_perc} :tooltip "${round(EWW_DISK["/"].used / 1000000000, 2)} GB"
+        (circular-progress :thickness 6 :value {EWW_DISK["/"].used_perc} :tooltip "${round(EWW_DISK["/"].used / 1000000000, 2)} GB"
           (label :text "")))
       (box :orientation "v" :space-evenly true
-        (circular-progress :thickness 8 :value {EWW_DISK["/home"].used_perc} :tooltip "${round(EWW_DISK["/home"].used / 1000000000, 2)} GB"
+        (circular-progress :thickness 6 :value {EWW_DISK["/home"].used_perc} :tooltip "${round(EWW_DISK["/home"].used / 1000000000, 2)} GB"
           (label :text ""))))
     (box :class "power-buttons" :orientation "v" :spacing 8 :space-evenly false
       (button :class "button-power" :onclick "wdisplays &" "  Display Settings")

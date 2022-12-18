@@ -3,7 +3,7 @@
 }
 
 
-$bg_dark: #101010;
+$bg_dark: rgba(16, 16, 16, 0.8);
 $bg_light: rgba(48, 48, 48, 0.6);
 $black: #101010;
 $white: #F0F0F0;
@@ -42,7 +42,7 @@ tooltip {
 .widget {
     margin: 8px;
     padding: 16px;
-    background-color: rgba(32, 32, 32, 0.9);
+    background-color: rgba(32, 32, 32, 0.8);
     border-radius: 12px;
     box-shadow: 4px 4px 2px 1px $bg_dark;
 }
@@ -117,8 +117,6 @@ tooltip {
 }
 .music-position trough {
     min-height: 12px;
-    margin-top: 8px;
-    margin-left: 12px;
     background-color: $bg_dark;
     border-radius: 8px;
 }

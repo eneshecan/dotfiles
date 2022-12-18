@@ -22,7 +22,7 @@ window#waybar {
 .modules-left, .modules-center, .modules-right {
     margin: 4px 8px 6px 8px;
     padding: 0px 2px;
-    background-color: rgba(32, 32, 32, 0.75);
+    background-color: rgba(32, 32, 32, 0.8);
     border-radius: 12px;
     box-shadow: 4px 4px 2px 1px @black;
 }

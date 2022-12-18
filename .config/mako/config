@@ -1,8 +1,8 @@
 sort=-time
 layer=top
-text-color=#e0e0e0FF
+text-color=#E0E0E0FF
 text-alignment=center
-background-color=#202020E6
+background-color=#202020CC
 width=300
 height=100
 padding=8

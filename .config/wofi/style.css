@@ -23,7 +23,7 @@ window {
 
 #outer-box {
     margin: 8px;
-    background-color: rgba(32, 32, 32, 0.9);
+    background-color: rgba(32, 32, 32, 0.8);
     border-radius: 12px;
     box-shadow: 4px 4px 2px 1px @black;
 }
