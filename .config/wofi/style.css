@@ -8,32 +8,23 @@
 
 window {
     background-color: transparent;
-    color: @white;
     font-family: JetBrainsMono Nerd Font;
     font-size: 12px;
-
+    background-color: rgba(32, 32, 32, 0.8);
+    color: @white;
+    border-radius: 12px;
 }
 
 #input {
-    margin: 8px;
+    font-size: 14px;
+    margin: 16px;
     padding: 8px;
     border-radius: 12px;
-    border: 1px solid @black;
-}
-
-#outer-box {
-    margin: 8px;
-    background-color: rgba(32, 32, 32, 0.8);
-    border-radius: 12px;
-    box-shadow: 4px 4px 2px 1px @black;
+    background-color: rgba(48, 48, 48, 0.6);
 }
 
 #inner-box {
-    margin: 8px;
-    padding: 8px;
-    background-color: rgba(48, 48, 48, 0.6);
-    border-radius: 12px;
-    box-shadow: 0px 0px 1px 1px @black;
+    margin: 0px 16px 16px 16px;
 }
 
 #scroll label {

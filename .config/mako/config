@@ -1,11 +1,13 @@
 sort=-time
 layer=top
-text-color=#E0E0E0FF
+text-color=#F0F0F0
 text-alignment=center
 background-color=#202020CC
 width=300
-height=100
-padding=8
+height=140
+outer-margin=8
+margin=0
+padding=16
 border-size=0
 border-radius=12
 icons=1
@@ -15,16 +17,6 @@ default-timeout=5000
 ignore-timeout=1
 font=JetBrainsMono Nerd Font 10
 
-[urgency=low]
-background-color=#202020E6
-
-[urgency=normal]
-background-color=#2980B9E6
-
 [urgency=high]
-background-color=#BF616AE6
+text-color=#BF616A
 default-timeout=0
-
-[category=mpd]
-default-timeout=2000
-group-by=category

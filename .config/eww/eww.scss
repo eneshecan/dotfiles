@@ -13,8 +13,9 @@ $grey: #808080;
 window {
     font-family: JetBrainsMono Nerd Font;
     font-size: 13px;
-    background-color: transparent;
+    background-color: rgba(32, 32, 32, 0.8);
     color: $white;
+    border-radius: 12px;
 }
 
 window > box {
@@ -39,21 +40,11 @@ tooltip {
 }
 
 
-.widget {
-    margin: 8px;
-    padding: 16px;
-    background-color: rgba(32, 32, 32, 0.8);
-    border-radius: 12px;
-    box-shadow: 4px 4px 2px 1px $bg_dark;
-}
-
-
 .weather {
     font-size: 12px;
     background-color: $bg_light;
     border-radius: 12px;
     padding: 8px;
-    box-shadow: 0px 0px 1px 1px $bg_dark;
 }
 .weather-icon {
     font-size: 48px;
@@ -75,7 +66,6 @@ tooltip {
     background-color: $bg_light;
     border-radius: 12px;
     padding: 8px;
-    box-shadow: 0px 0px 1px 1px $bg_dark;
 }
 .calendar-title {
     font-size: 16px;
@@ -88,7 +78,6 @@ tooltip {
     background-position: center;
     border-radius: 12px;
     padding: 8px;
-    box-shadow: 0px 0px 1px 1px $bg_dark;
 }
 .musicartist {
     font-size: 12px;
@@ -112,7 +101,7 @@ tooltip {
     color: $grey;
 }
 .pause-play {
-    font-size: 58px;
+    font-size: 64px;
     margin-right: 12px;
 }
 .music-position trough {
@@ -132,7 +121,6 @@ tooltip {
     background-color: $bg_light;
     border-radius: 12px;
     padding: 8px;
-    box-shadow: 0px 0px 1px 1px $bg_dark;
 }
 
 .slider-vol scale trough {
@@ -180,7 +168,6 @@ tooltip {
     background-color: $bg_light;
     border-radius: 12px;
     padding: 8px;
-    box-shadow: 0px 0px 1px 1px $bg_dark;
 }
 
 .circulars circular-progress {
@@ -193,7 +180,6 @@ tooltip {
     background-color: $bg_light;
     border-radius: 12px;
     padding: 8px;
-    box-shadow: 0px 0px 1px 1px $bg_dark;
 }
 .button-power {
     font-size: 13px;

@@ -1,8 +1,11 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 42,
-    "margin": 0,
+    "height": 36,
+    "margin-top": 4,
+    "margin-right": 8,
+    "margin-bottom": 0,
+    "margin-left": 8,
     "modules-left": ["custom/os", "wlr/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "bluetooth", "network", "battery", "hyprland/language", "custom/power"],
@@ -27,8 +30,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "",
-            "deactivated": ""
+            "activated": " on",
+            "deactivated": " off"
         }
     },
     "tray": {

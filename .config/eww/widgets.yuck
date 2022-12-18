@@ -1,7 +1,7 @@
 (include "variables.yuck")
 
 (defwidget statuswidget []
-  (box :class "widget" :orientation "h" :spacing 8 :space-evenly false
+  (box :orientation "h" :spacing 8 :space-evenly false
     (box :orientation "v" :spacing 8 :space-evenly false
       (box :class "music" :style "background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('${music_cover}');" :orientation "h" :space-evenly false get_music_art
         (box :orientation "v" :space-evenly false
@@ -34,7 +34,7 @@
           (box :class "weather-stat" :halign "end" "${weather_stat_trimmed}"))))))
 
 (defwidget powerwidget []
-  (box :class "widget" :orientation "v" :spacing 8 :space-evenly "false"
+  (box :orientation "v" :spacing 8 :space-evenly "false"
     (box :class "circulars" :orientation "h" :spacing 8 :space-evenly true
       (box :orientation "v" :space-evenly true
         (circular-progress :thickness 6 :value {EWW_CPU.avg} :tooltip "${round(EWW_CPU.avg, 2)}%"
