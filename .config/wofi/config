@@ -2,5 +2,6 @@ width=640
 height=400
 mode=drun
 allow_images=true
+allow_markup=true
 image_size=16
 prompt=Search
