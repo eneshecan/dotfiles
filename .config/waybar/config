@@ -6,7 +6,7 @@
     "margin-right": 8,
     "margin-bottom": 0,
     "margin-left": 8,
-    "modules-left": ["custom/os", "wlr/workspaces"],
+    "modules-left": ["custom/os", "wlr/workspaces", "hyprland/submap"],
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "bluetooth", "network", "battery", "hyprland/language", "custom/power"],
     "wlr/workspaces": {
@@ -48,6 +48,10 @@
         "format-en": "en",
         "format-de": "de",
         "format-tr": "tr"
+    },
+    "hyprland/submap": {
+        "format": "<span style=\"italic\">{}</span>",
+        "tooltip": false
     },
     "cpu": {
         "format": "龍 {usage:02}%"

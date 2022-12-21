@@ -79,7 +79,8 @@ label:focus {
 #tray,
 #mode,
 #idle_inhibitor,
-#language {
+#language,
+#submap {
     margin: 0px 8px;
     background-color: transparent;
     color: @white;
