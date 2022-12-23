@@ -1,0 +1,9 @@
+%YAML 1.3
+---
+- Rule:
+  - MouseGesture: Mouse Left
+  - Execute: [hyprctl, dispatch, workspace, m+1]
+- Rule:
+  - MouseGesture: Mouse Right
+  - Execute: [hyprctl, dispatch, workspace, m-1]
+...
