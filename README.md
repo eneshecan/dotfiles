@@ -14,7 +14,6 @@ A collection of my configuration files for Arch Linux.
 * [playerctl](https://www.archlinux.org/packages/community/x86_64/playerctl/)
 * [blueman](https://archlinux.org/packages/community/x86_64/blueman/)
 * [hyprland](https://aur.archlinux.org/packages/hyprland/)
-* [kanshi](https://archlinux.org/packages/community/x86_64/kanshi/)
 * [swayidle](https://archlinux.org/packages/community/x86_64/swayidle/)
 * [foot](https://archlinux.org/packages/community/x86_64/foot/)
 * [waybar](https://archlinux.org/packages/community/x86_64/waybar/)
