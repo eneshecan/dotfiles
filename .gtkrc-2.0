@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/hecane01/.gtkrc-2.0.mine"
-gtk-theme-name="Yaru-dark"
+gtk-theme-name="Yaru-purple-dark"
 gtk-icon-theme-name="Papirus-Dark"
 gtk-font-name="JetBrainsMono Nerd Font 10"
 gtk-cursor-theme-name="Adwaita"
