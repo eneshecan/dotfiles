@@ -54,7 +54,7 @@
       (eventbox :onhover "eww update power_options_rev=true" :onhoverlost "eww update power_options_rev=false"
         (box :class "button-power" :orientation "v" :space-evenly "false" "襤 Power Options"
           (expander :expanded power_options_rev
-            (box :orientation "v" :space-evenly "true"
+            (box :orientation "v" :spacing 4 :space-evenly "true"
               (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh logout" "﫼 Logout")
               (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh suspend" "⏾ Suspend")
               (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh reboot" "菱 Reboot")
