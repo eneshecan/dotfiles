@@ -2,10 +2,6 @@
 @define-color black #101010;
 @define-color grey  #808080;
 
-*{
-    all: unset;
-}
-
 window {
     background-color: transparent;
     font-family: JetBrainsMono Nerd Font;
@@ -39,5 +35,13 @@ window {
 #entry:selected {
     border-radius: 8px;
     background-color: @grey;
+}
+
+#entry list {
+    border-radius: 8px;
+    background-color: @grey;
+}
+
+#entry:selected label {
     color: @black;
 }
