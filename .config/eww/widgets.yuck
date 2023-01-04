@@ -11,17 +11,17 @@
             (button :onclick "playerctl previous" "玲")
             (button :class "pause-play" :onclick "playerctl play-pause" play_icon)
             (button :onclick "playerctl next" "怜"))
-          (scale :class "music-position" :value music_pos :onchange "~/.config/eww/scripts/setmusicpos.sh {}")))
+          (scale :hexpand true :value music_pos :onchange "~/.config/eww/scripts/setmusicpos.sh {}")))
       (box :class "sliders" :orientation "v" :spacing 8 :space-evenly false
-        (box :orientation "h" :class "slider-vol" :space-evenly false
-          (box :class "label-vol" "")
-          (scale :hexpand true :min 0 :max 101 :value volume :onchange "~/.config/eww/scripts/setvol.sh {}"))
-        (box :class "slider-mic" :orientation "h" :space-evenly false
-          (box :class "label-mic" "")
-          (scale :hexpand true :min 0 :max 101 :value mic_volume :onchange "~/.config/eww/scripts/setmicvol.sh {}"))
-        (box :class "slider-bright" :orientation "h" :space-evenly false
-          (box :class "label-bright" "")
-          (scale :hexpand true :min 0 :max 101 :value bright :onchange "light -S {}"))))
+        (box :orientation "h" :space-evenly false
+          (box "")
+          (scale :hexpand true :marks "25,50,75" :min 0 :max 101 :value volume :onchange "~/.config/eww/scripts/setvol.sh {}"))
+        (box :orientation "h" :space-evenly false
+          (box "")
+          (scale :hexpand true :marks "25,50,75" :min 0 :max 101 :value mic_volume :onchange "~/.config/eww/scripts/setmicvol.sh {}"))
+        (box :orientation "h" :space-evenly false
+          (box "")
+          (scale :hexpand true :marks "25,50,75" :min 0 :max 101 :value bright :onchange "light -S {}"))))
     (box :orientation "v"  :hexpand true :spacing 8 :space-evenly false
       (box :class "calendar" :orientation "v" :spacing 4 :space-evenly false
         (box :class "calendar-title" " ${day}, ${number_day} ${month_full} ${year_full}")
@@ -52,7 +52,7 @@
       (button :class "button-power" :onclick "wdisplays &" "  Display Settings")
       (button :class "button-power" :onclick "~/.config/eww/scripts/power.sh lock" " Lock")
       (eventbox :onhover "eww update power_options_rev=true" :onhoverlost "eww update power_options_rev=false"
-        (box :class "button-power" :orientation "v" :space-evenly "false" "襤 Power Options "
+        (box :class "button-power" :orientation "v" :space-evenly "false" "襤 Power Options"
           (expander :expanded power_options_rev
             (box :orientation "v" :space-evenly "true"
               (button :class "button-power" :timeout "1m" :onclick "~/.config/eww/scripts/power.sh logout" "﫼 Logout")

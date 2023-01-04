@@ -1,8 +1,3 @@
-*{
-    all: unset;
-}
-
-
 $bg_dark: rgba(16, 16, 16, 0.8);
 $bg_light: rgba(48, 48, 48, 0.6);
 $black: #101010;
@@ -22,15 +17,8 @@ window > box {
     margin: 16px;
 }
 
-button {
-    padding: 4px;
-}
-
-scale .top {
-    font-size: 10px;
-}
-scale .bottom {
-    font-size: 10px;
+scale {
+    padding: 8px;
 }
 
 tooltip {
@@ -41,7 +29,6 @@ tooltip {
 
 
 .weather {
-    font-size: 12px;
     background-color: $bg_light;
     border-radius: 12px;
     padding: 8px;
@@ -62,9 +49,9 @@ tooltip {
 
 
 .calendar {
-    font-size: 12px;
     background-color: $bg_light;
     border-radius: 12px;
+    border: 0px;
     padding: 8px;
 }
 .calendar-title {
@@ -73,14 +60,12 @@ tooltip {
 
 
 .music {
-    font-size: 12px;
     background-size: cover;
     background-position: center;
     border-radius: 12px;
     padding: 8px;
 }
 .musicartist {
-    font-size: 12px;
     font-weight: bold;
     min-width: 220px;
 }
@@ -96,6 +81,8 @@ tooltip {
 }
 .musicbuttonbox button {
     padding-right: 20px;
+    background: transparent;
+    border: 0px;
 }
 .musicbuttonbox button:hover {
     color: $grey;
@@ -104,61 +91,16 @@ tooltip {
     font-size: 64px;
     margin-right: 12px;
 }
-.music-position trough {
-    min-height: 12px;
-    background-color: $bg_dark;
-    border-radius: 8px;
-}
-.music-position trough highlight {
-    margin: 3px;
-    border-radius: 8px;
-    background-color: $grey;
-}
 
 
 .sliders {
-    font-size: 12px;
     background-color: $bg_light;
     border-radius: 12px;
     padding: 8px;
 }
 
-.slider-vol scale trough {
-    background-color: $bg_dark;
-    border-radius: 8px;
-    min-height: 16px;
-    margin-left: 17px;
-}
-.slider-mic scale trough {
-    background-color: $bg_dark;
-    border-radius: 8px;
-    min-height: 16px;
-    margin-left: 17px;
-}
-.slider-bright scale trough {
-    background-color: $bg_dark;
-    border-radius: 8px;
-    min-height: 16px;
-    margin-left: 17px;
-}
-.slider-vol scale trough highlight {
-    margin: 3px;
-	background-color: $grey;
-	border-radius: 8px;
-}
-.slider-mic scale trough highlight {
-    margin: 3px;
-	background-color: $grey;
-	border-radius: 8px;
-}
-.slider-bright scale trough highlight {
-    margin: 3px;
-	background-color: $grey;
-	border-radius: 8px;
-}
-
-.label-bright, .label-vol, .label-mic {
-    font-size: 20px;
+.sliders label {
+    font-size: 16px;
 }
 
 
@@ -176,16 +118,11 @@ tooltip {
 
 
 .power-buttons {
-    font-size: 12px;
     background-color: $bg_light;
     border-radius: 12px;
     padding: 8px;
 }
+
 .button-power {
     font-size: 13px;
-}
-.button-power:hover {
-    background-color: $grey;
-    color: $black;
-    border-radius: 8px;
 }
