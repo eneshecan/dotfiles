@@ -22,7 +22,7 @@ window#waybar {
 }
 
 tooltip {
-    font-size: 12px;
+    font-size: 10px;
     background-color: @black;
     border-radius: 8px;
 }
