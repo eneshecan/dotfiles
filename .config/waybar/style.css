@@ -4,10 +4,6 @@
 @define-color red   #C23A23;
 @define-color green #90C861;
 
-* {
-    all: unset;
-}
-
 window {
     font-family: JetBrainsMono Nerd Font;
     font-size: 13px;
@@ -36,9 +32,10 @@ label:focus {
 }
 
 #workspaces button {
-    margin: 0px 12px;
+    margin: 0px 4px;
     background-color: transparent;
     color: @grey;
+    border: 0px;
 }
 
 #workspaces button:hover {
@@ -84,6 +81,7 @@ label:focus {
     margin: 0px 8px;
     background-color: transparent;
     color: @white;
+    border: 0px;
 }
 
 #battery.charging, #battery.plugged, #upower.charging {
