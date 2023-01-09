@@ -12,7 +12,7 @@
             (button :class "pause-play" :onclick "playerctl play-pause" play_icon)
             (button :onclick "playerctl next" "怜"))
           (scale :hexpand true :value music_pos :onchange "~/.config/eww/scripts/setmusicpos.sh {}")))
-      (box :class "sliders" :orientation "v" :spacing 8 :space-evenly false
+      (box :class "sliders" :orientation "v" :spacing 8 :space-evenly true
         (box :orientation "h" :space-evenly false
           (box "")
           (scale :hexpand true :marks "25,50,75" :min 0 :max 101 :value volume :onchange "~/.config/eww/scripts/setvol.sh {}"))
@@ -40,13 +40,13 @@
         (circular-progress :thickness 6 :value {EWW_CPU.avg} :tooltip "${round(EWW_CPU.avg, 2)}%"
           (label :text "龍")))
       (box :orientation "v" :space-evenly true
-        (circular-progress :thickness 6 :value {EWW_RAM.used_mem_perc} :tooltip "${round(EWW_RAM.used_mem / 1000000000, 2)} GB"
+        (circular-progress :thickness 6 :value {EWW_RAM.used_mem_perc} :tooltip "${round(EWW_RAM.used_mem / 1000000000, 2)} GB / ${round(EWW_RAM.total_mem / 1000000000, 2)} GB"
           (label :text "")))
       (box :orientation "v" :space-evenly true
-        (circular-progress :thickness 6 :value {EWW_DISK["/"].used_perc} :tooltip "${round(EWW_DISK["/"].used / 1000000000, 2)} GB"
+        (circular-progress :thickness 6 :value {EWW_DISK["/"].used_perc} :tooltip "${round(EWW_DISK["/"].used / 1000000000, 2)} GB / ${round(EWW_DISK["/"].total / 1000000000, 2)} GB"
           (label :text "")))
       (box :orientation "v" :space-evenly true
-        (circular-progress :thickness 6 :value {EWW_DISK["/home"].used_perc} :tooltip "${round(EWW_DISK["/home"].used / 1000000000, 2)} GB"
+        (circular-progress :thickness 6 :value {EWW_DISK["/home"].used_perc} :tooltip "${round(EWW_DISK["/home"].used / 1000000000, 2)} GB / ${round(EWW_DISK["/home"].total / 1000000000, 2)} GB"
           (label :text ""))))
     (box :class "power-buttons" :orientation "v" :spacing 8 :space-evenly false
       (button :class "button-power" :onclick "wdisplays &" "  Display Settings")
