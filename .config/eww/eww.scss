@@ -21,7 +21,12 @@ scale {
     padding: 8px;
 }
 
-calendar {
+calendar.view {
+    background-color: transparent;
+    border: 0px;
+}
+
+calendar.header {
     background-color: transparent;
     border: 0px;
 }
