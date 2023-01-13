@@ -1,13 +1,8 @@
-@define-color white #F0F0F0;
-@define-color black #101010;
-@define-color grey  #808080;
-
 window {
     background-color: transparent;
     font-family: JetBrainsMono Nerd Font;
     font-size: 12px;
     background-color: rgba(32, 32, 32, 0.8);
-    color: @white;
     border-radius: 12px;
 }
 
@@ -34,14 +29,13 @@ window {
 
 #entry:selected {
     border-radius: 8px;
-    background-color: @grey;
 }
 
 #entry list {
     border-radius: 8px;
-    background-color: @grey;
+    background-color: transparent;
 }
 
-#entry:selected label {
-    color: @black;
+#entry image {
+    background-color: transparent;
 }

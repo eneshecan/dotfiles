@@ -1,15 +1,7 @@
-$bg_dark: rgba(16, 16, 16, 0.8);
-$bg_light: rgba(48, 48, 48, 0.6);
-$black: #101010;
-$white: #F0F0F0;
-$grey: #808080;
-
-
 window {
     font-family: JetBrainsMono Nerd Font;
     font-size: 13px;
     background-color: rgba(32, 32, 32, 0.8);
-    color: $white;
     border-radius: 12px;
 }
 
@@ -33,13 +25,12 @@ calendar.header {
 
 tooltip {
     font-size: 10px;
-    background-color: $bg_dark;
     border-radius: 8px;
 }
 
 
 .weather {
-    background-color: $bg_light;
+    background-color: rgba(48, 48, 48, 0.6);
     border-radius: 12px;
     padding: 8px;
 }
@@ -59,7 +50,7 @@ tooltip {
 
 
 .calendar {
-    background-color: $bg_light;
+    background-color: rgba(48, 48, 48, 0.6);
     border-radius: 12px;
     padding: 8px;
 }
@@ -94,7 +85,7 @@ tooltip {
     border: 0px;
 }
 .musicbuttonbox button:hover {
-    color: $grey;
+    color: #808080;
 }
 .pause-play {
     font-size: 64px;
@@ -103,7 +94,7 @@ tooltip {
 
 
 .sliders {
-    background-color: $bg_light;
+    background-color: rgba(48, 48, 48, 0.6);
     border-radius: 12px;
     padding: 8px;
 }
@@ -116,18 +107,18 @@ tooltip {
 .circulars {
     font-size: 18px;
     min-height: 64px;
-    background-color: $bg_light;
+    background-color: rgba(48, 48, 48, 0.6);
     border-radius: 12px;
     padding: 8px;
 }
 
 .circulars circular-progress {
-    background-color: $bg_dark;
+    background-color: rgba(16, 16, 16, 0.8);
 }
 
 
 .power-buttons {
-    background-color: $bg_light;
+    background-color: rgba(48, 48, 48, 0.6);
     border-radius: 12px;
     padding: 8px;
 }

@@ -1,6 +1,3 @@
-@define-color white #F0F0F0;
-@define-color black #101010;
-@define-color grey  #808080;
 @define-color red   #C23A23;
 @define-color green #90C861;
 
@@ -12,7 +9,6 @@ window {
 
 window#waybar {
     background-color: transparent;
-    color: @white;
 }
 
 .modules-left, .modules-center, .modules-right {
@@ -23,39 +19,35 @@ window#waybar {
 
 tooltip {
     font-size: 10px;
-    background-color: @black;
     border-radius: 8px;
 }
 
 label:focus {
-    background-color: @black;
+    background-color: black;
 }
+
 
 #workspaces button {
     margin: 0px 4px;
     background-color: transparent;
-    color: @grey;
+    color: grey;
     border: 0px;
 }
 
 #workspaces button:hover {
     background: transparent;
-    color: @white;
+    color: white;
 }
 
-#workspaces button.focused {
-    color: @white;
-}
-
-
+#workspaces button.focused,
 #workspaces button.active {
-    color: @white;
+    color: white;
 }
-
 
 #workspaces button.urgent {
     color: @red;
 }
+
 
 #mode,
 #clock,
@@ -80,7 +72,6 @@ label:focus {
 #submap {
     margin: 0px 8px;
     background-color: transparent;
-    color: @white;
     border: 0px;
 }
 
@@ -90,7 +81,7 @@ label:focus {
 
 @keyframes blink {
     to {
-        color: @white;
+        color: white;
     }
 }
 
@@ -104,19 +95,19 @@ label:focus {
 }
 
 #network.disconnected {
-    color: @grey;
+    color: grey;
 }
 
 #pulseaudio.muted {
-    color: @grey;
+    color: grey;
 }
 
 #bluetooth.disabled {
-    color: @grey;
+    color: grey;
 }
 
 #custom-vpn.disconnected {
-    color: @grey;
+    color: grey;
 }
 
 #custom-os,
@@ -151,9 +142,9 @@ label:focus {
 }
 
 #idle_inhibitor {
-    color: @grey;
+    color: grey;
 }
 
 #idle_inhibitor.activated {
-    color: @white;
+    color: white;
 }

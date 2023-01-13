@@ -11,8 +11,8 @@ if [ ! -d $tmp_weather ]; then
     mkdir -p $tmp_weather
 fi
 
-# Put in your api and stuff link here 
-# If you dunno, head to openweathermap.org, and make and account 
+# Put in your api and stuff link here
+# If you dunno, head to openweathermap.org, and make and account
 # (completely free I swear, and then get your API Key and  your City ID)
 # I wish I was smart enough to do it like Elena, but this is the top I could do lol
 KEY="80dc3a2d0e9d9a11cacbd95501dedc17"
@@ -87,7 +87,7 @@ if [ ! -z "$weather" ]; then
     elif [ "$weather_icon_code" == "40n"  ]; then
         weather_icon=" "
         weather_hex="#84afdb"
-    else 
+    else
         weather_icon=" "
         weather_hex="#adadff"
     fi
