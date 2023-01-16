@@ -79,7 +79,9 @@
         "format-charging": " {capacity:02}%",
         "format-plugged": " {capacity:02}%",
         "format-full": "{icon} full",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
+        "on-click-right": "tlpui"
+
     },
     "upower": {
         "icon-size": 14,
