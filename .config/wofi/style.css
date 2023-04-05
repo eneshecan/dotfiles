@@ -2,8 +2,9 @@ window {
     background-color: transparent;
     font-family: JetBrainsMono Nerd Font;
     font-size: 12px;
-    background-color: rgba(32, 32, 32, 0.8);
+    background-image: linear-gradient(120deg, rgba(186, 85, 211, 0.75), rgba(6, 227, 126, 0.75));
     border-radius: 12px;
+    color: black;
 }
 
 #input {
