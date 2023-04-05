@@ -12,8 +12,8 @@ window#waybar {
 }
 
 .modules-left, .modules-center, .modules-right {
-    padding: 0px 2px;
-    background-image: linear-gradient(90deg, rgba(186, 85, 211, 0.75), rgba(6, 227, 126, 0.75));
+    padding: 0px 8px;
+    background-image: linear-gradient(90deg, rgba(186, 85, 211, 0.75), rgba(101, 217, 252, 0.75));
     border-radius: 12px;
 }
 
@@ -67,6 +67,7 @@ label:focus {
 #tray,
 #mode,
 #idle_inhibitor,
+#window,
 #language,
 #submap {
     background: transparent;
@@ -108,15 +109,6 @@ label:focus {
 
 #custom-vpn.disconnected {
     color: darkgrey;
-}
-
-#custom-os,
-#custom-power {
-    min-width: 14px;
-}
-
-#custom-media {
-    color: black;
 }
 
 #temperature.critical {

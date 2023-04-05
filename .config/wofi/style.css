@@ -1,8 +1,7 @@
 window {
-    background-color: transparent;
     font-family: JetBrainsMono Nerd Font;
     font-size: 12px;
-    background-image: linear-gradient(120deg, rgba(186, 85, 211, 0.75), rgba(6, 227, 126, 0.75));
+    background-image: linear-gradient(120deg, rgba(186, 85, 211, 0.75), rgba(101, 217, 252, 0.75));
     border-radius: 12px;
     color: black;
 }

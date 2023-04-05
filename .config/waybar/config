@@ -15,23 +15,23 @@
         "on-click": "activate",
         "format": "{icon}",
         "format-icons": {
-            "1":  "<span font='13'> 爵</span>",
-            "2":  "<span font='13'> </span>",
-            "3":  "<span font='13'> </span>",
+            "1":  "<span font='13'> 󰖟</span>",
+            "2":  "<span font='13'> </span>",
+            "3":  "<span font='13'> </span>",
             "4":  "<span font='13'> </span>",
             "5":  "<span font='13'> </span>",
-            "6":  "<span font='13'> </span>",
-            "7":  "<span font='13'> </span>",
-            "8":  "<span font='13'> </span>",
+            "6":  "<span font='13'> </span>",
+            "7":  "<span font='13'> 󱅰</span>",
+            "8":  "<span font='13'> 󱅰</span>",
             "9":  "<span font='13'> </span>",
-            "10": "<span font='13'> 﫵</span>"
+            "10": "<span font='13'> 󱙤</span>"
         }
     },
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": " on",
-            "deactivated": " off"
+            "activated": "",
+            "deactivated": ""
         }
     },
     "tray": {
@@ -39,8 +39,36 @@
         "spacing": 8
     },
     "clock": {
-        "tooltip": false,
-        "format": "  {:%a %d %b %I:%M %p}",
+        "interval": 60,
+        "format": "󰅐 {:%I:%M %p}",
+        "format-alt": " {:%a %d %b %I:%M %p}",
+        "tooltip": true,
+        "tooltip-format": "<span size='9pt'>{calendar}</span>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "on-scroll": -1,
+            "on-click-right": "mode",
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions":  {
+            "on-click-right": "mode",
+            "on-click-forward": "tz_up",
+            "on-click-backward": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+    "hyprland/window": {
+        "format": " {}",
+        "separate-outputs": true,
+        "max-length": 32
     },
     "hyprland/language": {
         "format": " {}",
@@ -53,16 +81,20 @@
         "tooltip": false
     },
     "cpu": {
-        "format": "龍 {usage:02}%"
+        "format": "󰓅 {usage:02}%",
+        "tooltip": true
     },
     "memory": {
-        "format": " {percentage:02}%"
+        "format": "󰍛 {percentage:02}%",
+        "tooltip": true,
+        "tooltip-format": "{used:0.1f}G / {total:0.1f}G"
     },
     "temperature": {
         "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input",
         "critical-threshold": 80,
         "format": "{icon} {temperatureC}°C",
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""],
+        "tooltip": true
     },
     "backlight": {
         "format": "{icon} {percent}%",
@@ -76,9 +108,9 @@
             "critical": 15
         },
         "format": "{icon} {capacity:02}%",
-        "format-charging": " {capacity:02}%",
+        "format-charging": "󰂄 {capacity:02}%",
         "format-plugged": " {capacity:02}%",
-        "format-full": "{icon} full",
+        "format-full": "{icon} 100%",
         "format-icons": ["", "", "", "", ""],
         "on-click-right": "tlpui"
 
@@ -96,7 +128,7 @@
     },
     "disk#home": {
         "interval": 60,
-        "format": " {percentage_used:02}%",
+        "format": " {percentage_used:02}%",
         "path": "/home"
     },
     "network": {
@@ -108,8 +140,8 @@
         "format-disconnected": "{icon}",
         "format-icons": {
             "wifi": "直",
-            "ethernet": "",
-            "linked": "",
+            "ethernet": "󰈀",
+            "linked": "󰈀",
             "disconnected": ""
         },
         "tooltip": true,
@@ -122,20 +154,20 @@
     "pulseaudio": {
         "scroll-step": 1,
         "format": "{icon} {volume:02}% {format_source}",
-        "format-bluetooth": "{icon} {volume:02}% {format_source}",
-        "format-bluetooth-muted": "{icon} 婢 {format_source}",
-        "format-muted": "{icon}  婢  {format_source}",
+        "format-bluetooth": "{icon}󰂯 {volume:02}% {format_source}",
+        "format-bluetooth-muted": "{icon}󰂯 󰖁 {format_source}",
+        "format-muted": "{icon}  󰖁  {format_source}",
         "format-source": " {volume:02}%",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "speaker": "蓼",
-            "hands-free": "魯",
-            "headset": "",
+            "speaker": "󰓃",
+            "hands-free": "󰐺",
+            "headset": "󰋎",
             "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["奄", "奔", "墳"]
+            "portable": "",
+            "car": "󰄋",
+            "default": ["󰕿", "󰖀", "󰕾"]
         },
         "on-click-right": "pavucontrol"
     },
@@ -146,8 +178,8 @@
         "format-connected-battery": "{icon} {device_alias} {device_battery_percentage}%",
         "format-disabled": "{icon} off",
         "format-icons": {
-            "enabled": "",
-            "disabled": ""
+            "enabled": "󰂯",
+            "disabled": "󰂲"
         },
         "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
@@ -169,7 +201,7 @@
         "max-length": 32,
         "escape": true,
         "format-icons": {
-            "spotify": "阮",
+            "spotify": "󰓇",
             "default": ""
         },
         "on-click": "playerctl play-pause",
