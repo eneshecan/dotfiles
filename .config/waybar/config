@@ -140,6 +140,7 @@
         "on-click-right": "pavucontrol"
     },
     "bluetooth": {
+        "max-length": 16,
         "format": "{icon} {status}",
         "format-connected": "{icon} {device_alias}",
         "format-connected-battery": "{icon} {device_alias} {device_battery_percentage}%",
