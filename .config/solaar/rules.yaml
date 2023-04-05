@@ -5,11 +5,10 @@
   - Execute: [hyprctl, dispatch, workspace, m+1]
 - Rule:
   - MouseGesture: Mouse Right
-  - Execute: [hyprctl, dispatch, workspace, m-1]
-- Rule:
+  - Execute: [hyprctl, dispatch, workspace, m-1]- Rule:
   - MouseGesture: Mouse Down
   - Execute: [eww, open, status]
 - Rule:
-  - MouseGesture: Mouse Up
+    - MouseGesture: Mouse Up
   - Execute: [eww, close, status]
 ...

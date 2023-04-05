@@ -13,7 +13,7 @@ window#waybar {
 
 .modules-left, .modules-center, .modules-right {
     padding: 0px 2px;
-    background-color: rgba(32, 32, 32, 0.8);
+    background-image: linear-gradient(90deg, rgba(186, 85, 211, 0.8), rgba(6, 227, 126, 0.8));
     border-radius: 12px;
 }
 
@@ -29,13 +29,12 @@ label:focus {
 
 #workspaces button {
     margin: 0px 4px;
-    background-color: transparent;
-    color: grey;
+    background: transparent;
+    color: black;
     border: 0px;
 }
 
 #workspaces button:hover {
-    background: transparent;
     color: white;
 }
 
@@ -70,8 +69,9 @@ label:focus {
 #idle_inhibitor,
 #language,
 #submap {
+    background: transparent;
+    color: black;
     margin: 0px 8px;
-    background-color: transparent;
     border: 0px;
 }
 
@@ -81,7 +81,7 @@ label:focus {
 
 @keyframes blink {
     to {
-        color: white;
+        color: black;
     }
 }
 
@@ -95,19 +95,19 @@ label:focus {
 }
 
 #network.disconnected {
-    color: grey;
+    color: darkgrey;
 }
 
 #pulseaudio.muted {
-    color: grey;
+    color: darkgrey;
 }
 
 #bluetooth.disabled {
-    color: grey;
+    color: darkgrey;
 }
 
 #custom-vpn.disconnected {
-    color: grey;
+    color: darkgrey;
 }
 
 #custom-os,
@@ -116,16 +116,8 @@ label:focus {
 }
 
 #custom-media {
-    color: #66CC99;
+    color: black;
     min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    color: #66CC99;
-}
-
-#custom-media.custom-vlc {
-    color: #FFA000;
 }
 
 #temperature.critical {
@@ -142,9 +134,9 @@ label:focus {
 }
 
 #idle_inhibitor {
-    color: grey;
+    color: darkgrey;
 }
 
 #idle_inhibitor.activated {
-    color: white;
+    color: black;
 }

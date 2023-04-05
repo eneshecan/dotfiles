@@ -6,9 +6,9 @@
     "margin-right": 8,
     "margin-bottom": 0,
     "margin-left": 8,
-    "modules-left": ["custom/os", "wlr/workspaces", "hyprland/submap"],
+    "modules-left": ["custom/os", "wlr/workspaces", "hyprland/submap", "custom/media"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "bluetooth", "network", "battery", "hyprland/language", "custom/power"],
+    "modules-right": ["temperature", "cpu", "memory", "disk#root", "disk#home", "pulseaudio", "backlight", "bluetooth", "network", "battery", "hyprland/language", "custom/power"],
     "wlr/workspaces": {
         "tooltip": false,
         "disable-scroll": true,
@@ -41,7 +41,6 @@
     "clock": {
         "tooltip": false,
         "format": "  {:%a %d %b %I:%M %p}",
-        "on-click":"$HOME/.config/eww/launch.sh status"
     },
     "hyprland/language": {
         "format": " {}",
@@ -173,7 +172,8 @@
             "default": ""
         },
         "on-click": "playerctl play-pause",
-        "on-click-right": "playerctl stop",
+        "on-click-forward": "playerctl next",
+        "on-click-backward": "playerctl previous",
         "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null"
     },
     "custom/os": {
@@ -184,6 +184,6 @@
     "custom/power": {
         "tooltip": false,
         "format": "襤",
-        "on-click": "$HOME/.config/eww/launch.sh power"
+        "on-click": "$HOME/.config/waybar/scripts/power.sh"
     }
 }
