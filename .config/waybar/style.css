@@ -3,8 +3,7 @@
 
 window {
     font-family: JetBrainsMono Nerd Font;
-    font-size: 13px;
-    min-height: 0;
+    font-size: 14px;
 }
 
 window#waybar {
@@ -28,6 +27,7 @@ label:focus {
 
 
 #workspaces button {
+    font-size: 18px;
     margin: 0px 4px;
     background: transparent;
     color: black;
