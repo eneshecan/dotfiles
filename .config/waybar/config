@@ -77,7 +77,7 @@
         "format-tr": "tr"
     },
     "hyprland/submap": {
-        "format": "<span style=\"italic\">{}</span>",
+        "format": "<span style=\"italic\">󰕮 {}</span>",
         "tooltip": false
     },
     "cpu": {
