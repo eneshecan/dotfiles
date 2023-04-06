@@ -1,5 +1,4 @@
-@define-color red   #C23A23;
-@define-color green #90C861;
+@define-color colorUrgent #C23A23;
 
 window {
     font-family: JetBrainsMono Nerd Font;
@@ -44,7 +43,7 @@ label:focus {
 }
 
 #workspaces button.urgent {
-    color: @red;
+    color: @colorUrgent;
 }
 
 
@@ -77,7 +76,7 @@ label:focus {
 }
 
 #battery.charging, #battery.plugged, #upower.charging {
-    color: @green;
+    color: #90C861;
 }
 
 @keyframes blink {
@@ -87,7 +86,7 @@ label:focus {
 }
 
 #battery.critical:not(.charging), #upower.empty {
-    color: @red;
+    color: @colorUrgent;
     animation-name: blink;
     animation-duration: 1.0s;
     animation-timing-function: linear;
@@ -95,24 +94,16 @@ label:focus {
     animation-direction: alternate;
 }
 
-#network.disconnected {
-    color: darkgrey;
+#network.disconnected, #pulseaudio.muted, #bluetooth.disabled, #custom-vpn.disconnected, #idle_inhibitor {
+    color: #404040;
 }
 
-#pulseaudio.muted {
-    color: darkgrey;
-}
-
-#bluetooth.disabled {
-    color: darkgrey;
-}
-
-#custom-vpn.disconnected {
-    color: darkgrey;
+#idle_inhibitor.activated {
+    color: black;
 }
 
 #temperature.critical {
-    color: @red;
+    color: @colorUrgent;
 }
 
 #tray > .passive {
@@ -121,13 +112,5 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    color: @red;
-}
-
-#idle_inhibitor {
-    color: darkgrey;
-}
-
-#idle_inhibitor.activated {
-    color: black;
+    color: @colorUrgent;
 }
