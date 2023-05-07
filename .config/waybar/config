@@ -41,7 +41,7 @@
     "clock": {
         "interval": 60,
         "format": "󰅐 {:%I:%M %p}",
-        "format-alt": " {:%a %d %b %I:%M %p}",
+        "format-alt": "󰃭 {:%a %d %b %I:%M %p}",
         "tooltip": true,
         "tooltip-format": "<span size='9pt'>{calendar}</span>",
         "calendar": {
@@ -71,7 +71,7 @@
         "max-length": 32
     },
     "hyprland/language": {
-        "format": " {}",
+        "format": "󰥻 {}",
         "format-en": "en",
         "format-de": "de",
         "format-tr": "tr"
@@ -98,7 +98,7 @@
     },
     "backlight": {
         "format": "{icon} {percent}%",
-        "format-icons": ["", "", "", ""],
+        "format-icons": ["󰃚", "󰃜", "󰃞", "󰃠"],
         "on-scroll-up": "light -A 5",
         "on-scroll-down": "light -U 5"
     },
@@ -111,7 +111,7 @@
         "format-charging": "󰂄 {capacity:02}%",
         "format-plugged": " {capacity:02}%",
         "format-full": "{icon} 100%",
-        "format-icons": ["", "", "", "", ""],
+        "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"],
         "on-click-right": "tlpui"
 
     },
@@ -139,10 +139,10 @@
         "format-linked": "{icon} no ip",
         "format-disconnected": "{icon}",
         "format-icons": {
-            "wifi": "直",
+            "wifi": "󰖩",
             "ethernet": "󰈀",
             "linked": "󰈀",
-            "disconnected": ""
+            "disconnected": "󰌙"
         },
         "tooltip": true,
         "tooltip-format-wifi": "{essid} {signalStrength}%",
@@ -157,14 +157,14 @@
         "format-bluetooth": "{icon}󰂯 {volume:02}% {format_source}",
         "format-bluetooth-muted": "{icon}󰂯 󰖁 {format_source}",
         "format-muted": "{icon}  󰖁  {format_source}",
-        "format-source": " {volume:02}%",
-        "format-source-muted": "",
+        "format-source": "󰍬 {volume:02}%",
+        "format-source-muted": "󰍭",
         "format-icons": {
-            "headphone": "",
+            "headphone": "󰋋",
             "speaker": "󰓃",
-            "hands-free": "󰐺",
+            "hands-free": "󰄞",
             "headset": "󰋎",
-            "phone": "",
+            "phone": "󰏲",
             "portable": "",
             "car": "󰄋",
             "default": ["󰕿", "󰖀", "󰕾"]
@@ -216,7 +216,7 @@
     },
     "custom/power": {
         "tooltip": false,
-        "format": "襤",
+        "format": "󰐥",
         "on-click": "$HOME/.config/waybar/scripts/power.sh"
     }
 }
