@@ -4,6 +4,7 @@
     "ssh",
     "cwd",
     "git",
+    "git_stash",
     "hg",
     "jobs",
     "root"
