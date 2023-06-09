@@ -175,7 +175,6 @@
         "max-length": 16,
         "format": "{icon}",
         "format-connected": "{icon} {device_alias}",
-        "format-connected-battery": "{icon} {device_alias} {device_battery_percentage}%",
         "format-disabled": "{icon}",
         "format-icons": {
             "enabled": "󰂯",
