@@ -174,7 +174,7 @@
     "bluetooth": {
         "max-length": 16,
         "format": "{icon}",
-        "format-connected": "{icon} {device_alias}",
+        "format-connected": "{icon} {num_connections}",
         "format-disabled": "{icon}",
         "format-icons": {
             "enabled": "󰂯",
