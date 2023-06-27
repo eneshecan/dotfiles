@@ -26,3 +26,4 @@ A collection of my configuration files for Arch Linux.
 * [light](https://archlinux.org/packages/community/x86_64/light/)
 * [grim](https://archlinux.org/packages/community/x86_64/grim/) & [slurp](https://archlinux.org/packages/community/x86_64/slurp/) & [swappy](https://archlinux.org/packages/community/x86_64/swappy/)
 * [cava](https://aur.archlinux.org/packages/cava)
+* [geany](https://archlinux.org/packages/extra/x86_64/geany/)
