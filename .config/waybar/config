@@ -43,7 +43,7 @@
         "format": "󰅐 {:%I:%M %p}",
         "format-alt": "󰃭 {:%a %d %b %I:%M %p}",
         "tooltip": true,
-        "tooltip-format": "<span size='9pt'>{calendar}</span>",
+        "tooltip-format": "{calendar}",
         "calendar": {
             "mode": "month",
             "mode-mon-col": 3,

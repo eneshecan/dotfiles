@@ -16,7 +16,7 @@ window#waybar {
 }
 
 tooltip {
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 8px;
 }
 
