@@ -9,8 +9,8 @@
 # Common Aliases
 alias ls='ls --color=auto'
 alias ll='ls -lah'
-alias clean-system='yes | pacaur -Sc'
-alias upgrade-system='pacaur -Syu && pacaur -Qdt && pacaur -Rns $(pacaur -Qdtq)'
+alias clean-system='yes | yay -Sc'
+alias upgrade-system='yay -Syu && yay -Qdt && yay -Rns $(yay -Qdtq)'
 
 
 # powerline-shell
@@ -58,7 +58,7 @@ LESSHISTFILE=/dev/null
 
 
 # dotfiles config
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 source /usr/share/bash-completion/completions/git
 __git_complete config __git_main
 

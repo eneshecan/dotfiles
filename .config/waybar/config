@@ -6,10 +6,10 @@
     "margin-right": 8,
     "margin-bottom": 0,
     "margin-left": 8,
-    "modules-left": ["custom/os", "wlr/workspaces", "hyprland/submap", "custom/media"],
+    "modules-left": ["custom/os", "hyprland/workspaces", "hyprland/submap", "custom/media"],
     "modules-center": ["clock"],
     "modules-right": ["temperature", "cpu", "memory", "disk#root", "disk#home", "pulseaudio", "backlight", "bluetooth", "network", "battery", "hyprland/language", "custom/power"],
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "tooltip": false,
         "disable-scroll": true,
         "on-click": "activate",
@@ -43,7 +43,7 @@
         "format": "󰅐 {:%I:%M %p}",
         "format-alt": "󰃭 {:%a %d %b %I:%M %p}",
         "tooltip": true,
-        "tooltip-format": "{calendar}",
+        "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
             "mode": "month",
             "mode-mon-col": 3,
@@ -98,9 +98,7 @@
     },
     "backlight": {
         "format": "{icon} {percent}%",
-        "format-icons": ["󰃚", "󰃜", "󰃞", "󰃠"],
-        "on-scroll-up": "light -A 5",
-        "on-scroll-down": "light -U 5"
+        "format-icons": ["󰃚", "󰃜", "󰃞", "󰃠"]
     },
     "battery": {
         "states": {
@@ -112,7 +110,7 @@
         "format-plugged": " {capacity:02}%",
         "format-full": "{icon} 100%",
         "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"],
-        "on-click-right": "tlpui"
+        "on-click": "tlpui"
 
     },
     "upower": {
@@ -148,8 +146,8 @@
         "tooltip-format-wifi": "{essid} {signalStrength}%",
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
         "tooltip-format-disconnected": "Disconnected",
-        "on-click": "$HOME/.config/waybar/scripts/vpn.sh toggle",
-        "on-click-right": "foot -w 720x420 -a nmtui -T nmtui nmtui"
+        "on-click": "iwgtk",
+        "on-click-right": "$HOME/.config/waybar/scripts/vpn.sh toggle"
     },
     "pulseaudio": {
         "scroll-step": 1,
@@ -169,7 +167,7 @@
             "car": "󰄋",
             "default": ["󰕿", "󰖀", "󰕾"]
         },
-        "on-click-right": "pavucontrol"
+        "on-click": "pavucontrol"
     },
     "bluetooth": {
         "max-length": 16,
@@ -184,8 +182,7 @@
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-        "on-click": "rfkill toggle bluetooth",
-        "on-click-right": "blueman-manager"
+        "on-click": "blueman-manager"
     },
     "custom/vpn": {
         "interval": 4,
