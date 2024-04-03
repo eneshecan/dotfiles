@@ -8,7 +8,7 @@
     "margin-left": 8,
     "modules-left": ["custom/os", "hyprland/workspaces", "hyprland/submap", "custom/media"],
     "modules-center": ["clock"],
-    "modules-right": ["temperature", "cpu", "memory", "disk#root", "disk#home", "pulseaudio", "backlight", "bluetooth", "network", "battery", "hyprland/language", "custom/power"],
+    "modules-right": ["temperature", "cpu", "memory", "disk#root", "disk#home", "pulseaudio", "backlight", "bluetooth", "network", "custom/vpn", "battery", "hyprland/language", "custom/power"],
     "hyprland/workspaces": {
         "tooltip": false,
         "disable-scroll": true,
@@ -90,7 +90,7 @@
         "tooltip-format": "{used:0.1f}G / {total:0.1f}G"
     },
     "temperature": {
-        "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input",
+        "hwmon-path": "/sys/class/hwmon/hwmon8/temp1_input",
         "critical-threshold": 100,
         "format": "{icon} {temperatureC}°C",
         "format-icons": ["", "", ""],
