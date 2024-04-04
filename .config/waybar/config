@@ -8,7 +8,7 @@
     "margin-left": 8,
     "modules-left": ["custom/os", "hyprland/workspaces", "hyprland/submap", "custom/media"],
     "modules-center": ["clock"],
-    "modules-right": ["temperature", "cpu", "memory", "disk#root", "disk#home", "pulseaudio", "backlight", "bluetooth", "network", "custom/vpn", "battery", "hyprland/language", "custom/power"],
+    "modules-right": ["temperature", "cpu", "memory", "disk#root", "pulseaudio", "backlight", "bluetooth", "network", "custom/vpn", "battery", "hyprland/language", "custom/power"],
     "hyprland/workspaces": {
         "tooltip": false,
         "disable-scroll": true,
@@ -146,8 +146,7 @@
         "tooltip-format-wifi": "{essid} {signalStrength}%",
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
         "tooltip-format-disconnected": "Disconnected",
-        "on-click": "iwgtk",
-        "on-click-right": "$HOME/.config/waybar/scripts/vpn.sh toggle"
+        "on-click": "iwgtk"
     },
     "pulseaudio": {
         "scroll-step": 1,
