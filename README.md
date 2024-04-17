@@ -19,7 +19,7 @@ A collection of my configuration files for Arch Linux.
 * [playerctl](https://www.archlinux.org/packages/community/x86_64/playerctl/)
 
 ### Network
-* [dhcpcd](https://archlinux.org/packages/extra/x86_64/dhcpcd/)
+* [systemd-networkd](https://archlinux.org/packages/core/x86_64/systemd/)
 * [iwd](https://archlinux.org/packages/extra/x86_64/iwd/)
 * [iwgtk](https://aur.archlinux.org/packages/iwgtk)
 
