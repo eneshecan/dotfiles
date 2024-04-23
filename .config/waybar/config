@@ -39,7 +39,6 @@
         "spacing": 8
     },
     "clock": {
-        "interval": 60,
         "format": "󰅐 {:%I:%M %p}",
         "format-alt": "󰃭 {:%a %d %b %I:%M %p}",
         "tooltip": true,
@@ -90,8 +89,9 @@
         "tooltip-format": "{used:0.1f}G / {total:0.1f}G"
     },
     "temperature": {
-        "hwmon-path": "/sys/class/hwmon/hwmon8/temp1_input",
-        "critical-threshold": 100,
+        "hwmon-path-abs": "/sys/devices/platform/dell_smm_hwmon/hwmon",
+        "input-filename": "temp1_input",
+        "critical-threshold": 90,
         "format": "{icon} {temperatureC}°C",
         "format-icons": ["", "", ""],
         "tooltip": true
@@ -120,17 +120,14 @@
         "tooltip-spacing": 16
     },
     "disk#root": {
-        "interval": 60,
         "format": " {percentage_used:02}%",
         "path": "/"
     },
     "disk#home": {
-        "interval": 60,
         "format": " {percentage_used:02}%",
         "path": "/home"
     },
     "network": {
-        "interval": 30,
         "max-length": 8,
         "format-wifi": "{icon} {signalStrength}%",
         "format-ethernet": "{icon} {ifname}",
