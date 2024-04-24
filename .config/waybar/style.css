@@ -60,15 +60,15 @@ label:focus {
 #network,
 #pulseaudio,
 #cava,
-#custom-media,
-#custom-os,
-#custom-vpn,
-#custom-power,
+#mpris,
 #tray,
 #mode,
 #window,
 #language,
-#submap {
+#submap,
+#custom-os,
+#custom-vpn,
+#custom-power {
     background: transparent;
     color: black;
     margin: 0px 8px;
