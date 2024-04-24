@@ -6,7 +6,7 @@
     "margin-right": 8,
     "margin-bottom": 0,
     "margin-left": 8,
-    "modules-left": ["custom/os", "hyprland/workspaces", "hyprland/submap", "custom/media"],
+    "modules-left": ["custom/os", "hyprland/workspaces", "hyprland/submap", "custom/media", "cava"],
     "modules-center": ["clock"],
     "modules-right": ["temperature", "cpu", "memory", "disk#root", "pulseaudio", "backlight", "bluetooth", "network", "custom/vpn", "battery", "hyprland/language", "custom/power"],
     "hyprland/workspaces": {
@@ -25,13 +25,6 @@
             "8":  "󰎹 󱅰",
             "9":  "󰎼 ",
             "10": "󰎡 󱙤"
-        }
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
         }
     },
     "tray": {
@@ -179,6 +172,12 @@
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
         "on-click": "blueman-manager"
+    },
+    "cava": {
+        "bars": 12,
+        "bar_delimiter": 0,
+        "hide_on_silence": true,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
     },
     "custom/vpn": {
         "interval": 4,

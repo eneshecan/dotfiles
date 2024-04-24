@@ -59,13 +59,13 @@ label:focus {
 #backlight,
 #network,
 #pulseaudio,
+#cava,
 #custom-media,
 #custom-os,
 #custom-vpn,
 #custom-power,
 #tray,
 #mode,
-#idle_inhibitor,
 #window,
 #language,
 #submap {
@@ -94,12 +94,8 @@ label:focus {
     animation-direction: alternate;
 }
 
-#network.disconnected, #pulseaudio.muted, #bluetooth.disabled, #custom-vpn.disconnected, #idle_inhibitor {
+#network.disconnected, #pulseaudio.muted, #bluetooth.disabled, #custom-vpn.disconnected {
     color: #404040;
-}
-
-#idle_inhibitor.activated {
-    color: black;
 }
 
 #temperature.critical {
