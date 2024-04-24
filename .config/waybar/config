@@ -174,10 +174,11 @@
         "on-click": "blueman-manager"
     },
     "mpris": {
+        "interval": 4,
         "format": "{player_icon} {dynamic}",
         "format-paused": "{status_icon} {dynamic}",
         "dynamic-order": ["artist", "title"],
-        "dynamic-len": 32,
+        "max-length": 32,
         "player-icons": {
             "default": ""
         },
@@ -190,6 +191,7 @@
     "cava": {
         "bars": 12,
         "bar_delimiter": 0,
+        "hide_on_silence": true,
         "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
     },
     "custom/vpn": {
