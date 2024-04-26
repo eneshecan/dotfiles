@@ -16,14 +16,14 @@
         "format": "{icon}",
         "format-icons": {
             "1":  "󰎤 󰖟",
-            "2":  "󰎧 ",
-            "3":  "󰎪 ",
-            "4":  "󰎭 ",
-            "5":  "󰎱 ",
+            "2":  "󰎧 󰆍",
+            "3":  "󰎪 󰆍",
+            "4":  "󰎭 󰌢",
+            "5":  "󰎱 󰌢",
             "6":  "󰎳 ",
             "7":  "󰎶 󱅰",
             "8":  "󰎹 󱅰",
-            "9":  "󰎼 ",
+            "9":  "󰎼 󰝚",
             "10": "󰎡 󱙤"
         }
     },
@@ -73,7 +73,7 @@
         "tooltip": false
     },
     "cpu": {
-        "format": "󰓅 {usage:02}%",
+        "format": "󰊚 {usage:02}%",
         "tooltip": true
     },
     "memory": {
@@ -86,7 +86,7 @@
         "input-filename": "temp1_input",
         "critical-threshold": 90,
         "format": "{icon} {temperatureC}°C",
-        "format-icons": ["", "", ""],
+        "format-icons": ["󱃃", "󰔏", "󱃂"],
         "tooltip": true
     },
     "backlight": {
@@ -100,7 +100,7 @@
         },
         "format": "{icon} {capacity:02}%",
         "format-charging": "󰂄 {capacity:02}%",
-        "format-plugged": " {capacity:02}%",
+        "format-plugged": "󰚥 {capacity:02}%",
         "format-full": "{icon} 100%",
         "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"],
         "on-click": "tlpui"
@@ -113,11 +113,11 @@
         "tooltip-spacing": 16
     },
     "disk#root": {
-        "format": " {percentage_used:02}%",
+        "format": "󰋊 {percentage_used:02}%",
         "path": "/"
     },
     "disk#home": {
-        "format": " {percentage_used:02}%",
+        "format": "󰋜 {percentage_used:02}%",
         "path": "/home"
     },
     "network": {
@@ -180,12 +180,12 @@
         "dynamic-order": ["artist", "title"],
         "max-length": 32,
         "player-icons": {
-            "default": ""
+            "default": "󰐊"
         },
         "status-icons": {
-            "playing": "",
-            "paused": "",
-            "stopped": ""
+            "playing": "󰐊",
+            "paused": "󰏤",
+            "stopped": "󰓛"
         }
     },
     "cava": {
