@@ -11,8 +11,8 @@ if [ "${op}" == "toggle" ]; then
     fi
 elif [ "${op}" == "gettext" ]; then
     if test -d /proc/sys/net/ipv4/conf/tun0 ; then
-        echo "{\"text\": \"\", \"class\": \"connected\", \"tooltip\": \"Connected to ${name}\"}"
+        echo "{\"text\": \"󰌾\", \"class\": \"connected\", \"tooltip\": \"Connected to ${name}\"}"
     else
-        echo "{\"text\": \"\", \"class\": \"disconnected\", \"tooltip\": \"Disconnected from ${name}\"}"
+        echo "{\"text\": \"󰿆\", \"class\": \"disconnected\", \"tooltip\": \"Disconnected from ${name}\"}"
     fi
 fi
