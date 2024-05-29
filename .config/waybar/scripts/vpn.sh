@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 
 op=${1}
-name="4-VPN-443udp"
+name="VPN-unrooted"
+status="$(systemctl is-active openvpn@${name}.service)"
 
 if [ "${op}" == "toggle" ]; then
-    if test -d /proc/sys/net/ipv4/conf/tun0 ; then
-        openvpn3 session-manage --disconnect --config ${name}.ovpn > /dev/null 2>&1
+    if [ "${status}" == "active" ]; then
+        systemctl stop openvpn@${name}.service
     else
-        printf "username\npassword\n" | openvpn3 session-start --config ${name}.ovpn > /dev/null 2>&1
+        systemctl start openvpn@${name}.service
     fi
 elif [ "${op}" == "gettext" ]; then
-    if test -d /proc/sys/net/ipv4/conf/tun0 ; then
+    if [ "${status}" == "active" ]; then
         echo "{\"text\": \"󰌾\", \"class\": \"connected\", \"tooltip\": \"Connected to ${name}\"}"
     else
         echo "{\"text\": \"󰿆\", \"class\": \"disconnected\", \"tooltip\": \"Disconnected from ${name}\"}"
