@@ -66,6 +66,7 @@ label:focus {
 #window,
 #language,
 #submap,
+#privacy,
 #custom-os,
 #custom-vpn,
 #custom-power {
@@ -99,6 +100,10 @@ label:focus {
 }
 
 #temperature.critical {
+    color: @colorUrgent;
+}
+
+#privacy-item {
     color: @colorUrgent;
 }
 
