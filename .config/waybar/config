@@ -6,7 +6,7 @@
     "margin-right": 8,
     "margin-bottom": 0,
     "margin-left": 8,
-    "modules-left": ["custom/os", "hyprland/workspaces", "hyprland/submap", "mpris", "privacy"],
+    "modules-left": ["custom/os", "hyprland/workspaces", "hyprland/submap", "mpris"],
     "modules-center": ["clock"],
     "modules-right": ["temperature", "cpu", "memory", "disk#root", "pulseaudio", "backlight", "bluetooth", "network", "custom/vpn", "battery", "hyprland/language", "custom/power"],
     "hyprland/workspaces": {
