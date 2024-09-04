@@ -79,7 +79,7 @@
     "memory": {
         "format": "󰍛 {percentage:02}%",
         "tooltip": true,
-        "tooltip-format": "{used:0.1f}G / {total:0.1f}G"
+        "tooltip-format": "Physical: {used:0.1f}G / {total:0.1f}G \nSwap: {swapUsed:0.1f}G / {swapTotal:0.1f}G"
     },
     "temperature": {
         "hwmon-path-abs": "/sys/devices/platform/dell_smm_hwmon/hwmon",
