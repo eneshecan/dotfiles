@@ -45,6 +45,7 @@ A collection of my configuration files for Arch Linux.
 
 ### Notifications
 * [mako](https://archlinux.org/packages/community/x86_64/mako/)
+* [avizo](https://aur.archlinux.org/packages/avizo)
 
 ### Application Launcher
 * [wofi](https://archlinux.org/packages/community/x86_64/wofi/)
