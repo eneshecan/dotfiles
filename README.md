@@ -50,6 +50,16 @@ A collection of my configuration files for Arch Linux.
 ### Application Launcher
 * [wofi](https://archlinux.org/packages/extra/x86_64/wofi/)
 
+### File Management
+* [thunar](https://archlinux.org/packages/extra/x86_64/thunar/)
+* [qdirstat](https://aur.archlinux.org/packages/qdirstat-bin)
+
+### Internet
+* [firefox](https://archlinux.org/packages/extra/x86_64/firefox/)
+
+### Text Editor
+* [geany](https://archlinux.org/packages/extra/x86_64/geany/)
+
 ### Power Management
 * [tlp](https://archlinux.org/packages/extra/any/tlp/)
 * [tlpui](https://aur.archlinux.org/packages/tlpui)
